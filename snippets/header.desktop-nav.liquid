@@ -101,6 +101,7 @@
 	  flex: 1 1 81%;
 	  flex-flow: column wrap;
 	  columns: 4;
+	  column-gap: 44px;
 	
 	  .megamenu--collections & {
 	    display: flex;
@@ -145,8 +146,20 @@
 	}
 	
 	.megamenu__col-title a {
+	  display: inline-flex;
+	  align-items: center;
+	  min-height: 30px;
+	  padding: 0;
 	  font-weight: var(--element-text-font-weight--heading);
-	  font-size: calc(var(--element-text-font-size--body-md) + 1px);
+	  font-size: calc(var(--element-text-font-size--body-md) - 1px);
+	  letter-spacing: 0;
+	  text-transform: uppercase;
+	}
+
+	.megamenu__col-title--divider {
+	  margin-top: 12px;
+	  padding-top: 14px;
+	  border-top: 1px solid color-mix(in srgb, currentColor 14%, transparent);
 	}
 	
 	/*Center grid items in megamenu when logo centered*/
@@ -162,10 +175,18 @@
 	}
 	
 	.site-nav__dropdown-link {
-	  display: block;
+	  display: flex;
+	  align-items: center;
+	  gap: 0;
 	  padding: 8px 15px;
 	  white-space: nowrap;
 	  font-size: calc(var(--element-text-font-size--body-md) - 1px);
+	  line-height: 1.35;
+	  border-radius: 6px;
+	  transition:
+	    background-color 0.18s ease,
+	    color 0.18s ease,
+	    opacity 0.18s ease;
 	
 	  &:hover {
 	    text-decoration: underline;
@@ -176,6 +197,22 @@
 	    padding: 1px 0;
 	    white-space: normal;
 	  }
+	}
+
+	.site-nav__dropdown-link--icon {
+	  min-height: 31px;
+	  padding: 5px 8px 5px 0;
+	}
+
+	.site-nav__dropdown-link--icon:hover {
+	  background-color: color-mix(in srgb, currentColor 6%, transparent);
+	  text-decoration: none;
+	}
+
+	.site-nav__dropdown-section--divider {
+	  margin-top: 6px;
+	  padding-top: 6px;
+	  border-top: 1px solid color-mix(in srgb, currentColor 14%, transparent);
 	}
 	
 	.site-nav__link--underline {
@@ -398,10 +435,12 @@
                   {%- for childlink in link.links -%}
                     {%- liquid
                       assign create_new_column = false
-                      assign is_by_shape_mega = false
+                      assign show_menu_icons_mega = false
+                      assign show_section_divider_mega = false
                       assign childlink_normalized_mega = childlink.title | downcase | strip
-                      if childlink_normalized_mega == 'by shape'
-                        assign is_by_shape_mega = true
+                      if childlink_normalized_mega == 'by shape' or childlink_normalized_mega == 'by style'
+                        assign show_menu_icons_mega = true
+                        assign show_section_divider_mega = true
                       endif
 
                       if childlink.levels > 0 and forloop.index != 1
@@ -436,7 +475,7 @@
                     {%- endif -%}
 
                     <div>
-                      <div class="megamenu__col-title">
+                      <div class="megamenu__col-title{% if show_section_divider_mega %} megamenu__col-title--divider{% endif %}">
                         <a
                           href="{{ childlink.url }}"
                           class="site-nav__dropdown-link site-nav__dropdown-link--top-level"
@@ -454,8 +493,8 @@
                       -%}
 
                       {%- for grandchildlink in childlink.links -%}
-                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
-                          {% if is_by_shape_mega %}{% render 'shape-menu-icon', shape: grandchildlink.title %}{% endif %}
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link{% if show_menu_icons_mega %} site-nav__dropdown-link--icon{% endif %}">
+                          {% if show_menu_icons_mega %}{% render 'shape-menu-icon', shape: grandchildlink.title %}{% endif %}
                           {{ grandchildlink.title }}
                         </a>
                       {%- endfor -%}
@@ -486,14 +525,16 @@
                   assign has_sub_dropdown = true
                 endif
 
-                assign is_by_shape_submenu = false
+                assign show_menu_icons_submenu = false
+                assign show_section_divider_submenu = false
                 assign childlink_normalized = childlink.title | downcase | strip
-                if childlink_normalized == 'by shape' or childlink_normalized == 'по форме'
-                  assign is_by_shape_submenu = true
+                if childlink_normalized == 'by shape' or childlink_normalized == 'by style' or childlink_normalized == 'по форме'
+                  assign show_menu_icons_submenu = true
+                  assign show_section_divider_submenu = true
                 endif
               -%}
 
-              <li class="{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %}">
+              <li class="{% if has_sub_dropdown %} site-nav__deep-dropdown-trigger{% endif %}{% if show_section_divider_submenu %} site-nav__dropdown-section--divider{% endif %}">
                 <a
                   href="{{ childlink.url }}"
                   class="site-nav__dropdown-link site-nav__dropdown-link--second-level{% if has_sub_dropdown %} site-nav__dropdown-link--has-children{% endif %}"
@@ -507,8 +548,8 @@
                   <ul class="site-nav__deep-dropdown">
                     {%- for grandchildlink in childlink.links -%}
                       <li>
-                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link">
-                          {% if is_by_shape_submenu %}{% render 'shape-menu-icon', shape: grandchildlink.title %}{% endif %}
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link{% if show_menu_icons_submenu %} site-nav__dropdown-link--icon{% endif %}">
+                          {% if show_menu_icons_submenu %}{% render 'shape-menu-icon', shape: grandchildlink.title %}{% endif %}
                           {{- grandchildlink.title | escape -}}
                         </a>
                       </li>

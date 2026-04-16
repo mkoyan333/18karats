@@ -34,4 +34,75 @@
       render 'element.text', text: description, variant: 'rte'
     endif
   -%}
+  {%- unless is_tab -%}
+    <script>
+      (() => {
+        const root = document.currentScript.closest('div');
+        const rte = root && root.querySelector('element-text-rte');
+        if (!rte || rte.querySelector('.product-detail-spec')) return;
+
+        const paragraphs = Array.from(rte.querySelectorAll(':scope > p'));
+        const normalize = (value) => value.replace(/\u00a0/g, ' ').trim();
+        const findParagraph = (matcher) => paragraphs.find((paragraph) => matcher(normalize(paragraph.innerText || '')));
+        const detailsParagraph = findParagraph((text) => text.startsWith('Details:'));
+        const naturalParagraph = findParagraph((text) => text.startsWith('Natural Side Diamonds:'));
+        const labParagraph = findParagraph((text) => text.startsWith('Lab Side Diamonds:'));
+        const priceParagraph = findParagraph((text) => text.includes('Price is for setting only'));
+
+        if (!detailsParagraph && !naturalParagraph && !labParagraph) return;
+
+        const linesFrom = (paragraph, heading) => {
+          if (!paragraph) return [];
+          return normalize(paragraph.innerText || '')
+            .split('\n')
+            .map((line) => normalize(line))
+            .filter(Boolean)
+            .filter((line) => line !== heading);
+        };
+
+        const escapeHtml = (value) => value
+          .replace(/&/g, '&amp;')
+          .replace(/</g, '&lt;')
+          .replace(/>/g, '&gt;')
+          .replace(/"/g, '&quot;')
+          .replace(/'/g, '&#039;');
+
+        const toRows = (lines) => lines.map((line) => {
+          const splitAt = line.indexOf(':');
+          if (splitAt === -1) return `<div class="product-detail-spec__row"><span>${escapeHtml(line)}</span></div>`;
+          const label = escapeHtml(line.slice(0, splitAt).trim());
+          const value = escapeHtml(line.slice(splitAt + 1).trim());
+          return `<div class="product-detail-spec__row"><span>${label}</span><strong>${value}</strong></div>`;
+        }).join('');
+
+        const priceNote = escapeHtml(priceParagraph ? normalize(priceParagraph.innerText || '').replace(/^["\u201C]|["\u201D]$/g, '') : 'Price is for setting only');
+        const spec = document.createElement('div');
+        spec.className = 'product-detail-spec';
+        spec.innerHTML = `
+          <div class="product-detail-spec__header">
+            <span>Product details</span>
+            <strong>Setting specification</strong>
+          </div>
+          <div class="product-detail-spec__grid">
+            <section class="product-detail-spec__group">
+              <h3>Setting</h3>
+              ${toRows(linesFrom(detailsParagraph, 'Details:'))}
+            </section>
+            <section class="product-detail-spec__group">
+              <h3>Natural side diamonds</h3>
+              ${toRows(linesFrom(naturalParagraph, 'Natural Side Diamonds:'))}
+            </section>
+            <section class="product-detail-spec__group">
+              <h3>Lab side diamonds</h3>
+              ${toRows(linesFrom(labParagraph, 'Lab Side Diamonds:'))}
+            </section>
+          </div>
+          <div class="product-detail-spec__note">${priceNote}</div>
+        `;
+
+        (detailsParagraph || naturalParagraph || labParagraph).before(spec);
+        [detailsParagraph, naturalParagraph, labParagraph, priceParagraph].forEach((paragraph) => paragraph && paragraph.remove());
+      })();
+    </script>
+  {%- endunless -%}
 </div>

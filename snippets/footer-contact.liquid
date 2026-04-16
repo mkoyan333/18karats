@@ -24,8 +24,14 @@
   <div class="footer__blocks--mobile">
     <div class="footer__block--mobile">
       <h2 class="footer__title heading-{{ blocks_heading_size }}">
-        {% assign actions_get_in_touch = 'actions.get_in_touch' | t %}
-        {% render 'utility.translate', t: actions_get_in_touch, fallback: 'Get in touch' %}
+        {%- if phone != blank -%}
+          Contact
+        {%- elsif chat_page != blank -%}
+          Support
+        {%- else -%}
+          {% assign actions_get_in_touch = 'actions.get_in_touch' | t %}
+          {% render 'utility.translate', t: actions_get_in_touch, fallback: 'Get in touch' %}
+        {%- endif -%}
       </h2>
 
       <ul class="footer__menu footer__menu--underline">

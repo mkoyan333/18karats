@@ -7,6 +7,7 @@
         when 'title'
           render 'block.product-title', block: block
         when 'description'
+          echo '<div class="product-promise-panel" aria-label="18 Karats service promises"><div class="product-promise-panel__item"><span class="product-promise-panel__eyebrow">Shipping</span><span class="product-promise-panel__text">Free insured US shipping</span></div><div class="product-promise-panel__item"><span class="product-promise-panel__eyebrow">Warranty</span><span class="product-promise-panel__text">Lifetime warranty and upgrades</span></div><div class="product-promise-panel__item"><span class="product-promise-panel__eyebrow">Support</span><span class="product-promise-panel__text">Personal guidance before you order</span></div></div>'
           render 'block.product-description', block: block
         when 'variant_picker'
           render 'block.product-variant-picker', block: block, forloop: forloop

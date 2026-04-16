@@ -14,10 +14,15 @@
 {% stylesheet %}
 	/*Height changes based on active subnav*/
 	.slide-nav__wrapper {
+	  --color-primary: #20312d;
+	  --color-secondary: #ffffff;
+	  --element-text-color: #20312d;
 	  --z-index-overlay: 1;
 	  position: relative;
 	  overflow: hidden;
 	  display: block;
+	  background: #ffffff !important;
+	  color: #20312d !important;
 	
 	  &:after {
 	    background-color: rgba(0, 0, 0, 0.027);
@@ -29,6 +34,7 @@
 	/*Element slides left/right to reveal current nav level*/
 	.slide-nav {
 	  margin: 0;
+	  padding: 14px 14px 24px;
 	  list-style: none;
 	  transition: transform var(--slide-curve);
 	
@@ -59,14 +65,26 @@
 	  position: relative;
 	  display: flex;
 	  width: 100%;
-	  padding: 10px 20px;
+	  padding: 13px 22px;
 	  align-items: center;
 	  justify-content: space-between;
-	  font-size: calc(var(--element-text-font-size--body-md) + 2px);
+	  font-size: calc(var(--element-text-font-size--body-md) + 1px);
+	  line-height: 1.25;
+	  border-radius: 0;
+	  transition:
+	    background-color 0.18s ease,
+	    color 0.18s ease;
+
+	  &:hover,
+	  &:focus-visible {
+	    background: color-mix(in srgb, currentColor 6%, transparent);
+	    text-decoration: none;
+	  }
 	
 	  & > span {
 	    display: block;
 	    flex: 1 1 auto;
+	    min-width: 0;
 	  }
 	
 	  & .element-icon {
@@ -98,12 +116,17 @@
 	
 	/*Slightly different style, icon on left*/
 	.slide-nav__link--back {
+	  margin-bottom: 8px;
+	  padding-top: 18px;
+	  padding-bottom: 16px;
+	  border-bottom: 1px solid color-mix(in srgb, currentColor 13%, transparent);
 	  font-weight: var(--element-text-font-weight--heading);
 	  justify-content: flex-start;
+	  letter-spacing: 0;
+	  text-transform: uppercase;
 	
 	  & > span {
-	    text-decoration: underline;
-	    text-underline-offset: 2px;
+	    text-decoration: none;
 	  }
 	
 	  & .element-icon {
@@ -126,6 +149,136 @@
 	  &:last-child {
 	    padding-bottom: 10px;
 	  }
+	}
+
+	.slide-nav > .slide-nav__item {
+	  padding: 0;
+	}
+
+	.slide-nav > .slide-nav__item + .slide-nav__item {
+	  margin-top: 8px;
+	}
+
+	.slide-nav > .slide-nav__item > .slide-nav__button > .slide-nav__link,
+	.slide-nav > .slide-nav__item > .slide-nav__link {
+	  min-height: 62px;
+	  padding: 12px 14px;
+	  border: 1px solid color-mix(in srgb, currentColor 12%, transparent);
+	  border-radius: 8px;
+	  background:
+	    linear-gradient(90deg, color-mix(in srgb, currentColor 5%, #ffffff), #ffffff 42%);
+	  font-weight: var(--element-text-font-weight--heading);
+	  color: #20312d;
+	  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.035);
+	}
+
+	.slide-nav > .slide-nav__item > .slide-nav__button > .slide-nav__link:hover,
+	.slide-nav > .slide-nav__item > .slide-nav__button > .slide-nav__link:focus-visible,
+	.slide-nav > .slide-nav__item > .slide-nav__link:hover,
+	.slide-nav > .slide-nav__item > .slide-nav__link:focus-visible {
+	  background: color-mix(in srgb, currentColor 5%, #ffffff);
+	}
+
+	.slide-nav > .slide-nav__item > .slide-nav__button > .slide-nav__link > span,
+	.slide-nav > .slide-nav__item > .slide-nav__link > span {
+	  font-size: calc(var(--element-text-font-size--body-md) + 1px);
+	  line-height: 1.2;
+	}
+
+	.slide-nav__root-icon {
+	  display: inline-flex;
+	  align-items: center;
+	  justify-content: center;
+	  flex: 0 0 36px;
+	  width: 36px;
+	  height: 36px;
+	  margin-right: 12px;
+	  border: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+	  border-radius: 8px;
+	  background: #ffffff;
+	  color: #20312d;
+	}
+
+	.slide-nav__root-icon .element-icon {
+	  width: 17px;
+	  height: 17px;
+	  margin: 0;
+	}
+
+	.slide-nav__root-text {
+	  display: flex;
+	  align-items: center;
+	  min-width: 0;
+	}
+
+	.slide-nav > .slide-nav__item:nth-child(n + 4) > .slide-nav__link {
+	  min-height: 54px;
+	  background: #ffffff;
+	  box-shadow: none;
+	}
+
+	.slide-nav__item--divider {
+	  margin: 10px 20px 0;
+	  padding-top: 10px;
+	  border-top: 1px solid color-mix(in srgb, currentColor 14%, transparent);
+	}
+
+	.slide-nav__item--divider > .slide-nav__button > .slide-nav__link {
+	  padding-left: 0;
+	  padding-right: 0;
+	  font-size: calc(var(--element-text-font-size--body-md) - 1px);
+	  font-weight: var(--element-text-font-weight--heading);
+	  letter-spacing: 0;
+	  text-transform: uppercase;
+	}
+
+	.slide-nav__item--divider > .slide-nav__button > .slide-nav__link:hover,
+	.slide-nav__item--divider > .slide-nav__button > .slide-nav__link:focus-visible {
+	  background: transparent;
+	}
+
+	.slide-nav__link--icon {
+	  justify-content: flex-start;
+	  gap: 0;
+	  min-height: 48px;
+	  padding-top: 10px;
+	  padding-bottom: 10px;
+	  font-size: calc(var(--element-text-font-size--body-md) - 1px);
+	}
+
+	.slide-nav__link--icon .shape-menu-icon {
+	  --shape-menu-icon-size: 22px;
+	  opacity: 0.8;
+	}
+
+	.slide-nav__dropdown--icon-grid.is-active {
+	  display: grid !important;
+	  grid-template-columns: repeat(2, minmax(0, 1fr));
+	  gap: 8px;
+	  padding: 0 14px 24px;
+	}
+
+	.slide-nav__dropdown--icon-grid > .slide-nav__item {
+	  padding: 0;
+	}
+
+	.slide-nav__dropdown--icon-grid > .slide-nav__item:first-child,
+	.slide-nav__dropdown--icon-grid > .slide-nav__item--full {
+	  grid-column: 1 / -1;
+	}
+
+	.slide-nav__dropdown--icon-grid .slide-nav__link--icon {
+	  height: 54px;
+	  padding: 10px 9px;
+	  border: 1px solid color-mix(in srgb, currentColor 13%, transparent);
+	  border-radius: 8px;
+	  background: #ffffff;
+	  font-size: calc(var(--element-text-font-size--body-sm) + 1px);
+	}
+
+	.slide-nav__dropdown--icon-grid .slide-nav__link--icon:hover,
+	.slide-nav__dropdown--icon-grid .slide-nav__link--icon:focus-visible {
+	  background: color-mix(in srgb, currentColor 5%, #ffffff);
 	}
 	
 	.slide-nav__dropdown {
@@ -186,6 +339,21 @@
           assign is_by_shape_menu_item = true
         endif
 
+        assign root_icon_name = 'arrow-right'
+        if title_normalized contains 'engagement'
+          assign root_icon_name = 'heart'
+        elsif title_normalized contains 'jewelry'
+          assign root_icon_name = 'star'
+        elsif title_normalized contains 'diamond'
+          assign root_icon_name = 'shape-round'
+        elsif title_normalized contains 'about'
+          assign root_icon_name = 'shield'
+        elsif title_normalized contains 'gallery'
+          assign root_icon_name = 'view-small'
+        elsif title_normalized contains 'contact'
+          assign root_icon_name = 'phone'
+        endif
+
         assign is_collection = false
         assign have_image = false
         if link.url contains '/collections/'
@@ -219,11 +387,16 @@
               data-active="true"
             {% endif %}
           >
-            <span class="slide-nav__link">
+            <span class="slide-nav__link slide-nav__link--root">
               {%- if have_image -%}
                 {{ collection_image }}
               {%- endif -%}
-              <span>{{ link.title }}</span>
+              <span class="slide-nav__root-text">
+                <span class="slide-nav__root-icon" aria-hidden="true">
+                  {% render 'element.icon', name: root_icon_name %}
+                </span>
+                <span>{{ link.title }}</span>
+              </span>
               {% render 'element.icon', name: chevron_icon %}
               <span class="icon__fallback-text visually-hidden">
                 {% render 'utility.translate', key: 'actions.expand_submenu', fallback: 'Expand submenu' -%}
@@ -274,14 +447,16 @@
                 assign grand_child_list_handle = childlink.title | handleize
                 assign grand_child_link_id = grand_child_list_handle | append: link_index
 
-                assign is_by_shape_submenu = false
+                assign show_menu_icons_submenu = false
+                assign show_section_divider_submenu = false
                 assign childlink_normalized = childlink.title | downcase | strip
-                if childlink_normalized == 'by shape' or childlink_normalized == 'по форме'
-                  assign is_by_shape_submenu = true
+                if childlink_normalized == 'by shape' or childlink_normalized == 'by style' or childlink_normalized == 'по форме'
+                  assign show_menu_icons_submenu = true
+                  assign show_section_divider_submenu = true
                 endif
               -%}
 
-              <li class="slide-nav__item">
+              <li class="slide-nav__item{% if show_section_divider_submenu %} slide-nav__item--divider{% endif %}">
                 {%- if childlink.levels > 0 -%}
                   <button
                     type="button"
@@ -300,7 +475,7 @@
                     </span>
                   </button>
                   <ul
-                    class="slide-nav__dropdown"
+                    class="slide-nav__dropdown{% if show_menu_icons_submenu %} slide-nav__dropdown--icon-grid{% endif %}"
                     data-parent="tier-3-{{ grand_child_link_id }}"
                     data-level="3"
                   >
@@ -321,7 +496,7 @@
                       If a collection, automatically add 'view all' link
                     {% endcomment %}
                     {%- if childlink.url contains '/collections/' -%}
-                      <li class="slide-nav__item">
+                      <li class="slide-nav__item{% if show_menu_icons_submenu %} slide-nav__item--full{% endif %}">
                         <a href="{{ childlink.url }}" class="slide-nav__link">
                           <span>
                             {% render 'utility.translate', key: 'actions.view_all', fallback: 'View all' -%}
@@ -333,10 +508,10 @@
 
                     {%- for grandchildlink in childlink.links -%}
                       <li class="slide-nav__item">
-                        <a href="{{ grandchildlink.url }}" class="slide-nav__link">
-                          {% if is_by_shape_submenu %}{% render 'shape-menu-icon', shape: grandchildlink.title %}{% endif %}
+                        <a href="{{ grandchildlink.url }}" class="slide-nav__link{% if show_menu_icons_submenu %} slide-nav__link--icon{% endif %}">
+                          {% if show_menu_icons_submenu %}{% render 'shape-menu-icon', shape: grandchildlink.title %}{% endif %}
                           <span>{{ grandchildlink.title | escape }}</span>
-                          {% render 'element.icon', name: chevron_icon %}
+                          {% unless show_menu_icons_submenu %}{% render 'element.icon', name: chevron_icon %}{% endunless %}
                         </a>
                       </li>
                     {%- endfor -%}
@@ -351,12 +526,17 @@
             {%- endfor -%}
           </ul>
         {%- else -%}
-          <a href="{{ link.url }}" class="slide-nav__link">
+          <a href="{{ link.url }}" class="slide-nav__link slide-nav__link--root">
             {%- if have_image -%}
               {{ collection_image }}
             {%- endif -%}
 
-            <span>{{ link.title | escape }}</span>
+            <span class="slide-nav__root-text">
+              <span class="slide-nav__root-icon" aria-hidden="true">
+                {% render 'element.icon', name: root_icon_name %}
+              </span>
+              <span>{{ link.title | escape }}</span>
+            </span>
             {% render 'element.icon', name: chevron_icon %}
           </a>
         {%- endif -%}
