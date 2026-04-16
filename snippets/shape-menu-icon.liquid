@@ -30,6 +30,13 @@
     vector-effect: non-scaling-stroke;
   }
 
+  .shape-menu-icon__image {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+
   .site-nav__dropdown-link .shape-menu-icon {
     margin-top: -1px;
   }
@@ -46,38 +53,48 @@
 {% liquid
   assign shape = shape | default: ''
   assign shape_name = shape | strip | downcase
+  assign icon_url = ''
+
+  case shape_name
+    when 'asscher'
+      assign icon_url = '/cdn/shop/files/ASSCHER-U7PARIXY.svg?v=1749826813&width=50'
+    when 'elongated cushion', 'elongated-cushion'
+      assign icon_url = '/cdn/shop/files/CUSHION-VQ6KC3AI.svg?v=1749826813&width=50'
+    when 'cushion'
+      assign icon_url = '/cdn/shop/files/CUSHION-VQ6KC3AI.svg?v=1749826813&width=50'
+    when 'emerald'
+      assign icon_url = '/cdn/shop/files/EMERALD-WDWYFLXN.svg?v=1749826813&width=50'
+    when 'heart'
+      assign icon_url = '/cdn/shop/files/HEART-VGGURWHG.svg?v=1749826813&width=50'
+    when 'marquise'
+      assign icon_url = '/cdn/shop/files/MARQUISE-LMQ3JHFO.svg?v=1749826813&width=50'
+    when 'oval'
+      assign icon_url = '/cdn/shop/files/OVAL-FJP3WUW2.svg?v=1749826813&width=50'
+    when 'pear'
+      assign icon_url = '/cdn/shop/files/PEAR-ZABBQM76.svg?v=1749826813&width=50'
+    when 'princess'
+      assign icon_url = '/cdn/shop/files/PRINCESS-GYL3K7OB.svg?v=1749826813&width=50'
+    when 'radiant'
+      assign icon_url = '/cdn/shop/files/RADIANT-LBLWCVJT.svg?v=1749826813&width=50'
+    when 'round'
+      assign icon_url = '/cdn/shop/files/ROUND-5UMFM7E6.svg?v=1749826813&width=50'
+    when 'solitaire'
+      assign icon_url = '/cdn/shop/files/solitaire-4VMZDYZQ.svg?v=1749826823&width=50'
+    when 'diamond band', 'pave'
+      assign icon_url = '/cdn/shop/files/pave-YYUQTFKW.svg?v=1749826823&width=50'
+    when 'halo'
+      assign icon_url = '/cdn/shop/files/halo-YF4LVVRJ.svg?v=1749826823&width=50'
+    when 'hidden halo'
+      assign icon_url = '/cdn/shop/files/hidden-halo-P7AYBI4X.svg?v=1749826823&width=50'
+    when 'tree stone', 'three stone', 'three-stone'
+      assign icon_url = '/cdn/shop/files/three-stone-Y4KHS2BW.svg?v=1749826823&width=50'
+    when 'bezel'
+      assign icon_url = '/cdn/shop/files/Bezel_50f9c527-b628-4807-b35d-446b225ffd59.svg?v=1751500812&width=50'
+  endcase
 -%}
 
-{% if shape_name != blank %}
+{% if shape_name != blank and icon_url != blank %}
   <span class="shape-menu-icon" aria-hidden="true">
-    {%- if shape_name == 'asscher' -%}
-      {% render 'element.icon', name: 'shape-asscher' %}
-    {%- elsif shape_name == 'elongated cushion' or shape_name == 'elongated-cushion' -%}
-      {% render 'element.icon', name: 'shape-elongated-cushion' %}
-    {%- elsif shape_name == 'cushion' -%}
-      {% render 'element.icon', name: 'shape-cushion' %}
-    {%- elsif shape_name == 'emerald' -%}
-      {% render 'element.icon', name: 'shape-emerald' %}
-    {%- elsif shape_name == 'heart' -%}
-      {% render 'element.icon', name: 'shape-heart' %}
-    {%- elsif shape_name == 'marquise' -%}
-      {% render 'element.icon', name: 'shape-marquise' %}
-    {%- elsif shape_name == 'oval' -%}
-      {% render 'element.icon', name: 'shape-oval' %}
-    {%- elsif shape_name == 'pear' -%}
-      {% render 'element.icon', name: 'shape-pear' %}
-    {%- elsif shape_name == 'princess' -%}
-      {% render 'element.icon', name: 'shape-princess' %}
-    {%- elsif shape_name == 'radiant' -%}
-      {% render 'element.icon', name: 'shape-radiant' %}
-    {%- elsif shape_name == 'round' -%}
-      {% render 'element.icon', name: 'shape-round' %}
-    {%- elsif shape_name == 'solitaire' -%}
-      {% render 'element.icon', name: 'style-solitaire' %}
-    {%- elsif shape_name == 'tree stone' or shape_name == 'three stone' or shape_name == 'three-stone' -%}
-      {% render 'element.icon', name: 'style-three-stone' %}
-    {%- elsif shape_name == 'bezel' -%}
-      {% render 'element.icon', name: 'style-bezel' %}
-    {%- endif -%}
+    <img class="shape-menu-icon__image" src="{{ icon_url }}" alt="" loading="lazy" width="20" height="20">
   </span>
 {% endif %}
