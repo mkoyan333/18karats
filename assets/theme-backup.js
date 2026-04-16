@@ -1,0 +1,85 @@
+/*
+@license
+  Gem by Archetype Themes (https://archetypethemes.co)
+  Access unminified JS in assets/theme.js
+
+  Use this event listener to run your own JS outside of this file.
+  Documentation - https://help.archetypethemes.co/en/articles/206656
+
+  document.addEventListener('page:loaded', function() {
+    // Page has loaded and theme assets are ready
+  });
+*/
+
+if (console && console.log) {
+  console.log(
+    "Gem theme (" +
+      theme.settings.themeVersion +
+      ") by ARCHΞTYPE | Learn more at https://archetypethemes.co"
+  );
+}
+
+(function () {
+  "use strict";
+
+  if (
+    window.Shopify &&
+    window.Shopify.theme &&
+    navigator &&
+    navigator.sendBeacon &&
+    window.Shopify.designMode
+  ) {
+    navigator.sendBeacon(
+      "https://api.archetypethemes.co/api/beacon",
+      new URLSearchParams({
+        shop: window.Shopify.shop,
+        themeName:
+          window.theme &&
+          window.theme.settings &&
+          `${window.theme.settings.themeName} v${window.theme.settings.themeVersion}`,
+        role: window.Shopify.theme.role,
+        route: window.location.pathname,
+        themeId: window.Shopify.theme.id,
+        themeStoreId: window.Shopify.theme.theme_store_id || 0,
+        isThemeEditor: !!window.Shopify.designMode,
+      })
+    );
+  }
+
+  /*============================================================================
+    Things that don't require DOM to be ready
+  ==============================================================================*/
+
+  /*============================================================================
+    Things that require DOM to be ready
+  ==============================================================================*/
+  function DOMready(callback) {
+    if (document.readyState != "loading") callback();
+    else document.addEventListener("DOMContentLoaded", callback);
+  }
+
+  DOMready(function () {
+    document.dispatchEvent(new CustomEvent("page:loaded"));
+  });
+})();
+document.addEventListener("DOMContentLoaded", function() {
+  // Select the heading inside the app filter container
+  const colourHeading = document.querySelector('.diamond-proxy-colour-filter h3');
+  if (colourHeading) {
+    colourHeading.textContent = 'Color';
+  }
+});
+// Create a MutationObserver to watch for changes in the DOM
+const observer = new MutationObserver((mutationsList, observer) => {
+  const colourHeading = document.querySelector('.diamond-proxy-colour-filter h3');
+  if (colourHeading && colourHeading.textContent.trim() === 'Colour') {
+    colourHeading.textContent = 'Color';
+  }
+});
+
+// Start observing the whole document body
+observer.observe(document.body, {
+  childList: true,
+  subtree: true
+});
+

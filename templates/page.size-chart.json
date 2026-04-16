@@ -1,0 +1,462 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "custom_css": [
+        "@media(min-width:990px){.site-nav.site-navigation.small--hide{display:flex;flex-wrap:nowrap;white-space:nowrap;overflow:hidden}.site-nav.site-navigation.small--hide>li{flex:0 0 auto}}"
+      ],
+      "settings": {}
+    },
+    "media_text_ytcTQf": {
+      "type": "media-text",
+      "blocks": {
+        "image_aQCEaR": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/18-karats-jewelry.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_aQCEaR"
+      ],
+      "name": "t:labels.media_with_text",
+      "settings": {
+        "media_width": "50",
+        "media_crop": "none",
+        "layout": "right",
+        "content_alignment": "center",
+        "content_position": "center",
+        "color_scheme": "1",
+        "top_padding": false,
+        "bottom_padding": false,
+        "full_width": true,
+        "subheading": "",
+        "heading": "<em>How</em> to Measure Ring Size",
+        "heading_size": "h2",
+        "text_highlight": "serif",
+        "text": "<p>For precise sizing, we recommend a ring mandrel—a tapered rod marked with sizes—to measure an existing ring worn on the same finger. Alternatively, a finger-sizing tool, typically a set of graduated rings, can be used directly on the finger to determine the ideal size. </p>",
+        "button_text": "",
+        "button_link": "https://www.amazon.com/s?k=finger+sizer&crid=1Z99ZEY4UMMEZ&sprefix=finger+sizer%2Caps%2C299&ref=nb_sb_noss_1"
+      }
+    },
+    "media_text_CLgjbP": {
+      "type": "media-text",
+      "blocks": {
+        "image_9i4VBb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/ring_size_guide.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_9i4VBb"
+      ],
+      "name": "t:labels.media_with_text",
+      "settings": {
+        "media_width": "50",
+        "media_crop": "none",
+        "layout": "left",
+        "content_alignment": "left",
+        "content_position": "center",
+        "color_scheme": "1",
+        "top_padding": false,
+        "bottom_padding": false,
+        "full_width": true,
+        "subheading": "",
+        "heading": "Make Your <em>Own</em> Ring Sizer",
+        "heading_size": "h2",
+        "text_highlight": "serif",
+        "text": "<p>For the most accurate results, we recommend professional sizing whenever possible—but this method offers a helpful starting point from the comfort of home.</p><ol><li>Cut a piece of string, floss, thin paper, or yarn at least 3 inches in length.</li><li>Gently wrap it around the base of your finger for a comfortable yet snug fit. </li><li>Mark where the end of the string overlaps.</li><li>Lay the string flat and measure from the end to your mark using a rule. </li></ol>",
+        "button_text": "SHOP RING SIZERS",
+        "button_link": "https://www.amazon.com/s?k=finger+sizer&crid=1Z99ZEY4UMMEZ&sprefix=finger+sizer%2Caps%2C299&ref=nb_sb_noss_1"
+      }
+    },
+    "rich_text_ibERiq": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Nc3r7c": {
+          "type": "heading",
+          "settings": {
+            "title": "How<em> </em>Should a Ring Fit?",
+            "heading_size": "h1",
+            "text_highlight": "serif"
+          }
+        },
+        "text_NagzAJ": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>A well-sized ring should glide effortlessly over the knuckle with gentle resistance and rest securely on the finger with a comfortable snugness. It should never feel tight or require force to remove. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Nc3r7c",
+        "text_NagzAJ"
+      ],
+      "name": "t:labels.rich_text",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "rich_text_jUCEez": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_Up7anJ": {
+          "type": "heading",
+          "settings": {
+            "title": "Ring Size Chart",
+            "heading_size": "h1",
+            "text_highlight": "serif"
+          }
+        },
+        "text_WLn7Hz": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>18 KARATS uses universally recognized US sizes for our rings and wedding bands. The chart below matches US sizes with inside finger circumference and equivalents in international sizing. For quarter-size increments, we recommend using the UK sizing<strong> </strong>option through our Ring Builder. For any questions about sizing, contact us—we’re here to help! </p>"
+          }
+        },
+        "button_EVM3Qi": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://pages/contact-18karats",
+            "link_text": "CONTACT US"
+          }
+        }
+      },
+      "block_order": [
+        "heading_Up7anJ",
+        "text_WLn7Hz",
+        "button_EVM3Qi"
+      ],
+      "name": "t:labels.rich_text",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "1",
+        "divider": false
+      }
+    },
+    "advanced_content_Kdarq6": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_JicfgB": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div><table class=\"responsive tw-mx-auto tw-w-full\"><tbody><tr><th colspan=\"2\" scope=\"col\"><span class=\"pinned-table-header\"><strong>Inside C</strong></span></strong></th><th rowspan=\"2\" scope=\"col\"><strong>US, CA, MX</strong></th><th rowspan=\"2\" scope=\"col\"><span class=\"large-table-header\"><strong>UK, SA, AU</strong></span></th><th rowspan=\"2\" scope=\"col\"><strong>FR</strong></th><th rowspan=\"2\" scope=\"col\"><span class=\"medium-table-header\"><strong>AS, DE, RU</strong></span></th><th rowspan=\"2\" <th rowspan=\"2\" scope=\"col\"><span class=\"large-table-header\"> <strong>IT, NL, ES, CH </strong></span></th></tr><tr><th scope=\"col\" style=\"width: 88px;\"><strong>IN</strong></th><th scope=\"col\" style=\"width: 88px;\"><strong>MM</strong></th></tr><tr><td>1.74</td><td>44.2</td><td>3</td><td>F</td><td>44</td><td>14</td><td>4</td></tr><tr><td>1.77</td><td>44.8</td><td>3.25</td><td>F 1/2</td><td>45</td><td>14 1/4</td><td>4 5/8</td></tr><tr><td>1.79</td><td>45.5</td><td>3.5</td><td>G</td><td>45.5</td><td>14 1/2</td><td>5 1/4</td></tr><tr><td>1.82</td><td>46.1</td><td>3.75</td><td>G 1/2</td><td>46</td><td>14 3/4</td><td>5 7/8</td></tr><tr><td>1.84</td><td>46.8</td><td>4</td><td>H</td><td>47</td><td>15</td><td>6 1/2</td></tr><tr><td>1.87</td><td>47.4</td><td>4.25</td><td>H 1/2</td><td>47.5</td><td>---</td><td>7 1/8</td></tr><tr><td>1.89</td><td>48</td><td>4.5</td><td>I</td><td>48</td><td>15 1/4</td><td>7 3/4</td></tr><tr><td>1.92</td><td>48.7</td><td>4.75</td><td>J</td><td>48.5</td><td>15 1/2</td><td>8 3/8</td></tr><tr><td>1.94</td><td>49.3</td><td>5</td><td>J 1/2</td><td>49</td><td>15 3/4</td><td>9</td></tr><tr><td>1.97</td><td>50</td><td>5.25</td><td>K</td><td>50</td><td>16</td><td>9 5/8</td></tr><tr><td>1.99</td><td>50.6</td><td>5.5</td><td>K 1/2</td><td>50.5</td><td>16 1/4</td><td>10 1/4</td></tr><tr><td>2.02</td><td>51.2</td><td>5.75</td><td>L</td><td>51</td><td>---</td><td>10 7/8</td></tr><tr><td>2.04</td><td>51.9</td><td>6</td><td>L 1/2</td><td>52</td><td>16 1/2</td><td>11 1/2</td></tr><tr><td>2.07</td><td>52.5</td><td>6.25</td><td>M</td><td>52.5</td><td>16 3/4</td><td>12 1/8</td></tr><tr><td>2.09</td><td>53.1</td><td>6.5</td><td>M 1/2</td><td>53</td><td>17</td><td>12 3/4</td></tr><tr><td>2.12</td><td>53.8</td><td>6.75</td><td>N</td><td>54</td><td>---</td><td>13 3/8</td></tr><tr><td>2.14</td><td>54.4</td><td>7</td><td>N 1/2</td><td>54.5</td><td>17 1/4</td><td>14</td></tr><tr><td>2.17</td><td>55.1</td><td>7.25</td><td>O</td><td>55</td><td>17 1/2</td><td>14 5/8</td></tr><tr><td>2.19</td><td>55.7</td><td>7.5</td><td>O 1/2</td><td>56</td><td>17 3/4</td><td>15 1/4</td></tr><tr><td>2.22</td><td>56.3</td><td>7.75</td><td>P</td><td>56.5</td><td>18</td><td>15 7/8</td></tr><tr><td>2.24</td><td>57</td><td>8</td><td>P 1/2</td><td>57</td><td>---</td><td>16 1/2</td></tr><tr><td>2.27</td><td>57.6</td><td>8.25</td><td>Q</td><td>58</td><td>18 1/4</td><td>17 1/8</td></tr><tr><td>2.29</td><td>58.3</td><td>8.5</td><td>Q 1/2</td><td>58.5</td><td>18 1/2</td><td>17 3/4</td></tr><tr><td>2.32</td><td>58.9</td><td>8.75</td><td>R</td><td>59</td><td>18 3/4</td><td>18 3/8</td></tr><tr><td>2.34</td><td>59.5</td><td>9</td><td>R 1/2</td><td>60</td><td>19</td><td>19</td></tr><tr><td>2.37</td><td>60.2</td><td>9.25</td><td>S</td><td>60.5</td><td>19 1/4</td><td>19 5/8</td></tr><tr><td>2.39</td><td>60.8</td><td>9.5</td><td>S 1/2</td><td>61</td><td>19 1/2</td><td>20 1/4</td></tr><tr><td>2.42</td><td>61.4</td><td>9.75</td><td>T</td><td>61.5</td><td>---</td><td>20 7/8</td></tr><tr><td>2.44</td><td>62.1</td><td>10</td><td>T 1/2</td><td>62</td><td>19 3/4</td><td>21 1/2</td></tr><tr><td>2.47</td><td>62.7</td><td>10.25</td><td>U</td><td>63</td><td>20</td><td>22 1/8</td></tr><tr><td>2.49</td><td>63.4</td><td>10.5</td><td>U 1/2</td><td>63.5</td><td>---</td><td>22 3/4</td></tr><tr><td>2.52</td><td>64</td><td>10.75</td><td>V</td><td>64</td><td>20 1/2</td><td>23 3/8</td></tr><tr><td>2.54</td><td>64.6</td><td>11</td><td>V 1/2</td><td>65</td><td>20 3/4</td><td>24</td></tr><tr><td>2.57</td><td>65.3</td><td>11.25</td><td>W</td><td>65.5</td><td>---</td><td>24 5/8</td></tr><tr><td>2.59</td><td>65.9</td><td>11.5</td><td>W 1/2</td><td>66</td><td>21</td><td>25 1/4</td></tr><tr><td>2.62</td><td>66.6</td><td>11.75</td><td>X</td><td>67</td><td>21 1/4</td><td>25 7/8</td></tr><tr><td>2.65</td><td>67.2</td><td>12</td><td>X 1/2</td><td>67.5</td><td>21 1/2</td><td>26 1/2</td></tr><tr><td>2.68</td><td>68.1</td><td>12.25</td><td>Y</td><td>68</td><td>---</td><td>27 1/8</td></tr><tr><td>2.71</td><td>68.5</td><td>12.5</td><td>Z</td><td>69</td><td>21 3/4</td><td>27 3/4</td></tr><tr><td>2.72</td><td>69.1</td><td>12.75</td><td>Z 1/2</td><td>69.5</td><td>---</td><td>28 3/8</td></tr><tr><td>2.75</td><td>69.7</td><td>13</td><td>---</td><td>70</td><td>22</td><td>29</td></tr></tbody></table>\n</div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_JicfgB"
+      ],
+      "custom_css": [
+        "@media (max-width: 950px) {{font-size: 12px; }}"
+      ],
+      "name": "t:labels.custom_content",
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "smi_styles_cPLrze": {
+      "type": "smi-styles",
+      "blocks": {
+        "color_mrncqH": {
+          "type": "color",
+          "settings": {
+            "background_color1": "#ffffff",
+            "background_gradient_color1": "",
+            "text_color1": "#000000",
+            "subtext_color1": "#000000",
+            "solid_background_button_color1": "#000000",
+            "solid_button_label_color1": "#ffffff",
+            "outline_button_color1": "#000000",
+            "shadow_color1": "#000000",
+            "background_color2": "#fcf8f5",
+            "background_gradient_color2": "",
+            "text_color2": "#000000",
+            "subtext_color2": "#000000",
+            "solid_background_button_color2": "#000000",
+            "solid_button_label_color2": "#fcf8f5",
+            "outline_button_color2": "#000000",
+            "shadow_color2": "#000000",
+            "background_color3": "#282828",
+            "background_gradient_color3": "",
+            "text_color3": "#ffffff",
+            "subtext_color3": "#ffffff",
+            "solid_background_button_color3": "#ffffff",
+            "solid_button_label_color3": "#282828",
+            "outline_button_color3": "#ffffff",
+            "shadow_color3": "#ffffff",
+            "background_color4": "#63513f",
+            "background_gradient_color4": "",
+            "text_color4": "#ffffff",
+            "subtext_color4": "#ffffff",
+            "solid_background_button_color4": "#ffffff",
+            "solid_button_label_color4": "#63513f",
+            "outline_button_color4": "#ffffff",
+            "shadow_color4": "#ffffff",
+            "background_color5": "#5b3f2c",
+            "background_gradient_color5": "",
+            "text_color5": "#ffffff",
+            "subtext_color5": "#ffffff",
+            "solid_background_button_color5": "#ffffff",
+            "solid_button_label_color5": "#5b3f2c",
+            "outline_button_color5": "#ffffff",
+            "shadow_color5": "#ffffff",
+            "background_color6": "#ffffff",
+            "background_gradient_color6": "",
+            "text_color6": "#000000",
+            "subtext_color6": "#000000",
+            "solid_background_button_color6": "#000000",
+            "solid_button_label_color6": "#ffffff",
+            "outline_button_color6": "#000000",
+            "shadow_color6": "#000000",
+            "background_color7": "#ffffff",
+            "background_gradient_color7": "",
+            "text_color7": "#000000",
+            "subtext_color7": "#000000",
+            "solid_background_button_color7": "#000000",
+            "solid_button_label_color7": "#ffffff",
+            "outline_button_color7": "#000000",
+            "shadow_color7": "#000000",
+            "background_color8": "#ffffff",
+            "background_gradient_color8": "",
+            "text_color8": "#000000",
+            "subtext_color8": "#000000",
+            "solid_background_button_color8": "#000000",
+            "solid_button_label_color8": "#ffffff",
+            "outline_button_color8": "#000000",
+            "shadow_color8": "#000000",
+            "background_color9": "#ffffff",
+            "background_gradient_color9": "",
+            "text_color9": "#000000",
+            "subtext_color9": "#000000",
+            "solid_background_button_color9": "#000000",
+            "solid_button_label_color9": "#ffffff",
+            "outline_button_color9": "#000000",
+            "shadow_color9": "#000000",
+            "background_color10": "#ffffff",
+            "background_gradient_color10": "",
+            "text_color10": "#000000",
+            "subtext_color10": "#000000",
+            "solid_background_button_color10": "#000000",
+            "solid_button_label_color10": "#ffffff",
+            "outline_button_color10": "#000000",
+            "shadow_color10": "#000000"
+          }
+        },
+        "typography_VmykBQ": {
+          "type": "typography",
+          "settings": {
+            "overwrite_font": false,
+            "type_header_font": "cardo_n4",
+            "heading_scale": 100,
+            "heading_line_height_scale": 100,
+            "heading_letter_spacing_scale": 0.4,
+            "heading_text_case": "original",
+            "type_body_font": "instrument_sans_n4",
+            "body_scale": 100,
+            "body_line_height_scale": 100,
+            "body_letter_spacing_scale": 0.3,
+            "button_font": "body",
+            "button_text_case": "uppercase",
+            "price_font": "body",
+            "menu_font": "body",
+            "subheading_font": "body"
+          }
+        },
+        "typography_advance_mPyDzL": {
+          "type": "typography_advance",
+          "settings": {
+            "fontsize_h1": 44,
+            "fontsize_h2": 34,
+            "fontsize_h3": 26,
+            "fontsize_h4": 20,
+            "fontsize_h5": 16,
+            "fontsize_h6": 14,
+            "fontsize_xs_h1": 40,
+            "fontsize_xs_h2": 30,
+            "fontsize_xs_h3": 22,
+            "fontsize_xs_h4": 20,
+            "fontsize_xs_h5": 16,
+            "fontsize_xs_h6": 14,
+            "fontsize_button": 14,
+            "button_letter_spacing_scale": 0.7,
+            "fontweight_button": "500",
+            "fontsize_subheading": 14,
+            "subheading_letter_spacing_scale": 0,
+            "fontweight_subheading": "400",
+            "fontsize_badge": 14,
+            "badge_letter_spacing_scale": 0,
+            "fontweight_badge": "400",
+            "fontsize_menu": 16,
+            "menu_letter_spacing_scale": 0.8,
+            "fontweight_menu": "500",
+            "fontsize_price_xl": 24,
+            "fontsize_price_lg": 18,
+            "fontsize_price_md": 16,
+            "price_letter_spacing_scale": 0,
+            "fontweight_price": "400"
+          }
+        },
+        "layout_xMcHKC": {
+          "type": "layout",
+          "settings": {
+            "page_width": 1200,
+            "spacing_sections": 0,
+            "spacing_elements": 100,
+            "spacing_elements_mobile": 100,
+            "spacing_grid_horizontal": 30,
+            "spacing_grid_vertical": 30
+          }
+        },
+        "buttons_XKDMAA": {
+          "type": "buttons",
+          "settings": {
+            "buttons_scale": 100,
+            "buttons_border_thickness": 1,
+            "buttons_border_opacity": 80,
+            "buttons_radius": 0,
+            "buttons_shadow": "0,0,0",
+            "buttons_shadow_opacity": 20
+          }
+        },
+        "variants_wNchL8": {
+          "type": "variants",
+          "settings": {
+            "variant_pills_border_thickness": 1,
+            "variant_pills_radius": 0,
+            "variant_pills_shadow": "0,0,0",
+            "variant_pills_shadow_opacity": 20
+          }
+        },
+        "inputs_VmtirF": {
+          "type": "inputs",
+          "settings": {
+            "inputs_border_thickness": 1,
+            "inputs_border_opacity": 55,
+            "inputs_radius": 0,
+            "inputs_shadow": "0,0,0",
+            "inputs_shadow_opacity": 20
+          }
+        },
+        "icons_XYFEcC": {
+          "type": "icons",
+          "settings": {
+            "icon_thickness": 1.5,
+            "icon_scale": 100
+          }
+        },
+        "product_cards_aNpKH8": {
+          "type": "product_cards",
+          "settings": {
+            "card_image_padding": 0,
+            "card_border_thickness": 0,
+            "card_border_opacity": 55,
+            "card_corner_radius": 0,
+            "card_shadow": "0,0,0",
+            "card_shadow_opacity": 20
+          }
+        },
+        "product_badges_L48CXL": {
+          "type": "product_badges",
+          "settings": {
+            "badge_corner_radius": 40,
+            "sale_badge_background_color": "#d01717",
+            "sale_badge_text_color": "#ffffff",
+            "sold_out_badge_background_color": "#8c8c8c",
+            "sold_out_badge_text_color": "#ffffff"
+          }
+        },
+        "blog_cards_pTqPpM": {
+          "type": "blog_cards",
+          "settings": {
+            "blog_card_image_padding": 0,
+            "blog_card_border_thickness": 0,
+            "blog_card_border_opacity": 55,
+            "blog_card_corner_radius": 0,
+            "blog_card_shadow": "0,0,0",
+            "blog_card_shadow_opacity": 20
+          }
+        },
+        "content_containers_eJrKhP": {
+          "type": "content_containers",
+          "settings": {
+            "text_boxes_border_thickness": 0,
+            "text_boxes_border_opacity": 55,
+            "text_boxes_radius": 0,
+            "text_boxes_shadow": "0,0,0",
+            "text_boxes_shadow_opacity": 20
+          }
+        },
+        "media_8eeqqX": {
+          "type": "media",
+          "settings": {
+            "media_border_thickness": 0,
+            "media_border_opacity": 55,
+            "media_radius": 0,
+            "media_shadow": "0,0,0",
+            "media_shadow_opacity": 20
+          }
+        },
+        "dropdown_popup_drawer_zLkabe": {
+          "type": "dropdown_popup_drawer",
+          "settings": {
+            "popup_border_thickness": 1,
+            "popup_border_opacity": 10,
+            "popup_corner_radius": 0,
+            "popup_shadow": "0,0,0",
+            "popup_shadow_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "color_mrncqH",
+        "typography_VmykBQ",
+        "typography_advance_mPyDzL",
+        "layout_xMcHKC",
+        "buttons_XKDMAA",
+        "variants_wNchL8",
+        "inputs_VmtirF",
+        "icons_XYFEcC",
+        "product_cards_aNpKH8",
+        "product_badges_L48CXL",
+        "blog_cards_pTqPpM",
+        "content_containers_eJrKhP",
+        "media_8eeqqX",
+        "dropdown_popup_drawer_zLkabe"
+      ],
+      "name": "✧Smind Styles",
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "media_text_ytcTQf",
+    "media_text_CLgjbP",
+    "rich_text_ibERiq",
+    "rich_text_jUCEez",
+    "advanced_content_Kdarq6",
+    "smi_styles_cPLrze"
+  ]
+}

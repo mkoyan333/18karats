@@ -1,0 +1,89 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "settings": {
+            "heading_size": "h0",
+            "text_highlight": "handwrite"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "settings": {
+        "color_scheme": "none"
+      }
+    },
+    "sidebar": {
+      "type": "blog-sidebar",
+      "blocks": {
+        "tags": {
+          "type": "tags",
+          "settings": {}
+        },
+        "article": {
+          "type": "article",
+          "settings": {}
+        },
+        "product": {
+          "type": "product",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "tags",
+        "article",
+        "product",
+        "share"
+      ],
+      "settings": {}
+    },
+    "main": {
+      "type": "blog-template",
+      "settings": {
+        "blog_show_excerpt": true,
+        "blog_image_size": "square"
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "heading_size": "h1",
+        "heading_position": "center",
+        "count": 3,
+        "view_all": false
+      }
+    }
+  },
+  "order": [
+    "rich-text",
+    "sidebar",
+    "main",
+    "featured-collection"
+  ],
+  "wrapper": "div.page-width.page-content.blog-layout"
+}

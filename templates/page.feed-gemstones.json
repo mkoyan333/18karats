@@ -1,0 +1,60 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "1749688048042dc42c": {
+      "type": "apps",
+      "blocks": {
+        "nivoda_connect_feed_gemstones_BFJHjf": {
+          "type": "shopify://apps/nivoda-connect/blocks/feed_gemstones/1818f65a-9917-4ef2-bca9-2424a925fc76",
+          "settings": {
+            "primary_color": "#c9b3b3",
+            "shapes": "EMERALD,OVAL,OTHER,CUSHION,OCTAGONAL,ROUND,PEAR,HEART,SQUARE,TRILLIANT,MARQUISE,",
+            "colors": "GREEN,RED,BI_COLOR,BLUE,MULTI_COLOR,PINK,WHITE,YELLOW,ORANGE,PURPLE,TEAL",
+            "types": "EMERALD,SAPPHIRE,RUBY,ALEXANDRITE,TOURMALINE,AQUAMARINE,OPAL,AMETH\nYST,TOPAZ,TANZANITE,AMETRINE",
+            "carats_min": 0.5,
+            "carats_max": 15,
+            "clarity_min": "MI",
+            "clarity_max": "EC",
+            "cut": "FACETED,CABOCHON",
+            "gem_certificate_lab": "GIA,IGI"
+          }
+        }
+      },
+      "block_order": [
+        "nivoda_connect_feed_gemstones_BFJHjf"
+      ],
+      "custom_css": [
+        ".iQSsGU {background-color: white; border-radius: 4px; padding: 4px 23px; display: flex; align-items: center; justify-content: center; cursor: pointer; min-height: 30px; outline: none; box-shadow: none;}",
+        ".dttMVo {padding: 2px 25px;}",
+        "div.sc-dntaoT {font-size: 12px;}",
+        "@media screen and (max-width: 1040px) {.ljfjHC {margin-bottom: 30px; }}",
+        ".cWkSJN {font-size: 14px;}",
+        "#root {padding: 2px;}",
+        ".yBATk {font-size: 16px; line-height: 20px; padding-top: 10px;}",
+        ".slider-inputs input {font-size: 14px;}",
+        ".jhOQiN {margin-top: 18px; margin-bottom: 10px;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "1749688048042dc42c"
+  ]
+}

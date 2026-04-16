@@ -1,0 +1,133 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "blocks_gFhPFP": {
+      "type": "_blocks",
+      "blocks": {
+        "gallery_hero_tATHDc": {
+          "type": "gallery-hero",
+          "settings": {
+            "static_text": "18 Karats |",
+            "rotating_words": "Jewelry, Engagement Rings, Wedding Bands, Necklaces, Bracelets, Earrings, Diamonds",
+            "rotation_speed": 2000,
+            "font_size": 46,
+            "font_weight": "400",
+            "text_color": "#100f0f",
+            "rotating_text_color": "#69522b",
+            "background_color": "#fdfdfd",
+            "word_spacing": 15,
+            "min_word_width": 300,
+            "alignment": "center",
+            "padding_top": 40,
+            "padding_bottom": 40,
+            "desktop_width_percent": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "gallery_hero_tATHDc"
+      ],
+      "name": "Rotating title",
+      "settings": {}
+    },
+    "blocks_cehekM": {
+      "type": "_blocks",
+      "blocks": {
+        "gallyer_gallery_d4bRgG": {
+          "type": "gallyer-gallery",
+          "settings": {
+            "heading": "Take a look at designs as unique as the moments they represent. Pieces created to capture stories, memories, and individuality.",
+            "heading_font": "serif",
+            "heading_color": "#000000",
+            "heading_size": 24,
+            "heading_opacity": 65,
+            "heading_offset": -5,
+            "desktop_columns": 4,
+            "desktop_rows": 3,
+            "tablet_columns": 3,
+            "tablet_rows": 3,
+            "mobile_columns": 2,
+            "mobile_rows": 2,
+            "rotation_speed": 20,
+            "grid_gap": 16,
+            "image_radius": 24,
+            "background_color": "#ffffff",
+            "padding_top": 80,
+            "padding_bottom": 80,
+            "image_1": "shopify://shop_images/IMG_6731.jpg",
+            "image_2": "shopify://shop_images/5_stone_bracelet.png",
+            "image_3": "shopify://shop_images/oval_wide_band.png",
+            "image_4": "shopify://shop_images/emerald_bezel.png",
+            "image_5": "shopify://shop_images/heart_pendant.png",
+            "image_6": "shopify://shop_images/three_stone_1.png",
+            "image_7": "shopify://shop_images/oval_baguette.png",
+            "image_8": "shopify://shop_images/chunky_oval_prong.png",
+            "image_9": "shopify://shop_images/pink_ring.png",
+            "image_10": "shopify://shop_images/marquise_solitaire.png",
+            "image_11": "shopify://shop_images/double_claw_prong_oval.png",
+            "image_12": "shopify://shop_images/oval_wavy.png",
+            "image_13": "shopify://shop_images/pear_three_stone.png",
+            "image_14": "shopify://shop_images/emerald_band.png",
+            "image_15": "shopify://shop_images/blue_sapphire.png",
+            "image_16": "shopify://shop_images/three_stone_emerald.png",
+            "image_17": "shopify://shop_images/spiral_band.png",
+            "image_18": "shopify://shop_images/pear_solitaire.png",
+            "image_19": "shopify://shop_images/chunky_pave_band.png",
+            "image_20": "shopify://shop_images/toi_moi.png",
+            "image_21": "shopify://shop_images/wave_pear.png",
+            "image_22": "shopify://shop_images/emerald_solitaire.png",
+            "image_23": "shopify://shop_images/radiant_pave.png"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "gallyer_gallery_d4bRgG"
+      ],
+      "name": "Gallery grid",
+      "settings": {}
+    },
+    "advanced_content_Kdarq6": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_JicfgB": {
+          "type": "liquid",
+          "settings": {
+            "code": "<h2>Custom content</h2><p>Use this advanced section to build your own layouts or to add custom HTML, Liquid, or scripts.</p>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_JicfgB"
+      ],
+      "disabled": true,
+      "name": "t:labels.custom_content",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "main",
+    "blocks_gFhPFP",
+    "blocks_cehekM",
+    "advanced_content_Kdarq6"
+  ]
+}

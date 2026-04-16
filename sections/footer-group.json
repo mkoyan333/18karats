@@ -1,0 +1,162 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "type": "footer",
+  "name": "t:labels.footer_group",
+  "sections": {
+    "newsletter_L7QqkQ": {
+      "type": "newsletter",
+      "blocks": {
+        "title_QP63mj": {
+          "type": "title",
+          "settings": {
+            "title": "Sign up for our newsletter",
+            "heading_size": "h2"
+          }
+        },
+        "text_wQ6edG": {
+          "type": "text",
+          "settings": {
+            "text": "<h6><em><strong>Get exclusive deals and $100 off your first ring! </strong></em></h6>"
+          }
+        },
+        "form_PjbgNU": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "title_QP63mj",
+        "text_wQ6edG",
+        "form_PjbgNU"
+      ],
+      "custom_css": [
+        ".btn {color: #fff; background-color: #2f2a2c; border-radius: 4px; border: none; padding: 10px 22px; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase;}",
+        ".theme-block {margin-bottom: 8px;}",
+        ".newsletter-section {display: flex; gap: 40px; align-items: center; padding: 30px 0;}"
+      ],
+      "settings": {
+        "color_scheme": "2",
+        "align_text": "left",
+        "image": "shopify://shop_images/luxury_jewelry_d57921ed-2b98-4a31-a53d-ae1b61491c12.jpg",
+        "image_width": "33",
+        "image_mask": "none",
+        "image_position": "left",
+        "divider": false,
+        "top_padding": false,
+        "bottom_padding": true
+      }
+    },
+    "a740ea2c-781b-40de-a6d9-494f8f22cf0e": {
+      "type": "countdown",
+      "blocks": {
+        "sections--19336827732257__a740ea2c-781b-40de-a6d9-494f8f22cf0e-16862557833d9d9ad2-0": {
+          "type": "content",
+          "settings": {
+            "heading": "Countdown",
+            "heading_size": "h2",
+            "text": "<p>Use this timer to create urgency and boost sales.</p>",
+            "content_alignment": "left"
+          }
+        },
+        "sections--19336827732257__a740ea2c-781b-40de-a6d9-494f8f22cf0e-16862557833d9d9ad2-1": {
+          "type": "timer",
+          "settings": {
+            "year": "2025",
+            "month": "01",
+            "day": "1",
+            "hour": "03",
+            "minute": "00",
+            "hide_timer": false,
+            "text": ""
+          }
+        }
+      },
+      "block_order": [
+        "sections--19336827732257__a740ea2c-781b-40de-a6d9-494f8f22cf0e-16862557833d9d9ad2-0",
+        "sections--19336827732257__a740ea2c-781b-40de-a6d9-494f8f22cf0e-16862557833d9d9ad2-1"
+      ],
+      "disabled": true,
+      "settings": {
+        "layout": "banner",
+        "full_width": true,
+        "color_scheme": "3",
+        "blur_image": false,
+        "overlay_color": "#432f21",
+        "overlay_opacity": 54
+      }
+    },
+    "footer": {
+      "type": "footer",
+      "blocks": {
+        "d1f2ab5f-84ba-485d-89b7-6502cc899b9f": {
+          "type": "menu",
+          "settings": {
+            "title": "Shop",
+            "menu": "footer",
+            "enable_account_link": true
+          }
+        },
+        "footer-0": {
+          "type": "menu",
+          "settings": {
+            "title": "About Us",
+            "menu": "footer-menu-2",
+            "enable_account_link": false
+          }
+        },
+        "footer-1": {
+          "type": "contact",
+          "settings": {
+            "phone": "(888) 318-8818",
+            "contact": "contact-18karats",
+            "chat": "",
+            "enable_social": true
+          }
+        },
+        "contact_Y7yfkB": {
+          "type": "contact",
+          "settings": {
+            "phone": "",
+            "contact": "contact-18karats",
+            "chat": "contact-18karats",
+            "enable_social": false
+          }
+        },
+        "06e5522c-25f4-42fc-968e-1d95ae8d9fe2": {
+          "type": "follow_shop_cta",
+          "disabled": true,
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "d1f2ab5f-84ba-485d-89b7-6502cc899b9f",
+        "footer-0",
+        "footer-1",
+        "contact_Y7yfkB",
+        "06e5522c-25f4-42fc-968e-1d95ae8d9fe2"
+      ],
+      "settings": {
+        "color_scheme": "",
+        "show_newsletter": false,
+        "newsletter_richtext": "<p>Subscribe today to hear first about our sales</p>",
+        "footer_main_menu": true,
+        "show_copyright": true,
+        "copyright_text": "",
+        "policies_menu": ""
+      }
+    }
+  },
+  "order": [
+    "newsletter_L7QqkQ",
+    "a740ea2c-781b-40de-a6d9-494f8f22cf0e",
+    "footer"
+  ]
+}

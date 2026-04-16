@@ -1,0 +1,1157 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "smi_image_hero_1_6_NKzFBW": {
+      "type": "smi-image-hero-1-6",
+      "blocks": {
+        "color_wP6K3D": {
+          "type": "color",
+          "settings": {
+            "background_color": "#fdfdfd",
+            "background_gradient_color": "",
+            "text_color": "#ffffff",
+            "subtext_color": "#ffffff",
+            "solid_background_button_color": "#ffffff",
+            "solid_button_label_color": "#63513f",
+            "outline_button_color": "#ffffff",
+            "shadow_color": "#ffffff"
+          }
+        }
+      },
+      "block_order": [
+        "color_wP6K3D"
+      ],
+      "custom_css": [
+        ".smi-color-text-75 {color: white;}"
+      ],
+      "name": "✧Image hero 1-6",
+      "settings": {
+        "container_full_width": true,
+        "image": "shopify://shop_images/custom-ring-designer2_c472b379-1d5e-44f7-8f83-48b4fb0eca01.jpg",
+        "hero_height": "small",
+        "subheading": "",
+        "heading": "",
+        "heading_size": "smi-h1",
+        "description": "",
+        "first_button_label": "",
+        "first_button_link": "#custom-form",
+        "first_button_style": "outline",
+        "second_button_label": "",
+        "second_button_link": "",
+        "second_button_style": "outline_arrow",
+        "desktop_content_position": "center_center",
+        "mobile_content_position": "center",
+        "desktop_content_alignment": "center",
+        "mobile_content_alignment": "center",
+        "content_max_width": 860,
+        "content_background_opacity": 0,
+        "color_scheme": "scheme_1",
+        "image_overlay": ""
+      }
+    },
+    "rich-text": {
+      "type": "rich-text",
+      "blocks": {
+        "heading": {
+          "type": "heading",
+          "disabled": true,
+          "settings": {
+            "title": "DESIGN OR CUSTOMIZE YOUR RING",
+            "heading_size": "h2",
+            "text_highlight": "serif"
+          }
+        },
+        "text": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": true,
+            "text": "<p>Use this text to share information about your brand with your customers. Describe a product, share announcements, or welcome customers to your store.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading",
+        "text"
+      ],
+      "disabled": true,
+      "settings": {
+        "align_text": "center",
+        "narrow_column": true,
+        "color_scheme": "1",
+        "divider": false
+      }
+    },
+    "rich_text_aAXdNB": {
+      "type": "rich-text",
+      "blocks": {
+        "text_cDfe4x": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><em>Custom Rings and Bands</em></p>"
+          }
+        },
+        "heading_8BV8we": {
+          "type": "heading",
+          "settings": {
+            "title": "<em>Create</em> Your Signature Ring",
+            "heading_size": "h0",
+            "text_highlight": "serif"
+          }
+        },
+        "text_b87BHf": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Creating custom rings and bands with 18 KARATS is simple, personal, and seamless. From the first idea to the reveal, our team guides you every step of the way — turning inspiration into a one-of-a-kind piece.</p>"
+          }
+        }
+      },
+      "block_order": [
+        "text_cDfe4x",
+        "heading_8BV8we",
+        "text_b87BHf"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "1",
+        "divider": false
+      }
+    },
+    "smi_icon_with_text_1_7_MdLbmD": {
+      "type": "smi-icon-with-text-1-7",
+      "blocks": {
+        "icon_with_text_mxYPC4": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "chat",
+            "upload_icon": "shopify://shop_images/custom_ring_design_steps1.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "Get Started",
+            "heading_size": "smi-h4",
+            "content": "<p>Fill out our questionnaire and our team will schedule an introductory appointment to discuss your vision, budget, and preferences.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_CwrPxi": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "return",
+            "upload_icon": "shopify://shop_images/custom_ring_design_steps2.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "Visualize the Design",
+            "heading_size": "smi-h4",
+            "content": "<p>We refine every detail — reviewing photos, sketches, and inspiration to finalize your design. Once approved, we begin production.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_F8cqGE": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verify",
+            "upload_icon": "shopify://shop_images/custom_ring_design_steps3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "See Custom 3D Renderings",
+            "heading_size": "smi-h4",
+            "content": "<p>Get a 3D rendering showing your piece's setting, proportions, and form from every angle and confirm any remaining modifications.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_gQrHei": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verify",
+            "upload_icon": "shopify://shop_images/custom_ring_design_steps4.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "Get Your Completed Piece",
+            "heading_size": "smi-h4",
+            "content": "<p>Within 2-3 weeks, your finished piece will be ready and shipped out to you, complete with product certification and details. </p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "color_MiWVAQ": {
+          "type": "color",
+          "settings": {
+            "background_color": "#ffffff",
+            "background_gradient_color": "",
+            "text_color": "#000000",
+            "subtext_color": "#000000",
+            "outline_button_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_mxYPC4",
+        "icon_with_text_CwrPxi",
+        "icon_with_text_F8cqGE",
+        "icon_with_text_gQrHei",
+        "color_MiWVAQ"
+      ],
+      "custom_css": [
+        "@media screen and (min-width: 992px) and (max-width: 1200px) {.smi-layout-grid-slider .smi-swiper-slide {width: 500px; }}"
+      ],
+      "settings": {
+        "container_full_width": true,
+        "sub_heading": "",
+        "heading": "Our Custom Design Process",
+        "heading_size": "smi-h3",
+        "description": "",
+        "heading_alignment": "center",
+        "content_alignment": "center",
+        "number_of_columns_on_desktop": "4",
+        "number_of_columns_on_mobile": "1",
+        "enable_swipe_on_mobile": false,
+        "sticky_page_dot_style": "text-style-2",
+        "icon_position": "top",
+        "color_scheme": "scheme_4",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "slideshow_image_PHAqcb": {
+      "type": "slideshow-image",
+      "blocks": {
+        "image_jkUCQt": {
+          "type": "image",
+          "settings": {
+            "link": "",
+            "image": "shopify://shop_images/custom-ring.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_jkUCQt"
+      ],
+      "disabled": true,
+      "name": "t:labels.image_optional_slides",
+      "settings": {
+        "full_width": false,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "media-text": {
+      "type": "media-text",
+      "blocks": {
+        "image_KKVC47": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/custom-ring.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_KKVC47"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 959px) {.media-with-text-media-width--33 .media-with-text__image, .media-with-text-media-width--33 .media-with-text__video {max-width: 100%; }}"
+      ],
+      "settings": {
+        "media_width": "50",
+        "media_crop": "landscape",
+        "layout": "right",
+        "content_alignment": "left",
+        "content_position": "center",
+        "color_scheme": "1",
+        "top_padding": true,
+        "bottom_padding": true,
+        "full_width": true,
+        "subheading": "",
+        "heading": "Create a <em>New</em> Custom Piece",
+        "heading_size": "h2",
+        "text_highlight": "serif",
+        "text": "<p>Share your inspiration and we’ll create you a new design! Collaborate with our designers to refine shape, proportions, and details to create your dream vision. Once you approve final concept, our artisans handcraft your piece, ready for you in 2-3 weeks. </p>",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "media_text_zz9c3K": {
+      "type": "media-text",
+      "blocks": {
+        "image_H73jdN": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/custom_ring_design.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_H73jdN"
+      ],
+      "custom_css": [
+        "@media only screen and (max-width: 959px) {.media-with-text-media-width--33 .media-with-text__image, .media-with-text-media-width--33 .media-with-text__video {max-width: 100%; }}"
+      ],
+      "settings": {
+        "media_width": "50",
+        "media_crop": "landscape",
+        "layout": "left",
+        "content_alignment": "left",
+        "content_position": "center",
+        "color_scheme": "2",
+        "top_padding": true,
+        "bottom_padding": true,
+        "full_width": true,
+        "subheading": "",
+        "heading": "Customize an <em>Existing</em> Piece",
+        "heading_size": "h2",
+        "text_highlight": "serif",
+        "text": "<p>Our designs can be customized, re-imagined or combined to create something entirely new. We can tailor every element from embellishments and engravings to prongs, shanks, halos, bridges, accent stones, and more for your custom piece. </p>",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "media-text-2": {
+      "type": "media-text",
+      "blocks": {
+        "media-text-2-video": {
+          "type": "video",
+          "settings": {
+            "autoplay": true,
+            "loop": true,
+            "hide_controls": true,
+            "mute_video": true
+          }
+        }
+      },
+      "block_order": [
+        "media-text-2-video"
+      ],
+      "disabled": true,
+      "settings": {
+        "media_width": "50",
+        "media_crop": "none",
+        "layout": "right",
+        "content_alignment": "left",
+        "content_position": "center",
+        "color_scheme": "3",
+        "top_padding": false,
+        "bottom_padding": false,
+        "full_width": true,
+        "subheading": "",
+        "heading": "Media <em>with</em> text",
+        "heading_size": "h2",
+        "text_highlight": "handwrite",
+        "text": "<p>Pair large text with an image to tell a story, explain a detail about your product, or describe a new promotion.</p>",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "map": {
+      "type": "map",
+      "disabled": true,
+      "settings": {
+        "map_title": "Our retail store",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "address": "<p>301 Front St W<br>Toronto, Canada</p><p>Mon - Fri, 8:30am - 10:30pm<br>Saturday, 8:30am - 10:30pm<br>Sunday, 8:30am - 10:30pm</p>",
+        "map_address": "301 Front St W, Toronto, ON M5V 2T6",
+        "api_key": "",
+        "show_button": true
+      }
+    },
+    "rich_text_kpH4hE": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_gDFb7j": {
+          "type": "heading",
+          "settings": {
+            "title": "<em>Examples of Customization Options On Our Pieces </em>",
+            "heading_size": "h1",
+            "text_highlight": "serif"
+          }
+        },
+        "text_TT3Rg9": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Take a look below at just some of the areas that are fully customizable on any 18 KARATS piece. Have another request? Include the details of your dream piece and a member of our piece will be in touch to coordinate an introductory consultation. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "heading_gDFb7j",
+        "text_TT3Rg9"
+      ],
+      "disabled": true,
+      "name": "t:labels.rich_text",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "form": {
+      "type": "contact-form",
+      "disabled": true,
+      "settings": {
+        "title": "Contact us",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "text": "",
+        "show_phone": true,
+        "narrow_column": true,
+        "color_scheme": "none"
+      }
+    },
+    "6aade0b2-cb22-4630-be79-c9b31942ef9c": {
+      "type": "slideshow",
+      "blocks": {
+        "template--16777969008866__6aade0b2-cb22-4630-be79-c9b31942ef9c-1682605214423e6373-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "Overlaid Hero Slide",
+            "text_highlight": "accent-color",
+            "title_size": 70,
+            "subheading": "And optional subtext",
+            "link": "",
+            "link_text": "Optional button",
+            "link_2": "",
+            "link_text_2": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--16777969008866__6aade0b2-cb22-4630-be79-c9b31942ef9c-1682605214423e6373-0"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "desktop_size": 0,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": true,
+        "autoplay_speed": 7
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "Featured collection",
+        "heading_size": "h2",
+        "heading_position": "left",
+        "home_featured_products": "",
+        "count": 5,
+        "products_per_row": 5,
+        "mobile_scrollable": true,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "smi_styles_yKW7eb": {
+      "type": "smi-styles",
+      "blocks": {
+        "color_XMUbtr": {
+          "type": "color",
+          "settings": {
+            "background_color1": "#ffffff",
+            "background_gradient_color1": "",
+            "text_color1": "#000000",
+            "subtext_color1": "#000000",
+            "solid_background_button_color1": "#000000",
+            "solid_button_label_color1": "#ffffff",
+            "outline_button_color1": "#000000",
+            "shadow_color1": "#000000",
+            "background_color2": "#fcf8f5",
+            "background_gradient_color2": "",
+            "text_color2": "#000000",
+            "subtext_color2": "#000000",
+            "solid_background_button_color2": "#000000",
+            "solid_button_label_color2": "#fcf8f5",
+            "outline_button_color2": "#000000",
+            "shadow_color2": "#000000",
+            "background_color3": "#282828",
+            "background_gradient_color3": "",
+            "text_color3": "#ffffff",
+            "subtext_color3": "#ffffff",
+            "solid_background_button_color3": "#ffffff",
+            "solid_button_label_color3": "#282828",
+            "outline_button_color3": "#ffffff",
+            "shadow_color3": "#ffffff",
+            "background_color4": "#63513f",
+            "background_gradient_color4": "",
+            "text_color4": "#ffffff",
+            "subtext_color4": "#ffffff",
+            "solid_background_button_color4": "#ffffff",
+            "solid_button_label_color4": "#63513f",
+            "outline_button_color4": "#ffffff",
+            "shadow_color4": "#ffffff",
+            "background_color5": "#5b3f2c",
+            "background_gradient_color5": "",
+            "text_color5": "#ffffff",
+            "subtext_color5": "#ffffff",
+            "solid_background_button_color5": "#ffffff",
+            "solid_button_label_color5": "#5b3f2c",
+            "outline_button_color5": "#ffffff",
+            "shadow_color5": "#ffffff",
+            "background_color6": "#ffffff",
+            "background_gradient_color6": "",
+            "text_color6": "#000000",
+            "subtext_color6": "#000000",
+            "solid_background_button_color6": "#000000",
+            "solid_button_label_color6": "#ffffff",
+            "outline_button_color6": "#000000",
+            "shadow_color6": "#000000",
+            "background_color7": "#ffffff",
+            "background_gradient_color7": "",
+            "text_color7": "#000000",
+            "subtext_color7": "#000000",
+            "solid_background_button_color7": "#000000",
+            "solid_button_label_color7": "#ffffff",
+            "outline_button_color7": "#000000",
+            "shadow_color7": "#000000",
+            "background_color8": "#ffffff",
+            "background_gradient_color8": "",
+            "text_color8": "#000000",
+            "subtext_color8": "#000000",
+            "solid_background_button_color8": "#000000",
+            "solid_button_label_color8": "#ffffff",
+            "outline_button_color8": "#000000",
+            "shadow_color8": "#000000",
+            "background_color9": "#ffffff",
+            "background_gradient_color9": "",
+            "text_color9": "#000000",
+            "subtext_color9": "#000000",
+            "solid_background_button_color9": "#000000",
+            "solid_button_label_color9": "#ffffff",
+            "outline_button_color9": "#000000",
+            "shadow_color9": "#000000",
+            "background_color10": "#ffffff",
+            "background_gradient_color10": "",
+            "text_color10": "#000000",
+            "subtext_color10": "#000000",
+            "solid_background_button_color10": "#000000",
+            "solid_button_label_color10": "#ffffff",
+            "outline_button_color10": "#000000",
+            "shadow_color10": "#000000"
+          }
+        },
+        "typography_QqeUCh": {
+          "type": "typography",
+          "settings": {
+            "overwrite_font": false,
+            "type_header_font": "cardo_n4",
+            "heading_scale": 100,
+            "heading_line_height_scale": 100,
+            "heading_letter_spacing_scale": 0.4,
+            "heading_text_case": "original",
+            "type_body_font": "instrument_sans_n4",
+            "body_scale": 100,
+            "body_line_height_scale": 100,
+            "body_letter_spacing_scale": 0.3,
+            "button_font": "body",
+            "button_text_case": "uppercase",
+            "price_font": "body",
+            "menu_font": "body",
+            "subheading_font": "body"
+          }
+        },
+        "typography_advance_9PT47m": {
+          "type": "typography_advance",
+          "settings": {
+            "fontsize_h1": 44,
+            "fontsize_h2": 34,
+            "fontsize_h3": 26,
+            "fontsize_h4": 20,
+            "fontsize_h5": 16,
+            "fontsize_h6": 14,
+            "fontsize_xs_h1": 40,
+            "fontsize_xs_h2": 30,
+            "fontsize_xs_h3": 22,
+            "fontsize_xs_h4": 20,
+            "fontsize_xs_h5": 16,
+            "fontsize_xs_h6": 14,
+            "fontsize_button": 14,
+            "button_letter_spacing_scale": 0.7,
+            "fontweight_button": "500",
+            "fontsize_subheading": 14,
+            "subheading_letter_spacing_scale": 0,
+            "fontweight_subheading": "400",
+            "fontsize_badge": 14,
+            "badge_letter_spacing_scale": 0,
+            "fontweight_badge": "400",
+            "fontsize_menu": 16,
+            "menu_letter_spacing_scale": 0.8,
+            "fontweight_menu": "500",
+            "fontsize_price_xl": 24,
+            "fontsize_price_lg": 18,
+            "fontsize_price_md": 16,
+            "price_letter_spacing_scale": 0,
+            "fontweight_price": "400"
+          }
+        },
+        "layout_zPKU6n": {
+          "type": "layout",
+          "settings": {
+            "page_width": 1200,
+            "spacing_sections": 0,
+            "spacing_elements": 100,
+            "spacing_elements_mobile": 100,
+            "spacing_grid_horizontal": 30,
+            "spacing_grid_vertical": 30
+          }
+        },
+        "buttons_U3Ezw4": {
+          "type": "buttons",
+          "settings": {
+            "buttons_scale": 100,
+            "buttons_border_thickness": 1,
+            "buttons_border_opacity": 80,
+            "buttons_radius": 0,
+            "buttons_shadow": "0,0,0",
+            "buttons_shadow_opacity": 20
+          }
+        },
+        "variants_mKyfhd": {
+          "type": "variants",
+          "settings": {
+            "variant_pills_border_thickness": 1,
+            "variant_pills_radius": 0,
+            "variant_pills_shadow": "0,0,0",
+            "variant_pills_shadow_opacity": 20
+          }
+        },
+        "inputs_DMhyLp": {
+          "type": "inputs",
+          "settings": {
+            "inputs_border_thickness": 1,
+            "inputs_border_opacity": 55,
+            "inputs_radius": 0,
+            "inputs_shadow": "0,0,0",
+            "inputs_shadow_opacity": 20
+          }
+        },
+        "icons_6fVAQt": {
+          "type": "icons",
+          "settings": {
+            "icon_thickness": 1.5,
+            "icon_scale": 100
+          }
+        },
+        "product_cards_wELQ3N": {
+          "type": "product_cards",
+          "settings": {
+            "card_image_padding": 0,
+            "card_border_thickness": 0,
+            "card_border_opacity": 55,
+            "card_corner_radius": 0,
+            "card_shadow": "0,0,0",
+            "card_shadow_opacity": 20
+          }
+        },
+        "product_badges_AnLpVf": {
+          "type": "product_badges",
+          "settings": {
+            "badge_corner_radius": 40,
+            "sale_badge_background_color": "#d01717",
+            "sale_badge_text_color": "#ffffff",
+            "sold_out_badge_background_color": "#8c8c8c",
+            "sold_out_badge_text_color": "#ffffff"
+          }
+        },
+        "blog_cards_JbER4E": {
+          "type": "blog_cards",
+          "settings": {
+            "blog_card_image_padding": 0,
+            "blog_card_border_thickness": 0,
+            "blog_card_border_opacity": 55,
+            "blog_card_corner_radius": 0,
+            "blog_card_shadow": "0,0,0",
+            "blog_card_shadow_opacity": 20
+          }
+        },
+        "content_containers_XeBQwj": {
+          "type": "content_containers",
+          "settings": {
+            "text_boxes_border_thickness": 0,
+            "text_boxes_border_opacity": 55,
+            "text_boxes_radius": 0,
+            "text_boxes_shadow": "0,0,0",
+            "text_boxes_shadow_opacity": 20
+          }
+        },
+        "media_mHWFAb": {
+          "type": "media",
+          "settings": {
+            "media_border_thickness": 0,
+            "media_border_opacity": 55,
+            "media_radius": 0,
+            "media_shadow": "0,0,0",
+            "media_shadow_opacity": 20
+          }
+        },
+        "dropdown_popup_drawer_m3Mcty": {
+          "type": "dropdown_popup_drawer",
+          "settings": {
+            "popup_border_thickness": 1,
+            "popup_border_opacity": 10,
+            "popup_corner_radius": 0,
+            "popup_shadow": "0,0,0",
+            "popup_shadow_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "color_XMUbtr",
+        "typography_QqeUCh",
+        "typography_advance_9PT47m",
+        "layout_zPKU6n",
+        "buttons_U3Ezw4",
+        "variants_mKyfhd",
+        "inputs_DMhyLp",
+        "icons_6fVAQt",
+        "product_cards_wELQ3N",
+        "product_badges_AnLpVf",
+        "blog_cards_JbER4E",
+        "content_containers_XeBQwj",
+        "media_mHWFAb",
+        "dropdown_popup_drawer_m3Mcty"
+      ],
+      "name": "✧Smind Styles",
+      "settings": {}
+    },
+    "text_columns_a9Bkjf": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_Aepd8q": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_8LgwCt": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_JDNbCA": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_wJnLDG": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_Aepd8q",
+        "text_block_8LgwCt",
+        "text_block_JDNbCA",
+        "text_block_wJnLDG"
+      ],
+      "disabled": true,
+      "name": "t:labels.text_columns_with",
+      "settings": {
+        "title": "Customizable Prong Tips",
+        "heading_size": "h3",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "1"
+      }
+    },
+    "text_columns_JT9ntr": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_qMmYmF": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_MJiy8b": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_VLVx7U": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_b6bWPa": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_qMmYmF",
+        "text_block_MJiy8b",
+        "text_block_VLVx7U",
+        "text_block_b6bWPa"
+      ],
+      "disabled": true,
+      "name": "t:labels.text_columns_with",
+      "settings": {
+        "title": "Customizable Shank",
+        "heading_size": "h3",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "2"
+      }
+    },
+    "text_columns_XYArWa": {
+      "type": "text-columns",
+      "blocks": {
+        "text_block_BNK4Wz": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_7M8aKM": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_zyN9Hx": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_HC86mW": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_Gj7xNQ": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        },
+        "text_block_9UUDXR": {
+          "type": "text_block",
+          "settings": {
+            "enable_image": true,
+            "image_mask": "none",
+            "image_width": 230,
+            "title": "Example title",
+            "text": "",
+            "align_text": "center",
+            "button_label": "",
+            "button_link": ""
+          }
+        }
+      },
+      "block_order": [
+        "text_block_BNK4Wz",
+        "text_block_7M8aKM",
+        "text_block_zyN9Hx",
+        "text_block_HC86mW",
+        "text_block_Gj7xNQ",
+        "text_block_9UUDXR"
+      ],
+      "disabled": true,
+      "name": "t:labels.text_columns_with",
+      "settings": {
+        "title": "Customizable Prongs",
+        "heading_size": "h3",
+        "align_text": "center",
+        "divider": false,
+        "color_scheme": "3"
+      }
+    },
+    "advanced_content_cwtXFe": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_kfJLaD": {
+          "type": "liquid",
+          "settings": {
+            "code": "<a id=\"custom-form\"></a>",
+            "width": "50%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_kfJLaD"
+      ],
+      "name": "t:labels.custom_content",
+      "settings": {
+        "full_width": false,
+        "space_around": false
+      }
+    },
+    "rich_text_GKiAhK": {
+      "type": "rich-text",
+      "blocks": {
+        "heading_9rNWfg": {
+          "type": "heading",
+          "settings": {
+            "title": "<em>Start Custom Jewelry Request</em>",
+            "heading_size": "h1",
+            "text_highlight": "serif"
+          }
+        },
+        "text_zyb4mM": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>Fill out our custom jewelry request form at the link below, or contact our shop via email or phone, and a member of our team will reach out with next steps! </p>"
+          }
+        },
+        "button_6rLqNX": {
+          "type": "button",
+          "settings": {
+            "link": "shopify://pages/custom-ring-order",
+            "link_text": "Start Custom Ring Order"
+          }
+        }
+      },
+      "block_order": [
+        "heading_9rNWfg",
+        "text_zyb4mM",
+        "button_6rLqNX"
+      ],
+      "custom_css": [
+        ".btn, .rte .btn, .shopify-payment-button .shopify-payment-button__button--unbranded {border: 1px solid gray;}"
+      ],
+      "name": "t:labels.rich_text",
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "none",
+        "divider": false
+      }
+    },
+    "1761956105e27e648e": {
+      "type": "apps",
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
+    },
+    "smi_icon_with_text_1_7_xqPPia": {
+      "type": "smi-icon-with-text-1-7",
+      "blocks": {
+        "icon_with_text_4U3tf4": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "phone",
+            "icon_size": 30,
+            "icon_bg": "rgba(0,0,0,0)",
+            "heading": "Call 18 KARATS",
+            "heading_size": "smi-h4",
+            "content": "<p>Call us at <a href=\"tel:8883188818\" title=\"tel:8883188818\">(888) 318-8818</a> M-F 9AM-5PM</p>",
+            "button_label": "Call Us",
+            "link1": "tel:8883188818"
+          }
+        },
+        "icon_with_text_f3cMW9": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "mail",
+            "icon_size": 30,
+            "icon_bg": "rgba(0,0,0,0)",
+            "heading": "Email 18 KARATS",
+            "heading_size": "smi-h4",
+            "content": "<p>Email us at info@18karats.com any time. </p>",
+            "button_label": "Email Us",
+            "link1": "mailto:info@18karats.com"
+          }
+        },
+        "icon_with_text_Q3bLCN": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verify",
+            "icon_size": 30,
+            "icon_bg": "rgba(0,0,0,0)",
+            "heading": "Our Store Hours",
+            "heading_size": "smi-h4",
+            "content": "<p>Contact us by phone M-F 9AM-5PM</p>",
+            "button_label": "CALL US",
+            "link1": "tel:8883188818"
+          }
+        },
+        "color_4LfXJp": {
+          "type": "color",
+          "settings": {
+            "background_color": "#ffffff",
+            "background_gradient_color": "",
+            "text_color": "#000000",
+            "subtext_color": "#000000",
+            "outline_button_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_4U3tf4",
+        "icon_with_text_f3cMW9",
+        "icon_with_text_Q3bLCN",
+        "color_4LfXJp"
+      ],
+      "settings": {
+        "container_full_width": false,
+        "sub_heading": "",
+        "heading": "",
+        "heading_size": "smi-h2",
+        "description": "",
+        "heading_alignment": "center",
+        "content_alignment": "center",
+        "number_of_columns_on_desktop": "3",
+        "number_of_columns_on_mobile": "1",
+        "enable_swipe_on_mobile": false,
+        "sticky_page_dot_style": "text-style-2",
+        "icon_position": "top",
+        "color_scheme": "scheme_2",
+        "padding_top": 0,
+        "padding_bottom": 50
+      }
+    }
+  },
+  "order": [
+    "main",
+    "smi_image_hero_1_6_NKzFBW",
+    "rich-text",
+    "rich_text_aAXdNB",
+    "smi_icon_with_text_1_7_MdLbmD",
+    "slideshow_image_PHAqcb",
+    "media-text",
+    "media_text_zz9c3K",
+    "media-text-2",
+    "map",
+    "rich_text_kpH4hE",
+    "form",
+    "6aade0b2-cb22-4630-be79-c9b31942ef9c",
+    "featured-collection",
+    "smi_styles_yKW7eb",
+    "text_columns_a9Bkjf",
+    "text_columns_JT9ntr",
+    "text_columns_XYArWa",
+    "advanced_content_cwtXFe",
+    "rich_text_GKiAhK",
+    "1761956105e27e648e",
+    "smi_icon_with_text_1_7_xqPPia"
+  ]
+}

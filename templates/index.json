@@ -1,0 +1,1355 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "176315478554ade424": {
+      "type": "_blocks",
+      "settings": {}
+    },
+    "media-text": {
+      "type": "media-text",
+      "blocks": {
+        "image_XPtpcA": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/a_6a882083-e599-4d10-bd99-ca7067ff17bc.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_XPtpcA"
+      ],
+      "custom_css": [
+        ".accent-subtitle {letter-spacing: 0.07em; margin: 0 0 8px; font-style: italic; font-size: 16px;}",
+        "@media (max-width: 1250px) {.media-with-text__content {text-align: center; } .accent-subtitle {letter-spacing: 0.07em; margin: 0 0 8px; font-style: italic; font-size: 14px; }}",
+        ".color-scheme-3 .btn {color: var(--color-scheme-3-bg); background-color: transparent; color: black; border: none; text-decoration: underline;}"
+      ],
+      "settings": {
+        "media_width": "50",
+        "media_crop": "none",
+        "layout": "right",
+        "content_alignment": "center",
+        "content_position": "center",
+        "color_scheme": "3",
+        "top_padding": false,
+        "bottom_padding": false,
+        "full_width": true,
+        "subheading": "Luxury Gold and Diamond Jewelry",
+        "heading": "Gold Jewelry Made to <em>Shine</em>",
+        "heading_size": "h1",
+        "text_highlight": "serif",
+        "text": "<p>Shop our full range of gold jewelry and diamond jewelry pieces, crafted from the purest white, yellow, rose gold, and platinum to create pieces that shine with brilliance. </p>",
+        "button_text": "SHOP GOLD JEWELRY",
+        "button_link": "shopify://collections"
+      }
+    },
+    "media_text_fqEVJf": {
+      "type": "media-text",
+      "blocks": {
+        "image_xCx9FW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/untitled-design-2.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_xCx9FW"
+      ],
+      "custom_css": [
+        ".accent-subtitle {letter-spacing: 0.07em; margin: 0 0 8px; font-style: italic; font-size: 16px;}",
+        "@media (max-width: 1250px) {.media-with-text__content {text-align: center; } .accent-subtitle {letter-spacing: 0.07em; margin: 0 0 8px; font-style: italic; font-size: 14px; }}",
+        ".color-scheme-3 .btn {color: var(--color-scheme-3-bg); background-color: transparent; color: black; border: none; text-decoration: underline;}"
+      ],
+      "settings": {
+        "media_width": "50",
+        "media_crop": "none",
+        "layout": "left",
+        "content_alignment": "center",
+        "content_position": "center",
+        "color_scheme": "3",
+        "top_padding": false,
+        "bottom_padding": false,
+        "full_width": true,
+        "subheading": "",
+        "heading": "Design Your <em>Dream</em> Ring",
+        "heading_size": "h2",
+        "text_highlight": "serif",
+        "text": "<p>Create your ring with your choice of natural diamonds, lab-grown diamonds, and gemstones in a range of shapes, colors, and sizes.</p>",
+        "button_text": "CREATE YOUR RING",
+        "button_link": "https://18karats.com/pages/build-your-diamond-ring-1?stage=Select+Setting"
+      }
+    },
+    "promo-grid": {
+      "type": "promo-grid",
+      "blocks": {
+        "image": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/design_a_wedding_ring_00038ec1-b6fd-4e9f-838d-92ef69cbdda3.jpg",
+            "link": "",
+            "width": "50",
+            "height": 100
+          }
+        },
+        "banner": {
+          "type": "banner",
+          "disabled": true,
+          "settings": {
+            "heading": "Design Your <em>Dream</em> Ring",
+            "heading_size": "h2",
+            "text_highlight": "serif",
+            "text": "Use our ring builder to create your ring with your choice of natural and lab-grown diamonds, and gemstones in a range of shapes, colors, and sizes.",
+            "link": "shopify://pages/build-your-diamond-ring",
+            "label": "RING BUILDER",
+            "color_scheme": "3",
+            "width": "50"
+          }
+        }
+      },
+      "block_order": [
+        "image",
+        "banner"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".color-scheme-3 .btn {color: black; background-color: transparent; border-color: black;}",
+        ".btn {color: black; background-color: transparent; border-color: black; text-decoration: underline;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "gutter_size": 0,
+        "space_above": false,
+        "space_below": false,
+        "hide_block_images": false
+      }
+    },
+    "smi_collection_list_15_3_Jdr4nM": {
+      "type": "smi-collection-list-15-3",
+      "blocks": {
+        "collection_hHMGjU": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/1_fa346518-57af-44d0-8995-2591755c0f58.svg",
+            "heading": "Round",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=round"
+          }
+        },
+        "collection_9XbUc3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/8.svg",
+            "heading": "Cushion",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=cushion"
+          }
+        },
+        "collection_6dHakJ": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/6.svg",
+            "heading": "Emerald",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=emerald"
+          }
+        },
+        "collection_kReHrY": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/2_abe4fb1a-6bd9-4bd9-9dac-e7ff5d02bad2.svg",
+            "heading": "Oval",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=oval"
+          }
+        },
+        "collection_QaTnUY": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/4.svg",
+            "heading": "Radiant",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=radiant"
+          }
+        },
+        "collection_JVHAej": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/3_98b4ad15-8a54-41d4-8be8-141a420f3a1f.svg",
+            "heading": "Pear",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=pear"
+          }
+        },
+        "collection_TbHe4t": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/7.svg",
+            "heading": "Marquise",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=marquise"
+          }
+        },
+        "collection_R83L96": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/5.svg",
+            "heading": "Square Radiant",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=square_radiant"
+          }
+        },
+        "collection_FtTBX7": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/9.svg",
+            "heading": "Asscher",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=asscher"
+          }
+        },
+        "collection_PrkNw3": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Untitled_design_5.svg",
+            "heading": "Elongated Cushion",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=cushion"
+          }
+        },
+        "collection_xnAQNa": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/10.svg",
+            "heading": "Heart",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=heart"
+          }
+        },
+        "collection_3DYCak": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/11.svg",
+            "heading": "Princess",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=princess"
+          }
+        },
+        "collection_p9np7y": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/12.svg",
+            "heading": "Square Emerald",
+            "link": "https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true&shapes=square_emerald"
+          }
+        },
+        "collection_WwV3ry": {
+          "type": "collection",
+          "disabled": true,
+          "settings": {
+            "collection": "",
+            "heading": "",
+            "link": ""
+          }
+        },
+        "color_nkphfP": {
+          "type": "color",
+          "settings": {
+            "background_color": "#ffffff",
+            "background_gradient_color": "",
+            "text_color": "#000000",
+            "subtext_color": "#000000",
+            "solid_background_button_color": "#000000",
+            "solid_button_label_color": "#ffffff",
+            "outline_button_color": "#000000",
+            "shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "collection_hHMGjU",
+        "collection_9XbUc3",
+        "collection_6dHakJ",
+        "collection_kReHrY",
+        "collection_QaTnUY",
+        "collection_JVHAej",
+        "collection_TbHe4t",
+        "collection_R83L96",
+        "collection_FtTBX7",
+        "collection_PrkNw3",
+        "collection_xnAQNa",
+        "collection_3DYCak",
+        "collection_p9np7y",
+        "collection_WwV3ry",
+        "color_nkphfP"
+      ],
+      "disabled": true,
+      "settings": {
+        "sub_heading": "Customize It With Your Own Diamond",
+        "heading": "Shop <a href=\"https://18karats.com/pages/diamonds?activeTab=Natural&queryLabGrown=false\" title=\"https://18karats.com/pages/diamonds?activeTab=Natural&queryLabGrown=false\">Natural</a> and<em> </em><a href=\"https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true\" title=\"https://18karats.com/pages/diamonds?activeTab=Lab+Grown&queryLabGrown=true\">Lab Grown</a> Diamonds By Shape",
+        "heading_size": "smi-h3",
+        "description": "",
+        "heading_alignment": "center",
+        "content_heading_size": "smi-h5",
+        "content_alignment": "center",
+        "media_ratio": "3/2",
+        "media_shape": "round",
+        "arrow_style": "arr-rounded-rectangle",
+        "sticky_page_dot_style": "text-style-1",
+        "auto_rotate_slides": false,
+        "change_slides_every": 5,
+        "slider_overflow": false,
+        "container_max_width": 1600,
+        "number_of_columns_on_desktop": 8,
+        "number_of_columns_on_mobile": 3,
+        "item_gap_on_desktop": 4,
+        "item_gap_on_mobile": 8,
+        "show_product_count": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "color_scheme": "scheme_1",
+        "padding_top": 58,
+        "padding_bottom": 28
+      }
+    },
+    "featured_collections_xfKGJW": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_WCHWUt": {
+          "type": "collection",
+          "settings": {
+            "collection": "wedding-bands",
+            "title": ""
+          }
+        },
+        "collection_JAdJMd": {
+          "type": "collection",
+          "settings": {
+            "collection": "engagement-ring-settings",
+            "title": ""
+          }
+        },
+        "collection_whYwe9": {
+          "type": "collection",
+          "settings": {
+            "collection": "gold-and-diamond-earrings",
+            "title": ""
+          }
+        },
+        "collection_HEMYGL": {
+          "type": "collection",
+          "settings": {
+            "collection": "gold-and-diamond-necklaces",
+            "title": ""
+          }
+        }
+      },
+      "block_order": [
+        "collection_WCHWUt",
+        "collection_JAdJMd",
+        "collection_whYwe9",
+        "collection_HEMYGL"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "name": "t:labels.collection_list",
+      "settings": {
+        "title": "Shop 18 KARATS Gold Jewelry",
+        "heading_size": "h1",
+        "heading_position": "center",
+        "divider": false
+      }
+    },
+    "smi_collection_list_15_3_Tampqp": {
+      "type": "smi-collection-list-15-3",
+      "blocks": {
+        "collection_JYpJpj": {
+          "type": "collection",
+          "settings": {
+            "collection": "engagement-ring-settings",
+            "heading": "Engagement Rings",
+            "link": ""
+          }
+        },
+        "collection_7GQcf4": {
+          "type": "collection",
+          "settings": {
+            "collection": "wedding-bands",
+            "heading": "Wedding Bands",
+            "link": ""
+          }
+        },
+        "collection_dqgBeP": {
+          "type": "collection",
+          "settings": {
+            "collection": "gold-and-diamond-earrings",
+            "heading": "Earrings",
+            "link": ""
+          }
+        },
+        "collection_JJDbqG": {
+          "type": "collection",
+          "settings": {
+            "collection": "gold-and-diamond-necklaces",
+            "heading": "Necklaces",
+            "link": ""
+          }
+        },
+        "color_aFMqhJ": {
+          "type": "color",
+          "settings": {
+            "background_color": "#ffffff",
+            "background_gradient_color": "",
+            "text_color": "#000000",
+            "subtext_color": "#000000",
+            "solid_background_button_color": "#000000",
+            "solid_button_label_color": "#ffffff",
+            "outline_button_color": "#000000",
+            "shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "collection_JYpJpj",
+        "collection_7GQcf4",
+        "collection_dqgBeP",
+        "collection_JJDbqG",
+        "color_aFMqhJ"
+      ],
+      "name": "✧Collection list 15-3",
+      "settings": {
+        "sub_heading": "",
+        "heading": "Shop The 18 KARATS Collection",
+        "heading_size": "smi-h2",
+        "description": "",
+        "heading_alignment": "center",
+        "content_heading_size": "smi-h5",
+        "content_alignment": "center",
+        "media_ratio": "1/1",
+        "media_shape": "default",
+        "arrow_style": "arr-circle-style-3",
+        "sticky_page_dot_style": "dot-style-2",
+        "auto_rotate_slides": false,
+        "change_slides_every": 5,
+        "slider_overflow": false,
+        "container_max_width": 1400,
+        "number_of_columns_on_desktop": 4,
+        "number_of_columns_on_mobile": 2,
+        "item_gap_on_desktop": 16,
+        "item_gap_on_mobile": 10,
+        "show_product_count": false,
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "color_scheme": "scheme_1",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "featured_collection_7gFyRp": {
+      "type": "featured-collection",
+      "custom_css": [],
+      "settings": {
+        "title": "Shop Engagement Ring Settings",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "home_featured_products": "engagement-ring-settings",
+        "count": 5,
+        "products_per_row": 5,
+        "mobile_scrollable": false,
+        "view_all": true,
+        "divider": true
+      }
+    },
+    "advanced_content_FrzypQ": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_LJekBF": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"section--divider\"></div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_LJekBF"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Solitaire Engagement Ring Settings",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "home_featured_products": "solitaire-ring-settings",
+        "count": 5,
+        "products_per_row": 5,
+        "mobile_scrollable": false,
+        "view_all": true,
+        "divider": true
+      }
+    },
+    "advanced_content_L8Wyhk": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_zybyxT": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"section--divider\"></div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_zybyxT"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
+    },
+    "featured_collection_eR9XFF": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Bezel Engagement Ring Settings",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "home_featured_products": "bezel-ring-settings",
+        "count": 5,
+        "products_per_row": 5,
+        "mobile_scrollable": false,
+        "view_all": true,
+        "divider": true
+      }
+    },
+    "advanced_content_TPEAVd": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_97mhTM": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"section--divider\"></div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_97mhTM"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
+    },
+    "featured_collection_KKbVti": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Gold and Diamond Pendants",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "home_featured_products": "gold-and-diamond-necklaces",
+        "count": 5,
+        "products_per_row": 5,
+        "mobile_scrollable": false,
+        "view_all": true,
+        "divider": true
+      }
+    },
+    "featured_collection_HAix6E": {
+      "type": "featured-collection",
+      "settings": {
+        "title": "Shop Gold and Diamond Earrings",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "home_featured_products": "gold-and-diamond-earrings",
+        "count": 4,
+        "products_per_row": 4,
+        "mobile_scrollable": false,
+        "view_all": true,
+        "divider": false
+      }
+    },
+    "advanced_content_wzmHU9": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_Tzhxdq": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"section--divider\"></div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_Tzhxdq"
+      ],
+      "disabled": true,
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
+    },
+    "promo-grid-2": {
+      "type": "promo-grid",
+      "blocks": {
+        "promo-grid-2-banner": {
+          "type": "banner",
+          "settings": {
+            "heading": "Gemstones",
+            "heading_size": "h1",
+            "text_highlight": "serif",
+            "text": "Create your ring or buy your gemstone of choice with our gemstone ring builder, featuring sapphires, rubes, and emeralds.",
+            "link": "https://18karats.com/pages/gemstones",
+            "label": "GEMSTONES",
+            "color_scheme": "3",
+            "width": "50"
+          }
+        },
+        "promo-grid-2-image-3": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/shop-gemstones.jpg",
+            "link": "",
+            "width": "50",
+            "height": 300
+          }
+        },
+        "promo-grid-2-image": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/pink_diamonds_c7724c4f-af87-4c71-9cb8-6207fd5c90e8.jpg",
+            "link": "",
+            "width": "50",
+            "height": 100
+          }
+        },
+        "banner_7FPGQG": {
+          "type": "banner",
+          "settings": {
+            "heading": "<em>Colored</em> Diamonds",
+            "heading_size": "h1",
+            "text_highlight": "serif",
+            "text": "Create your ring or buy your colored diamond of choice with our colored diamonds, from pink and violet to blues, reds, and more in your choice of natural or lab diamonds.",
+            "link": "https://18karats.com/pages/build-your-diamond-ring?activeTab=Natural&queryLabGrown=false&fancy_color=Blue",
+            "label": "COLORED DIAMONDS",
+            "color_scheme": "1",
+            "width": "50"
+          }
+        }
+      },
+      "block_order": [
+        "promo-grid-2-banner",
+        "promo-grid-2-image-3",
+        "promo-grid-2-image",
+        "banner_7FPGQG"
+      ],
+      "disabled": true,
+      "custom_css": [
+        ".promo-grid > .flex-grid > .flex-grid__item--50 .btn {padding: 9px 16px; font-size: calc(var(--type-base-size) + 1px); background-color: transparent; border: 2px; border-color: black; color: black; text-decoration: underline;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "gutter_size": 0,
+        "space_above": true,
+        "space_below": true,
+        "hide_block_images": false
+      }
+    },
+    "smi_image_with_text_1_1_MAyXNB": {
+      "type": "smi-image-with-text-1-1",
+      "blocks": {
+        "heading_b3X4zP": {
+          "type": "heading",
+          "settings": {
+            "sub_heading": "",
+            "heading": "Gemstones",
+            "heading_size": "smi-h3",
+            "description": "<p>Shop our range of loose gemstones or make your own ring with your gemstone of choice, featuring rubies, sapphires, emeralds, and more. </p>"
+          }
+        },
+        "button_NgVGf7": {
+          "type": "button",
+          "settings": {
+            "first_button_label": "BUY GEMSTONES",
+            "first_button_link": "https://18karats.com/pages/gemstones",
+            "first_button_style": "text",
+            "second_button_label": "BUILD A RING",
+            "second_button_link": "https://18karats.com/pages/build-your-diamond-ring-1?stage=Select+Setting",
+            "second_button_style": "text",
+            "button_full_width": true
+          }
+        },
+        "color_wFDpge": {
+          "type": "color",
+          "settings": {
+            "background_color": "#fcfcfc",
+            "background_gradient_color": "",
+            "text_color": "#000000",
+            "subtext_color": "#000000",
+            "solid_background_button_color": "#000000",
+            "solid_button_label_color": "#fcf8f5",
+            "outline_button_color": "#000000",
+            "shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "heading_b3X4zP",
+        "button_NgVGf7",
+        "color_wFDpge"
+      ],
+      "name": "✧Image with text 1-1",
+      "settings": {
+        "full_width": "container",
+        "upload_image": "shopify://shop_images/shop-gemstones.jpg",
+        "desktop_media_width": "50",
+        "desktop_media_position": "row",
+        "media_ratio": "3/2",
+        "media_shape": "default",
+        "content_position": "center",
+        "content_alignment": "center",
+        "content_max_width": 570,
+        "color_scheme": "scheme_2",
+        "padding_top": 50,
+        "padding_bottom": 0
+      }
+    },
+    "smi_image_with_text_1_1_qUXiDh": {
+      "type": "smi-image-with-text-1-1",
+      "blocks": {
+        "heading_JMbi3W": {
+          "type": "heading",
+          "settings": {
+            "sub_heading": "",
+            "heading": "Colored Diamonds",
+            "heading_size": "smi-h3",
+            "description": "<p>Create your ring or buy your colored diamond of choice with our colored diamonds, from pink and violet to blues, reds, and more in your choice of natural or lab diamonds.</p>"
+          }
+        },
+        "button_iDnXRA": {
+          "type": "button",
+          "settings": {
+            "first_button_label": "BUY DIAMONDS",
+            "first_button_link": "https://18karats.com/pages/build-your-diamond-ring?activeTab=Natural&queryLabGrown=false",
+            "first_button_style": "text",
+            "second_button_label": "BUILD A RING",
+            "second_button_link": "https://18karats.com/pages/build-your-diamond-ring-1?stage=Select+Setting",
+            "second_button_style": "text",
+            "button_full_width": true
+          }
+        },
+        "color_GcYCzc": {
+          "type": "color",
+          "settings": {
+            "background_color": "#fcfcfc",
+            "background_gradient_color": "",
+            "text_color": "#000000",
+            "subtext_color": "#000000",
+            "solid_background_button_color": "#000000",
+            "solid_button_label_color": "#fcf8f5",
+            "outline_button_color": "#000000",
+            "shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "heading_JMbi3W",
+        "button_iDnXRA",
+        "color_GcYCzc"
+      ],
+      "name": "✧Image with text 1-1",
+      "settings": {
+        "full_width": "container",
+        "upload_image": "shopify://shop_images/pink_diamonds_c7724c4f-af87-4c71-9cb8-6207fd5c90e8.jpg",
+        "desktop_media_width": "50",
+        "desktop_media_position": "row-reverse",
+        "media_ratio": "3/2",
+        "media_shape": "default",
+        "content_position": "center",
+        "content_alignment": "center",
+        "content_max_width": 570,
+        "color_scheme": "scheme_2",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "media-text-2": {
+      "type": "media-text",
+      "blocks": {
+        "media-text-2-video": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/compressO-IMG_6682.webm",
+            "autoplay": true,
+            "loop": true,
+            "hide_controls": true,
+            "mute_video": true
+          }
+        }
+      },
+      "block_order": [
+        "media-text-2-video"
+      ],
+      "custom_css": [
+        ".accent-subtitle {letter-spacing: 0.07em; margin: 0 0 0px; font-style: italic; font-size: 17px;}",
+        ".color-scheme-3 .btn {color: black; background-color: transparent;}"
+      ],
+      "settings": {
+        "media_width": "50",
+        "media_crop": "4-3",
+        "layout": "right",
+        "content_alignment": "center",
+        "content_position": "center",
+        "color_scheme": "3",
+        "top_padding": false,
+        "bottom_padding": false,
+        "full_width": true,
+        "subheading": "Quality Design and Make",
+        "heading": "<em>About</em> 18 KARATS",
+        "heading_size": "h1",
+        "text_highlight": "serif",
+        "text": "<p>18 KARATS specializes in designing and manufacturing luxury gold jewelry and diamond jewelry with premium white gold, yellow gold, rose gold, platinum, and quality diamonds.  </p><p>With over 20 years of experience in jewelry design and manufacturing, 18 KARATS is one of Los Angeles' largest and most experienced jewelry manufacturers, offering exceptional pieces and designs.</p>",
+        "button_text": "ABOUT 18 KARATS",
+        "button_link": "shopify://pages/about-18karats"
+      }
+    },
+    "media_text_EpJ7pX": {
+      "type": "media-text",
+      "blocks": {
+        "video_UMhVAw": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/394E2D4F812FA0232CFDA665F74E339B_video_dashinit.mp4",
+            "autoplay": true,
+            "loop": true,
+            "hide_controls": true,
+            "mute_video": true
+          }
+        }
+      },
+      "block_order": [
+        "video_UMhVAw"
+      ],
+      "custom_css": [
+        ".color-scheme-3 .btn {color: black; background-color: transparent;}",
+        ".accent-subtitle {letter-spacing: 0.07em; margin: 0 0 0px; font-style: italic; font-size: 17px;}",
+        ".color-scheme-3 .btn {color: black; background-color: transparent;}"
+      ],
+      "settings": {
+        "media_width": "50",
+        "media_crop": "none",
+        "layout": "left",
+        "content_alignment": "center",
+        "content_position": "center",
+        "color_scheme": "3",
+        "top_padding": true,
+        "bottom_padding": true,
+        "full_width": true,
+        "subheading": "Any Metal, Any Stone, Any Design",
+        "heading": "Custom Designs",
+        "heading_size": "h1",
+        "text_highlight": "serif",
+        "text": "<p>18 KARATS specializes in bringing dream jewelry to life. We turn ideas into beautiful pieces — from engagement rings to statement jewelry. Whether it's a modern twist on a classic or something entirely your own, we combine your inspiration with our craftsmanship to create a personal piece.</p><p>Request a special order, and we’ll get started right away! You'll receive a digital rendering complete with design revisions to provide the look you always imagined. Choose any metal, any stone, any style, and any size — every detail is up to you.</p>",
+        "button_text": "CUSTOM JEWELRY",
+        "button_link": "shopify://pages/contact-18karats"
+      }
+    },
+    "smi_icon_with_text_1_7_gJLdJy-1748888379120": {
+      "type": "smi-icon-with-text-1-7",
+      "blocks": {
+        "icon_with_text_UdreAN": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "jewelry",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "Lifetime Warranty and Upgrades",
+            "heading_size": "smi-h4",
+            "content": "<p>Lifetime warranty on defects and lifetime upgrades with only the difference in price. </p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_jDMwPU": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "return",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "30 Day Money Back Guarantee",
+            "heading_size": "smi-h4",
+            "content": "<p>If you're not completely satisfied, return within 30 days for a full refund. </p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_bJyjzm": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verify",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "60 Days Unlimited Resizing",
+            "heading_size": "smi-h4",
+            "content": "<p>Need a different size? Enjoy complimentary resizing for 60 days to ensure the perfect fit.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_FVignA": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verify",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "Free Shipping and Returns",
+            "heading_size": "smi-h4",
+            "content": "<p>We offer free domestic shipping and returns for a worry-free experience.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_h7wyik": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verify",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "Precision and Quality",
+            "heading_size": "smi-h4",
+            "content": "<p>We use microscopes to set all diamonds for maximum accuracy and quality.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_nJ4iLb": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verify",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "Customized For You",
+            "heading_size": "smi-h4",
+            "content": "<p>Modify any existing design or create a one-of-a-kind piece.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "color_6WaVkw": {
+          "type": "color",
+          "settings": {
+            "background_color": "#ffffff",
+            "background_gradient_color": "",
+            "text_color": "#000000",
+            "subtext_color": "#000000",
+            "outline_button_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_UdreAN",
+        "icon_with_text_jDMwPU",
+        "icon_with_text_bJyjzm",
+        "icon_with_text_FVignA",
+        "icon_with_text_h7wyik",
+        "icon_with_text_nJ4iLb",
+        "color_6WaVkw"
+      ],
+      "custom_css": [
+        ".smi-text-md {font-size: 14px;}",
+        ".smi-section h4,.smi-section .smi-h4 {font-size: 18px; line-height: calc( (1 + 0.6 / (var(--font-heading-scale) * var(--h4-font-size, 20) / 16)) * var(--heading-line-height-scale, 1) );}",
+        ".smi-color-scheme_4 {--color-background: 255, 255, 255; --gradient-background: #ffffff; --color-foreground: 0, 0, 0; --color-subtext: 0, 0, 0; --color-secondary-button-text: 0, 0, 0; --color-shadow: ; padding-left: 5%; padding-right: 5%;}"
+      ],
+      "settings": {
+        "container_full_width": false,
+        "sub_heading": "",
+        "heading": "18 KARATS Promise",
+        "heading_size": "smi-h2",
+        "description": "<p>Every purchase from 18 KARATS comes with our quality guarantee. We offer a lifetime warranty on every item, with convenient resizing, returns, and customization options. </p>",
+        "heading_alignment": "center",
+        "content_alignment": "center",
+        "number_of_columns_on_desktop": "3",
+        "number_of_columns_on_mobile": "1",
+        "enable_swipe_on_mobile": false,
+        "sticky_page_dot_style": "text-style-2",
+        "icon_position": "top",
+        "color_scheme": "scheme_4",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "smi_styles_NeBDzE": {
+      "type": "smi-styles",
+      "blocks": {
+        "color_MidEjh": {
+          "type": "color",
+          "settings": {
+            "background_color1": "#ffffff",
+            "background_gradient_color1": "",
+            "text_color1": "#000000",
+            "subtext_color1": "#000000",
+            "solid_background_button_color1": "#000000",
+            "solid_button_label_color1": "#ffffff",
+            "outline_button_color1": "#000000",
+            "shadow_color1": "#000000",
+            "background_color2": "#fcf8f5",
+            "background_gradient_color2": "",
+            "text_color2": "#000000",
+            "subtext_color2": "#000000",
+            "solid_background_button_color2": "#000000",
+            "solid_button_label_color2": "#fcf8f5",
+            "outline_button_color2": "#000000",
+            "shadow_color2": "#000000",
+            "background_color3": "#282828",
+            "background_gradient_color3": "",
+            "text_color3": "#ffffff",
+            "subtext_color3": "#ffffff",
+            "solid_background_button_color3": "#ffffff",
+            "solid_button_label_color3": "#282828",
+            "outline_button_color3": "#ffffff",
+            "shadow_color3": "#ffffff",
+            "background_color4": "#63513f",
+            "background_gradient_color4": "",
+            "text_color4": "#ffffff",
+            "subtext_color4": "#ffffff",
+            "solid_background_button_color4": "#ffffff",
+            "solid_button_label_color4": "#63513f",
+            "outline_button_color4": "#ffffff",
+            "shadow_color4": "#ffffff",
+            "background_color5": "#5b3f2c",
+            "background_gradient_color5": "",
+            "text_color5": "#ffffff",
+            "subtext_color5": "#ffffff",
+            "solid_background_button_color5": "#ffffff",
+            "solid_button_label_color5": "#5b3f2c",
+            "outline_button_color5": "#ffffff",
+            "shadow_color5": "#ffffff",
+            "background_color6": "#ffffff",
+            "background_gradient_color6": "",
+            "text_color6": "#000000",
+            "subtext_color6": "#000000",
+            "solid_background_button_color6": "#000000",
+            "solid_button_label_color6": "#ffffff",
+            "outline_button_color6": "#000000",
+            "shadow_color6": "#000000",
+            "background_color7": "#ffffff",
+            "background_gradient_color7": "",
+            "text_color7": "#000000",
+            "subtext_color7": "#000000",
+            "solid_background_button_color7": "#000000",
+            "solid_button_label_color7": "#ffffff",
+            "outline_button_color7": "#000000",
+            "shadow_color7": "#000000",
+            "background_color8": "#ffffff",
+            "background_gradient_color8": "",
+            "text_color8": "#000000",
+            "subtext_color8": "#000000",
+            "solid_background_button_color8": "#000000",
+            "solid_button_label_color8": "#ffffff",
+            "outline_button_color8": "#000000",
+            "shadow_color8": "#000000",
+            "background_color9": "#ffffff",
+            "background_gradient_color9": "",
+            "text_color9": "#000000",
+            "subtext_color9": "#000000",
+            "solid_background_button_color9": "#000000",
+            "solid_button_label_color9": "#ffffff",
+            "outline_button_color9": "#000000",
+            "shadow_color9": "#000000",
+            "background_color10": "#ffffff",
+            "background_gradient_color10": "",
+            "text_color10": "#000000",
+            "subtext_color10": "#000000",
+            "solid_background_button_color10": "#000000",
+            "solid_button_label_color10": "#ffffff",
+            "outline_button_color10": "#000000",
+            "shadow_color10": "#000000"
+          }
+        },
+        "typography_pYNUUX": {
+          "type": "typography",
+          "settings": {
+            "overwrite_font": false,
+            "type_header_font": "cardo_n4",
+            "heading_scale": 100,
+            "heading_line_height_scale": 100,
+            "heading_letter_spacing_scale": 0.4,
+            "heading_text_case": "original",
+            "type_body_font": "instrument_sans_n4",
+            "body_scale": 100,
+            "body_line_height_scale": 100,
+            "body_letter_spacing_scale": 0.3,
+            "button_font": "body",
+            "button_text_case": "uppercase",
+            "price_font": "body",
+            "menu_font": "body",
+            "subheading_font": "body"
+          }
+        },
+        "typography_advance_tjr86Y": {
+          "type": "typography_advance",
+          "settings": {
+            "fontsize_h1": 44,
+            "fontsize_h2": 34,
+            "fontsize_h3": 26,
+            "fontsize_h4": 20,
+            "fontsize_h5": 16,
+            "fontsize_h6": 14,
+            "fontsize_xs_h1": 40,
+            "fontsize_xs_h2": 30,
+            "fontsize_xs_h3": 22,
+            "fontsize_xs_h4": 20,
+            "fontsize_xs_h5": 16,
+            "fontsize_xs_h6": 14,
+            "fontsize_button": 14,
+            "button_letter_spacing_scale": 0.7,
+            "fontweight_button": "500",
+            "fontsize_subheading": 14,
+            "subheading_letter_spacing_scale": 0,
+            "fontweight_subheading": "400",
+            "fontsize_badge": 14,
+            "badge_letter_spacing_scale": 0,
+            "fontweight_badge": "400",
+            "fontsize_menu": 16,
+            "menu_letter_spacing_scale": 0.8,
+            "fontweight_menu": "500",
+            "fontsize_price_xl": 24,
+            "fontsize_price_lg": 18,
+            "fontsize_price_md": 16,
+            "price_letter_spacing_scale": 0,
+            "fontweight_price": "400"
+          }
+        },
+        "layout_Ndpz9d": {
+          "type": "layout",
+          "settings": {
+            "page_width": 1200,
+            "spacing_sections": 0,
+            "spacing_elements": 100,
+            "spacing_elements_mobile": 100,
+            "spacing_grid_horizontal": 30,
+            "spacing_grid_vertical": 30
+          }
+        },
+        "buttons_a6y3tw": {
+          "type": "buttons",
+          "settings": {
+            "buttons_scale": 100,
+            "buttons_border_thickness": 1,
+            "buttons_border_opacity": 80,
+            "buttons_radius": 0,
+            "buttons_shadow": "0,0,0",
+            "buttons_shadow_opacity": 20
+          }
+        },
+        "variants_t8q8hX": {
+          "type": "variants",
+          "settings": {
+            "variant_pills_border_thickness": 1,
+            "variant_pills_radius": 0,
+            "variant_pills_shadow": "0,0,0",
+            "variant_pills_shadow_opacity": 20
+          }
+        },
+        "inputs_Yan8cX": {
+          "type": "inputs",
+          "settings": {
+            "inputs_border_thickness": 1,
+            "inputs_border_opacity": 55,
+            "inputs_radius": 0,
+            "inputs_shadow": "0,0,0",
+            "inputs_shadow_opacity": 20
+          }
+        },
+        "icons_6d3qTp": {
+          "type": "icons",
+          "settings": {
+            "icon_thickness": 1.5,
+            "icon_scale": 100
+          }
+        },
+        "product_cards_jHBrKR": {
+          "type": "product_cards",
+          "settings": {
+            "card_image_padding": 0,
+            "card_border_thickness": 0,
+            "card_border_opacity": 55,
+            "card_corner_radius": 0,
+            "card_shadow": "0,0,0",
+            "card_shadow_opacity": 20
+          }
+        },
+        "product_badges_P4dB8X": {
+          "type": "product_badges",
+          "settings": {
+            "badge_corner_radius": 40,
+            "sale_badge_background_color": "#d01717",
+            "sale_badge_text_color": "#ffffff",
+            "sold_out_badge_background_color": "#8c8c8c",
+            "sold_out_badge_text_color": "#ffffff"
+          }
+        },
+        "blog_cards_XqUEBy": {
+          "type": "blog_cards",
+          "settings": {
+            "blog_card_image_padding": 0,
+            "blog_card_border_thickness": 0,
+            "blog_card_border_opacity": 55,
+            "blog_card_corner_radius": 0,
+            "blog_card_shadow": "0,0,0",
+            "blog_card_shadow_opacity": 20
+          }
+        },
+        "content_containers_CkGGiQ": {
+          "type": "content_containers",
+          "settings": {
+            "text_boxes_border_thickness": 0,
+            "text_boxes_border_opacity": 55,
+            "text_boxes_radius": 0,
+            "text_boxes_shadow": "0,0,0",
+            "text_boxes_shadow_opacity": 20
+          }
+        },
+        "media_NxUVMG": {
+          "type": "media",
+          "settings": {
+            "media_border_thickness": 0,
+            "media_border_opacity": 55,
+            "media_radius": 0,
+            "media_shadow": "0,0,0",
+            "media_shadow_opacity": 20
+          }
+        },
+        "dropdown_popup_drawer_hkd983": {
+          "type": "dropdown_popup_drawer",
+          "settings": {
+            "popup_border_thickness": 1,
+            "popup_border_opacity": 10,
+            "popup_corner_radius": 0,
+            "popup_shadow": "0,0,0",
+            "popup_shadow_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "color_MidEjh",
+        "typography_pYNUUX",
+        "typography_advance_tjr86Y",
+        "layout_Ndpz9d",
+        "buttons_a6y3tw",
+        "variants_t8q8hX",
+        "inputs_Yan8cX",
+        "icons_6d3qTp",
+        "product_cards_jHBrKR",
+        "product_badges_P4dB8X",
+        "blog_cards_XqUEBy",
+        "content_containers_CkGGiQ",
+        "media_NxUVMG",
+        "dropdown_popup_drawer_hkd983"
+      ],
+      "settings": {}
+    },
+    "1750452428b87d5448": {
+      "type": "apps",
+      "blocks": {
+        "instareel_ig_reels_instagram_reels_feed_6pqGKe": {
+          "type": "shopify://apps/instareel-ig-reels/blocks/instagram-reels-feed/6399ee9c-54c8-4f76-97d7-8f02f7662aa1",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "instareel_ig_reels_instagram_reels_feed_6pqGKe"
+      ],
+      "disabled": true,
+      "custom_css": [
+        "#reelify-root-container,#instareel-root-container {text-align: center; padding-bottom: 4em;}"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "1759876078594dd156": {
+      "type": "apps",
+      "blocks": {
+        "instafeed_app_block_ezGUtY": {
+          "type": "shopify://apps/instafeed/blocks/app-block/c447db20-095d-4a10-9725-b5977662c9d5",
+          "settings": {
+            "title": "",
+            "title_color": "",
+            "title_size_v2": 0,
+            "alignment": "center",
+            "instafeed_margin_top": 0,
+            "instafeed_margin_bottom": 0,
+            "instafeed_margin_sides": 0,
+            "show_instagram_link": false,
+            "link_alignment": "left",
+            "link_color": "#000000",
+            "background_color": "",
+            "feed_id": "",
+            "html_area": ""
+          }
+        }
+      },
+      "block_order": [
+        "instafeed_app_block_ezGUtY"
+      ],
+      "settings": {
+        "full_width": true,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "176315478554ade424",
+    "media-text",
+    "media_text_fqEVJf",
+    "promo-grid",
+    "smi_collection_list_15_3_Jdr4nM",
+    "featured_collections_xfKGJW",
+    "smi_collection_list_15_3_Tampqp",
+    "featured_collection_7gFyRp",
+    "advanced_content_FrzypQ",
+    "featured-collection",
+    "advanced_content_L8Wyhk",
+    "featured_collection_eR9XFF",
+    "advanced_content_TPEAVd",
+    "featured_collection_KKbVti",
+    "featured_collection_HAix6E",
+    "advanced_content_wzmHU9",
+    "promo-grid-2",
+    "smi_image_with_text_1_1_MAyXNB",
+    "smi_image_with_text_1_1_qUXiDh",
+    "media-text-2",
+    "media_text_EpJ7pX",
+    "smi_icon_with_text_1_7_gJLdJy-1748888379120",
+    "smi_styles_NeBDzE",
+    "1750452428b87d5448",
+    "1759876078594dd156"
+  ]
+}

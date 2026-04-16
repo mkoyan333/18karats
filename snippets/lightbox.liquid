@@ -1,0 +1,28 @@
+{%- comment -%}
+  Renders a lightbox.
+  Element needs to have the .lightbox-trigger class and be wrapped in <image-lightbox><image-lightbox>
+
+  Accepts:
+  - context {string} - The context of the lightbox
+  - classes {string} - The classes to add to the lightbox image container
+  - img {image} - The image to display in the lightbox
+
+  Usage:
+  {%- render 'lightbox', context: 'This is some content', img: img -%}
+{%- endcomment -%}
+
+<div class="lightbox lightbox--{{ context }}">
+  <div class="lightbox-outer-container">
+    <div class="lightbox-content {{ classes }}">
+      {%- render 'element.image', img: img -%}
+
+      <button class="lightbox-close-btn">
+        {% render 'element.icon', name: 'close' %}
+      </button>
+    </div>
+  </div>
+</div>
+
+<script type="module">
+  import 'component.lightbox'
+</script>

@@ -1,0 +1,111 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "gallery": {
+      "type": "gallery",
+      "blocks": {
+        "image-1": {
+          "type": "image",
+          "settings": {}
+        },
+        "image-2": {
+          "type": "image",
+          "settings": {}
+        },
+        "image-3": {
+          "type": "image",
+          "settings": {}
+        },
+        "image-4": {
+          "type": "image",
+          "settings": {}
+        },
+        "image-5": {
+          "type": "image",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "image-1",
+        "image-2",
+        "image-3",
+        "image-4",
+        "image-5"
+      ],
+      "settings": {
+        "heading": "",
+        "full_width": true,
+        "space_above": false
+      }
+    },
+    "main": {
+      "type": "article-template",
+      "settings": {}
+    },
+    "sidebar": {
+      "type": "blog-sidebar",
+      "blocks": {
+        "tags": {
+          "type": "tags",
+          "settings": {}
+        },
+        "share": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "tags",
+        "share"
+      ],
+      "settings": {}
+    },
+    "blog-posts": {
+      "type": "blog-posts",
+      "settings": {
+        "heading_size": "h3"
+      }
+    },
+    "collection-list": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection-1": {
+          "type": "collection",
+          "settings": {}
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {}
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "collection-1",
+        "collection-2",
+        "collection-3"
+      ],
+      "settings": {
+        "heading_size": "h3"
+      }
+    }
+  },
+  "order": [
+    "gallery",
+    "main",
+    "sidebar",
+    "blog-posts",
+    "collection-list"
+  ],
+  "wrapper": "div.page-width.page-content.blog-layout"
+}

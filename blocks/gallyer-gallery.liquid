@@ -1,0 +1,927 @@
+{% doc %}
+  @prompt
+    Layout & Responsiveness
+    
+    Use a responsive CSS Grid layout.
+    
+    Allow merchants to control rows and columns separately for:
+    
+    Desktop
+    
+    Tablet
+    
+    Mobile
+    
+    Grid should automatically adapt and reflow based on device settings.
+    
+    Adjustable grid spacing (gap).
+    
+    Optimized, lightweight, and mobile-first.
+    
+    Heading
+    
+    Large centered heading text: “Projects”
+    
+    Heading slightly overlaps the grid (hero-style overlay).
+    
+    Controls in theme editor:
+    
+    Font size
+    
+    Opacity
+    
+    Vertical offset
+    
+    Heading must remain responsive across all devices.
+    
+    Image Management (MAX 24 IMAGES)
+    
+    Provide two selectable image modes using a toggle:
+    
+    Mode 1: Individual Image Blocks
+    
+    Merchant can add images one by one.
+    
+    Each image block includes:
+    
+    Image picker
+    
+    Optional link URL
+    
+    Optional alt text
+    
+    Mode 2: Bulk Gallery Upload
+    
+    Allow merchant to select up to 24 images at once.
+    
+    Images must come from Shopify Files (store uploads) — NOT products.
+    
+    Automatically place one image per grid cell.
+    
+    No manual block setup required.
+    
+    Images must render correctly immediately.
+    
+    Image Display Rules
+    
+    Enforce a consistent aspect ratio.
+    
+    Use object-fit: cover.
+    
+    Automatically crop images to fill grid cells.
+    
+    Rounded corners with adjustable radius (default ~24px).
+    
+    Fix any issues where images fail to display.
+    
+    Hover & Animation
+    
+    Hover effect:
+    
+    Subtle zoom-in
+    
+    Soft shadow fade-in
+    
+    Optional morphing animation:
+    
+    Images smoothly transition into the next image within the same grid cell.
+    
+    Crossfade or scale-morph effect.
+    
+    Adjustable animation speed.
+    
+    Animation toggle on/off.
+    
+    Use CSS-based animations only (no heavy JavaScript).
+    
+    Styling Controls
+    
+    Add theme settings for:
+    
+    Background color
+    
+    Section padding (top & bottom)
+    
+    Grid spacing
+    
+    Image corner radius
+    
+    Animation toggle and speed
+    
+    Technical Requirements
+    
+    Shopify Online Store 2.0 JSON section structure
+    
+    Semantic HTML
+    
+    Responsive CSS
+    
+    No external libraries
+    
+    Performance-optimized
+    
+    Clean and well-labeled schema
+    
+    End Goal
+    
+    The section should allow merchants to:
+    
+    Upload up to 24 images easily
+    
+    Choose bet, we added the images but the images arent showing, Rows + Columns Controls (per device)
+    
+    Add theme editor controls so the merchant can set columns and rows separately for Desktop / Tablet / Mobile.
+    
+    Example settings: desktop_columns, desktop_rows, tablet_columns, tablet_rows, mobile_columns, mobile_rows.
+    
+    The grid must render exactly rows × columns visible cells per device (up to the 24 image max) and reflow correctly on breakpoint changes.
+    
+    Keep adjustable grid gap setting.
+    
+    Morphing Rotation (always ON)
+    
+    Remove the animation toggle. The morphing/crossfade rotation must always be enabled.
+    
+    Every grid cell should automatically switch to a different image every 3 seconds.
+    
+    Use CSS-based transitions for the morph/crossfade/scale effect (no heavy JS; only minimal logic to swap image sources).
+    
+    No Duplicates On Screen
+    
+    At any moment, the same image must not appear in more than one grid cell.
+    
+    When rotating, ensure the newly selected image is not currently visible in any other cell.
+    
+    If there aren’t enough unique images to fill the grid (e.g., fewer images than cells), gracefully handle it (e.g., reduce filled cells or pause rotation) but never show duplicates simultaneously.
+    
+    Keep Existing Requirements
+    
+    Maintain current heading overlap controls (font size, opacity, vertical offset) and responsiveness.
+    
+    Maintain consistent aspect ratio, object-fit: cover, rounded corners with radius setting, and hover zoom + soft shadow.
+    
+    Keep performance optimized and OS 2.0 JSON schema clean and well-labeled., it works perfectly
+    
+    only problem is all the boxes show the same images in order, can you make it so each box shows a random picture each time so there is very very low percent chance of the same picture being shown , its perfect, only add teh option of choosing the speed the animation works on becuase its very fast now
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% liquid
+  assign all_images = ''
+  for i in (1..24)
+    assign image_key = 'image_' | append: i
+    assign image = block.settings[image_key]
+    if image != blank
+      if all_images == ''
+        assign all_images = image_key
+      else
+        assign all_images = all_images | append: ',' | append: image_key
+      endif
+    endif
+  endfor
+  assign image_array = all_images | split: ','
+  assign total_images = image_array.size
+
+  assign desktop_cells = block.settings.desktop_columns | times: block.settings.desktop_rows
+  assign tablet_cells = block.settings.tablet_columns | times: block.settings.tablet_rows
+  assign mobile_cells = block.settings.mobile_columns | times: block.settings.mobile_rows
+  
+  if desktop_cells > 24
+    assign desktop_cells = 24
+  endif
+  if tablet_cells > 24
+    assign tablet_cells = 24
+  endif
+  if mobile_cells > 24
+    assign mobile_cells = 24
+  endif
+%}
+
+{% style %}
+  .ai-gallery-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    background-color: {{ block.settings.background_color }};
+    padding: {{ block.settings.padding_top }}px 20px {{ block.settings.padding_bottom }}px;
+    position: relative;
+  }
+
+  .ai-gallery-container-{{ ai_gen_id }} {
+    max-width: 1400px;
+    margin: 0 auto;
+    position: relative;
+  }
+
+  .ai-gallery-heading-{{ ai_gen_id }} {
+    font-size: {{ block.settings.heading_size }}px;
+    text-align: center;
+    margin: 0;
+    position: relative;
+    z-index: 10;
+    opacity: {{ block.settings.heading_opacity | divided_by: 100.0 }};
+    transform: translateY({{ block.settings.heading_offset }}px);
+    font-family: {{ block.settings.heading_font.family }}, {{ block.settings.heading_font.fallback_families }};
+    font-weight: {{ block.settings.heading_font.weight }};
+    color: {{ block.settings.heading_color }};
+    margin-bottom: {{ block.settings.heading_offset | times: -1 | plus: 20 }}px;
+  }
+
+  .ai-gallery-grid-{{ ai_gen_id }} {
+    display: grid;
+    gap: {{ block.settings.grid_gap }}px;
+    grid-template-columns: repeat({{ block.settings.desktop_columns }}, 1fr);
+    grid-template-rows: repeat({{ block.settings.desktop_rows }}, 1fr);
+    grid-auto-rows: 0;
+    overflow: hidden;
+  }
+
+  @media screen and (max-width: 989px) {
+    .ai-gallery-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.tablet_columns }}, 1fr);
+      grid-template-rows: repeat({{ block.settings.tablet_rows }}, 1fr);
+    }
+
+    .ai-gallery-heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.7);
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-gallery-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.mobile_columns }}, 1fr);
+      grid-template-rows: repeat({{ block.settings.mobile_rows }}, 1fr);
+    }
+
+    .ai-gallery-heading-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.heading_size }}px * 0.5);
+    }
+
+    .ai-gallery-{{ ai_gen_id }} {
+      padding: {{ block.settings.padding_top | times: 0.6 }}px 15px {{ block.settings.padding_bottom | times: 0.6 }}px;
+    }
+  }
+
+  .ai-gallery-item-{{ ai_gen_id }} {
+    position: relative;
+    overflow: hidden;
+    border-radius: {{ block.settings.image_radius }}px;
+    aspect-ratio: 1 / 1;
+    background-color: #f4f4f4;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .ai-gallery-item-{{ ai_gen_id }}:hover {
+    transform: scale(1.02);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+  }
+
+  .ai-gallery-item-link-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    text-decoration: none;
+  }
+
+  .ai-gallery-image-wrapper-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .ai-gallery-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: opacity 0.6s ease, transform 0.6s ease;
+  }
+
+  .ai-gallery-image-{{ ai_gen_id }}.ai-active {
+    opacity: 1;
+    transform: scale(1);
+    z-index: 2;
+  }
+
+  .ai-gallery-image-{{ ai_gen_id }}.ai-inactive {
+    opacity: 0;
+    transform: scale(1.1);
+    z-index: 1;
+  }
+
+  .ai-gallery-item-{{ ai_gen_id }}:hover .ai-gallery-image-{{ ai_gen_id }}.ai-active {
+    transform: scale(1.05);
+  }
+
+  .ai-gallery-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+    position: relative;
+  }
+
+  .ai-gallery-placeholder-{{ ai_gen_id }} svg {
+    width: 60%;
+    height: 60%;
+    opacity: 0.3;
+  }
+
+  .ai-gallery-empty-state-{{ ai_gen_id }} {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 8px 16px;
+    background-color: rgba(255, 255, 255, 0.9);
+    border-radius: 4px;
+    font-size: 14px;
+    color: #666;
+    text-align: center;
+    pointer-events: none;
+    white-space: nowrap;
+  }
+
+  @media screen and (min-width: 990px) {
+    .ai-gallery-item-{{ ai_gen_id }}:nth-child(n + {{ desktop_cells | plus: 1 }}) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 989px) and (min-width: 750px) {
+    .ai-gallery-item-{{ ai_gen_id }}:nth-child(n + {{ tablet_cells | plus: 1 }}) {
+      display: none;
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-gallery-item-{{ ai_gen_id }}:nth-child(n + {{ mobile_cells | plus: 1 }}) {
+      display: none;
+    }
+  }
+{% endstyle %}
+
+<gallery-block-{{ ai_gen_id }} 
+  class="ai-gallery-{{ ai_gen_id }}" 
+  data-total-images="{{ total_images }}"
+  data-desktop-cells="{{ desktop_cells }}"
+  data-tablet-cells="{{ tablet_cells }}"
+  data-mobile-cells="{{ mobile_cells }}"
+  data-rotation-speed="{{ block.settings.rotation_speed }}"
+  data-image-data="{% for image_key in image_array %}{% assign img = block.settings[image_key] %}{% if img != blank %}{{ image_key }}::{{ img | image_url: width: 800 }}::{{ img.alt | escape }}{% unless forloop.last %}||{% endunless %}{% endif %}{% endfor %}"
+  {{ block.shopify_attributes }}
+>
+  <div class="ai-gallery-container-{{ ai_gen_id }}">
+    {% if block.settings.heading != blank %}
+      <h2 class="ai-gallery-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+    {% endif %}
+
+    <div class="ai-gallery-grid-{{ ai_gen_id }}">
+      {% if total_images > 0 %}
+        {% for i in (1..24) %}
+          <div class="ai-gallery-item-{{ ai_gen_id }}" data-cell-index="{{ forloop.index0 }}">
+            <div class="ai-gallery-item-link-{{ ai_gen_id }}">
+              <div class="ai-gallery-image-wrapper-{{ ai_gen_id }}">
+                <img
+                  src=""
+                  alt=""
+                  loading="lazy"
+                  width="800"
+                  height="800"
+                  class="ai-gallery-image-{{ ai_gen_id }} ai-active"
+                  data-slot="active"
+                >
+                <img
+                  src=""
+                  alt=""
+                  loading="lazy"
+                  width="800"
+                  height="800"
+                  class="ai-gallery-image-{{ ai_gen_id }} ai-inactive"
+                  data-slot="inactive"
+                >
+              </div>
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="ai-gallery-item-{{ ai_gen_id }}">
+          <div class="ai-gallery-placeholder-{{ ai_gen_id }}">
+            {{ 'image' | placeholder_svg_tag }}
+            <div class="ai-gallery-empty-state-{{ ai_gen_id }}">
+              Add images below
+            </div>
+          </div>
+        </div>
+      {% endif %}
+    </div>
+  </div>
+</gallery-block-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class GalleryBlock{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.intervals = [];
+        this.allImages = [];
+        this.currentlyVisible = new Set();
+      }
+
+      connectedCallback() {
+        this.parseImageData();
+        const totalImages = parseInt(this.dataset.totalImages) || 0;
+        const rotationSpeed = parseInt(this.dataset.rotationSpeed) || 5;
+        this.rotationInterval = rotationSpeed * 1000;
+        
+        if (totalImages > 0) {
+          this.initializeGrid();
+          if (totalImages > 1) {
+            this.startRotation();
+          }
+        }
+      }
+
+      disconnectedCallback() {
+        this.intervals.forEach(interval => clearInterval(interval));
+        this.intervals = [];
+      }
+
+      parseImageData() {
+        const imageData = this.dataset.imageData || '';
+        if (!imageData) return;
+
+        const imageEntries = imageData.split('||');
+        this.allImages = imageEntries.map(entry => {
+          const parts = entry.split('::');
+          return {
+            key: parts[0],
+            src: parts[1],
+            alt: parts[2] || ''
+          };
+        }).filter(img => img.src);
+      }
+
+      shuffleArray(array) {
+        const shuffled = [...array];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+          const j = Math.floor(Math.random() * (i + 1));
+          [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+      }
+
+      initializeGrid() {
+        const cells = this.querySelectorAll('.ai-gallery-item-{{ ai_gen_id }}');
+        const visibleCells = this.getVisibleCells();
+        
+        const shuffledImages = this.shuffleArray(this.allImages);
+        
+        cells.forEach((cell, index) => {
+          if (index < visibleCells && index < shuffledImages.length) {
+            const activeImg = cell.querySelector('[data-slot="active"]');
+            const inactiveImg = cell.querySelector('[data-slot="inactive"]');
+            
+            const initialImage = shuffledImages[index];
+            activeImg.src = initialImage.src;
+            activeImg.alt = initialImage.alt;
+            activeImg.dataset.imageKey = initialImage.key;
+            
+            this.currentlyVisible.add(initialImage.key);
+            
+            if (this.allImages.length > 1) {
+              const nextImage = this.getNextUniqueImage(initialImage.key);
+              if (nextImage) {
+                inactiveImg.src = nextImage.src;
+                inactiveImg.alt = nextImage.alt;
+                inactiveImg.dataset.imageKey = nextImage.key;
+              }
+            }
+          }
+        });
+      }
+
+      getVisibleCells() {
+        const width = window.innerWidth;
+        if (width >= 990) {
+          return parseInt(this.dataset.desktopCells) || 12;
+        } else if (width >= 750) {
+          return parseInt(this.dataset.tabletCells) || 9;
+        } else {
+          return parseInt(this.dataset.mobileCells) || 4;
+        }
+      }
+
+      startRotation() {
+        const cells = this.querySelectorAll('.ai-gallery-item-{{ ai_gen_id }}');
+        const visibleCells = this.getVisibleCells();
+        
+        cells.forEach((cell, index) => {
+          if (index < visibleCells && this.allImages.length > 1) {
+            const delay = Math.random() * 2000;
+            
+            setTimeout(() => {
+              const interval = setInterval(() => {
+                this.rotateCell(cell);
+              }, this.rotationInterval);
+              
+              this.intervals.push(interval);
+            }, delay);
+          }
+        });
+      }
+
+      rotateCell(cell) {
+        const wrapper = cell.querySelector('.ai-gallery-image-wrapper-{{ ai_gen_id }}');
+        const activeImg = wrapper.querySelector('[data-slot="active"]');
+        const inactiveImg = wrapper.querySelector('[data-slot="inactive"]');
+        
+        if (!activeImg || !inactiveImg) return;
+
+        const currentKey = activeImg.dataset.imageKey;
+        const nextKey = inactiveImg.dataset.imageKey;
+        
+        if (!nextKey) return;
+
+        requestAnimationFrame(() => {
+          activeImg.classList.remove('ai-active');
+          activeImg.classList.add('ai-inactive');
+          inactiveImg.classList.remove('ai-inactive');
+          inactiveImg.classList.add('ai-active');
+
+          activeImg.dataset.slot = 'inactive';
+          inactiveImg.dataset.slot = 'active';
+
+          this.currentlyVisible.delete(currentKey);
+          this.currentlyVisible.add(nextKey);
+
+          const futureImage = this.getNextUniqueImage(nextKey);
+          if (futureImage) {
+            activeImg.src = futureImage.src;
+            activeImg.alt = futureImage.alt;
+            activeImg.dataset.imageKey = futureImage.key;
+          }
+        });
+      }
+
+      getNextUniqueImage(currentKey) {
+        const availableImages = this.allImages.filter(img => 
+          img.key !== currentKey && !this.currentlyVisible.has(img.key)
+        );
+
+        if (availableImages.length === 0) {
+          const fallbackImages = this.allImages.filter(img => img.key !== currentKey);
+          if (fallbackImages.length === 0) return null;
+          
+          const randomIndex = Math.floor(Math.random() * fallbackImages.length);
+          return fallbackImages[randomIndex];
+        }
+
+        const randomIndex = Math.floor(Math.random() * availableImages.length);
+        return availableImages[randomIndex];
+      }
+    }
+
+    customElements.define('gallery-block-{{ ai_gen_id }}', GalleryBlock{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Gallery grid",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Heading"
+    },
+    {
+      "type": "inline_richtext",
+      "id": "heading",
+      "label": "Heading text",
+      "default": "Projects"
+    },
+    {
+      "type": "font_picker",
+      "id": "heading_font",
+      "label": "Heading font",
+      "default": "assistant_n4"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 24,
+      "max": 120,
+      "step": 4,
+      "unit": "px",
+      "label": "Font size",
+      "default": 72
+    },
+    {
+      "type": "range",
+      "id": "heading_opacity",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "label": "Opacity",
+      "default": 100
+    },
+    {
+      "type": "range",
+      "id": "heading_offset",
+      "min": -100,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "label": "Vertical offset",
+      "default": 40,
+      "info": "Positive values move heading down into grid"
+    },
+    {
+      "type": "header",
+      "content": "Desktop layout"
+    },
+    {
+      "type": "range",
+      "id": "desktop_columns",
+      "min": 2,
+      "max": 6,
+      "step": 1,
+      "label": "Columns",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "desktop_rows",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Rows",
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Tablet layout"
+    },
+    {
+      "type": "range",
+      "id": "tablet_columns",
+      "min": 2,
+      "max": 4,
+      "step": 1,
+      "label": "Columns",
+      "default": 3
+    },
+    {
+      "type": "range",
+      "id": "tablet_rows",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Rows",
+      "default": 3
+    },
+    {
+      "type": "header",
+      "content": "Mobile layout"
+    },
+    {
+      "type": "range",
+      "id": "mobile_columns",
+      "min": 1,
+      "max": 3,
+      "step": 1,
+      "label": "Columns",
+      "default": 2
+    },
+    {
+      "type": "range",
+      "id": "mobile_rows",
+      "min": 1,
+      "max": 6,
+      "step": 1,
+      "label": "Rows",
+      "default": 2
+    },
+    {
+      "type": "header",
+      "content": "Animation"
+    },
+    {
+      "type": "range",
+      "id": "rotation_speed",
+      "min": 2,
+      "max": 20,
+      "step": 1,
+      "unit": "s",
+      "label": "Rotation speed",
+      "default": 5,
+      "info": "How often images change"
+    },
+    {
+      "type": "header",
+      "content": "Grid spacing"
+    },
+    {
+      "type": "range",
+      "id": "grid_gap",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Gap between images",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Image style"
+    },
+    {
+      "type": "range",
+      "id": "image_radius",
+      "min": 0,
+      "max": 60,
+      "step": 4,
+      "unit": "px",
+      "label": "Corner radius",
+      "default": 24
+    },
+    {
+      "type": "header",
+      "content": "Section style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Top padding",
+      "default": 80
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "min": 0,
+      "max": 200,
+      "step": 10,
+      "unit": "px",
+      "label": "Bottom padding",
+      "default": 80
+    },
+    {
+      "type": "header",
+      "content": "Gallery images"
+    },
+    {
+      "type": "paragraph",
+      "content": "Add up to 24 images. Each cell shows a random image and rotates automatically with no duplicates visible at once."
+    },
+    {
+      "type": "image_picker",
+      "id": "image_1",
+      "label": "Image 1"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_2",
+      "label": "Image 2"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_3",
+      "label": "Image 3"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_4",
+      "label": "Image 4"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_5",
+      "label": "Image 5"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_6",
+      "label": "Image 6"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_7",
+      "label": "Image 7"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_8",
+      "label": "Image 8"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_9",
+      "label": "Image 9"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_10",
+      "label": "Image 10"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_11",
+      "label": "Image 11"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_12",
+      "label": "Image 12"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_13",
+      "label": "Image 13"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_14",
+      "label": "Image 14"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_15",
+      "label": "Image 15"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_16",
+      "label": "Image 16"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_17",
+      "label": "Image 17"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_18",
+      "label": "Image 18"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_19",
+      "label": "Image 19"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_20",
+      "label": "Image 20"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_21",
+      "label": "Image 21"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_22",
+      "label": "Image 22"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_23",
+      "label": "Image 23"
+    },
+    {
+      "type": "image_picker",
+      "id": "image_24",
+      "label": "Image 24"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Gallery grid"
+    }
+  ]
+}
+{% endschema %}

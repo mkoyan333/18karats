@@ -1,0 +1,307 @@
+{% doc %}
+  @prompt
+    title section that says 18 Karats | and after the line writes a new word each time, like Jewelry, Engagement Rings, Wedding Bands, Neclaces, Bracelets, Earrings, Diamonds, the words are cutoff from thje top and sides, make sure that the rotating word and the buseinss name are centered with each other, vertically not horizontally
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-rotating-title-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: {{ block.settings.alignment }};
+    align-items: center;
+    padding: {{ block.settings.padding_top }}px 20px {{ block.settings.padding_bottom }}px;
+    background-color: {{ block.settings.background_color }};
+    width: 100%;
+    overflow: visible;
+  }
+
+  .ai-rotating-title__wrapper-{{ ai_gen_id }} {
+    display: flex;
+    align-items: center;
+    gap: {{ block.settings.word_spacing }}px;
+    flex-wrap: wrap;
+    justify-content: {{ block.settings.alignment }};
+    overflow: visible;
+  }
+
+  .ai-rotating-title__static-{{ ai_gen_id }} {
+    font-size: {{ block.settings.font_size }}px;
+    color: {{ block.settings.text_color }};
+    font-weight: {{ block.settings.font_weight }};
+    margin: 0;
+    white-space: nowrap;
+    line-height: 1.2;
+  }
+
+  .ai-rotating-title__rotating-{{ ai_gen_id }} {
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    min-width: {{ block.settings.min_word_width }}px;
+    height: calc({{ block.settings.font_size }}px * 1.2);
+    overflow: visible;
+  }
+
+  .ai-rotating-title__word-{{ ai_gen_id }} {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    font-size: {{ block.settings.font_size }}px;
+    color: {{ block.settings.rotating_text_color }};
+    font-weight: {{ block.settings.font_weight }};
+    opacity: 0;
+    white-space: nowrap;
+    line-height: 1.2;
+  }
+
+  .ai-rotating-title__word-{{ ai_gen_id }}.active {
+    opacity: 1;
+    transition: opacity 0.5s ease;
+  }
+
+  .ai-rotating-title__word-{{ ai_gen_id }}.exit {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-rotating-title__static-{{ ai_gen_id }},
+    .ai-rotating-title__word-{{ ai_gen_id }} {
+      font-size: calc({{ block.settings.font_size }}px * 0.7);
+    }
+
+    .ai-rotating-title__rotating-{{ ai_gen_id }} {
+      height: calc({{ block.settings.font_size }}px * 0.7 * 1.2);
+    }
+
+    .ai-rotating-title__wrapper-{{ ai_gen_id }} {
+      gap: calc({{ block.settings.word_spacing }}px * 0.7);
+    }
+  }
+{% endstyle %}
+
+<rotating-title-{{ ai_gen_id }}
+  class="ai-rotating-title-{{ ai_gen_id }}"
+  {{ block.shopify_attributes }}
+  data-rotation-speed="{{ block.settings.rotation_speed }}"
+>
+  <div class="ai-rotating-title__wrapper-{{ ai_gen_id }}">
+    <h2 class="ai-rotating-title__static-{{ ai_gen_id }}">{{ block.settings.static_text }}</h2>
+    <div class="ai-rotating-title__rotating-{{ ai_gen_id }}">
+      {% assign words = block.settings.rotating_words | split: ',' %}
+      {% for word in words %}
+        <span
+          class="ai-rotating-title__word-{{ ai_gen_id }} {% if forloop.first %}active{% endif %}"
+          data-word-index="{{ forloop.index0 }}"
+        >
+          {{ word | strip }}
+        </span>
+      {% endfor %}
+    </div>
+  </div>
+</rotating-title-{{ ai_gen_id }}>
+
+<script>
+  (function() {
+    class RotatingTitle{{ ai_gen_id }} extends HTMLElement {
+      constructor() {
+        super();
+        this.currentIndex = 0;
+        this.words = [];
+        this.rotationSpeed = 2000;
+        this.intervalId = null;
+      }
+
+      connectedCallback() {
+        this.words = this.querySelectorAll('.ai-rotating-title__word-{{ ai_gen_id }}');
+        this.rotationSpeed = parseInt(this.dataset.rotationSpeed) || 2000;
+
+        if (this.words.length > 1) {
+          this.startRotation();
+        }
+      }
+
+      startRotation() {
+        this.intervalId = setInterval(() => {
+          this.rotateWord();
+        }, this.rotationSpeed);
+      }
+
+      rotateWord() {
+        const currentWord = this.words[this.currentIndex];
+        currentWord.classList.remove('active');
+        currentWord.classList.add('exit');
+
+        this.currentIndex = (this.currentIndex + 1) % this.words.length;
+
+        const nextWord = this.words[this.currentIndex];
+
+        setTimeout(() => {
+          currentWord.classList.remove('exit');
+          nextWord.classList.add('active');
+        }, 500);
+      }
+
+      disconnectedCallback() {
+        if (this.intervalId) {
+          clearInterval(this.intervalId);
+        }
+      }
+    }
+
+    customElements.define('rotating-title-{{ ai_gen_id }}', RotatingTitle{{ ai_gen_id }});
+  })();
+</script>
+
+{% schema %}
+{
+  "name": "Rotating title",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "static_text",
+      "label": "Static text",
+      "default": "18 Karats |"
+    },
+    {
+      "type": "textarea",
+      "id": "rotating_words",
+      "label": "Rotating words",
+      "default": "Jewelry, Engagement Rings, Wedding Bands, Necklaces, Bracelets, Earrings, Diamonds",
+      "info": "Separate words with commas"
+    },
+    {
+      "type": "range",
+      "id": "rotation_speed",
+      "label": "Rotation speed",
+      "min": 1000,
+      "max": 5000,
+      "step": 500,
+      "unit": "ms",
+      "default": 2000
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "range",
+      "id": "font_size",
+      "label": "Font size",
+      "min": 20,
+      "max": 100,
+      "step": 2,
+      "unit": "px",
+      "default": 46
+    },
+    {
+      "type": "select",
+      "id": "font_weight",
+      "label": "Font weight",
+      "options": [
+        { "value": "300", "label": "Light" },
+        { "value": "400", "label": "Regular" },
+        { "value": "500", "label": "Medium" },
+        { "value": "600", "label": "Semibold" },
+        { "value": "700", "label": "Bold" }
+      ],
+      "default": "400"
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Static text color",
+      "default": "#100f0f"
+    },
+    {
+      "type": "color",
+      "id": "rotating_text_color",
+      "label": "Rotating text color",
+      "default": "#69522b"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#fdfdfd"
+    },
+    {
+      "type": "range",
+      "id": "word_spacing",
+      "label": "Word spacing",
+      "min": 5,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "default": 15
+    },
+    {
+      "type": "range",
+      "id": "min_word_width",
+      "label": "Minimum word width",
+      "min": 100,
+      "max": 500,
+      "step": 10,
+      "unit": "px",
+      "default": 300,
+      "info": "Prevents layout shift during rotation"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Text alignment",
+      "options": [
+        { "value": "flex-start", "label": "Left" },
+        { "value": "center", "label": "Center" },
+        { "value": "flex-end", "label": "Right" }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "padding_top",
+      "label": "Top padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "padding_bottom",
+      "label": "Bottom padding",
+      "min": 0,
+      "max": 100,
+      "step": 5,
+      "unit": "px",
+      "default": 40
+    },
+    {
+      "type": "range",
+      "id": "desktop_width_percent",
+      "label": "Desktop width",
+      "min": 50,
+      "max": 100,
+      "step": 5,
+      "unit": "%",
+      "default": 100
+    }
+  ],
+  "presets": [
+    {
+      "name": "Rotating title"
+    }
+  ]
+}
+{% endschema %}

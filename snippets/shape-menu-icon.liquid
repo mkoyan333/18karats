@@ -1,0 +1,55 @@
+{%- comment -%}
+  Renders a shape icon for by-shape menu entries.
+
+  Usage:
+    {% render 'shape-menu-icon', shape: link.title %}
+{%- endcomment -%}
+
+{% stylesheet %}
+  .shape-menu-icon {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 1.1em;
+    height: 1.1em;
+    margin-right: 0.5rem;
+    font-size: 1em;
+    line-height: 1;
+  }
+
+  .shape-menu-icon svg {
+    width: 100%;
+    height: 100%;
+  }
+{% endstylesheet %}
+
+{% liquid
+  assign shape = shape | default: ''
+  assign shape_name = shape | strip | downcase
+-%}
+
+{% if shape_name != blank %}
+  <span class="shape-menu-icon" aria-hidden="true">
+    {%- if shape_name == 'asscher' -%}
+      {% render 'element.icon', name: 'shape-asscher' %}
+    {%- elsif shape_name == 'cushion' -%}
+      {% render 'element.icon', name: 'shape-cushion' %}
+    {%- elsif shape_name == 'emerald' -%}
+      {% render 'element.icon', name: 'shape-emerald' %}
+    {%- elsif shape_name == 'heart' -%}
+      {% render 'element.icon', name: 'shape-heart' %}
+    {%- elsif shape_name == 'marquise' -%}
+      {% render 'element.icon', name: 'shape-marquise' %}
+    {%- elsif shape_name == 'oval' -%}
+      {% render 'element.icon', name: 'shape-oval' %}
+    {%- elsif shape_name == 'pear' -%}
+      {% render 'element.icon', name: 'shape-pear' %}
+    {%- elsif shape_name == 'princess' -%}
+      {% render 'element.icon', name: 'shape-princess' %}
+    {%- elsif shape_name == 'radiant' -%}
+      {% render 'element.icon', name: 'shape-radiant' %}
+    {%- elsif shape_name == 'round' -%}
+      {% render 'element.icon', name: 'shape-round' %}
+    {%- endif -%}
+  </span>
+{% endif %}

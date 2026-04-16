@@ -1,0 +1,749 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "media-text": {
+      "type": "media-text",
+      "blocks": {
+        "video": {
+          "type": "video",
+          "settings": {
+            "autoplay": true,
+            "loop": true,
+            "hide_controls": true,
+            "mute_video": true
+          }
+        }
+      },
+      "block_order": [
+        "video"
+      ],
+      "disabled": true,
+      "settings": {
+        "media_width": "66",
+        "media_crop": "16-9",
+        "layout": "right",
+        "content_alignment": "left",
+        "content_position": "bottom",
+        "color_scheme": "1",
+        "top_padding": true,
+        "bottom_padding": false,
+        "full_width": true,
+        "subheading": "",
+        "heading": "Media <em>with</em> text",
+        "heading_size": "h1",
+        "text_highlight": "handwrite",
+        "text": "",
+        "button_text": "",
+        "button_link": ""
+      }
+    },
+    "collection-header": {
+      "type": "collection-header",
+      "settings": {
+        "enable": true,
+        "collection_image_enable": true,
+        "parallax": true,
+        "parallax_direction": "top"
+      }
+    },
+    "main-collection": {
+      "type": "main-collection",
+      "blocks": {
+        "collection_description": {
+          "type": "collection_description",
+          "disabled": true,
+          "settings": {}
+        },
+        "subcollections": {
+          "type": "subcollections",
+          "disabled": true,
+          "settings": {}
+        },
+        "product_grid": {
+          "type": "product_grid",
+          "settings": {
+            "grid_style": "medium"
+          }
+        }
+      },
+      "block_order": [
+        "collection_description",
+        "subcollections",
+        "product_grid"
+      ],
+      "settings": {
+        "enable_sidebar": true,
+        "collapse_filters": false,
+        "enable_color_swatches": true,
+        "enable_swatch_labels": true,
+        "enable_sort": true
+      }
+    },
+    "featured_collections_3j4Q9p": {
+      "type": "featured-collections",
+      "blocks": {
+        "collection_KAyctz": {
+          "type": "collection",
+          "settings": {
+            "collection": "gold-and-diamond-earrings",
+            "title": "Earrings"
+          }
+        },
+        "collection_CQYXaQ": {
+          "type": "collection",
+          "settings": {
+            "collection": "engagement-ring-settings",
+            "title": ""
+          }
+        },
+        "collection_nUPbBk": {
+          "type": "collection",
+          "settings": {
+            "collection": "wedding-bands",
+            "title": ""
+          }
+        },
+        "collection_hLkgad": {
+          "type": "collection",
+          "settings": {
+            "collection": "gold-and-diamond-necklaces",
+            "title": "Necklaces"
+          }
+        }
+      },
+      "block_order": [
+        "collection_KAyctz",
+        "collection_CQYXaQ",
+        "collection_nUPbBk",
+        "collection_hLkgad"
+      ],
+      "settings": {
+        "title": "Shop The Full 18 KARATS Collection",
+        "heading_size": "h2",
+        "heading_position": "center",
+        "divider": true
+      }
+    },
+    "advanced_content_MD3QPV": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_x7b4d7": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"section--divider\"></div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_x7b4d7"
+      ],
+      "name": "t:labels.custom_content",
+      "settings": {
+        "full_width": true,
+        "space_around": false
+      }
+    },
+    "media_text_TByM69": {
+      "type": "media-text",
+      "blocks": {
+        "video_zncnpa": {
+          "type": "video",
+          "settings": {
+            "video": "shopify://files/videos/394E2D4F812FA0232CFDA665F74E339B_video_dashinit.mp4",
+            "autoplay": true,
+            "loop": true,
+            "hide_controls": true,
+            "mute_video": true
+          }
+        }
+      },
+      "block_order": [
+        "video_zncnpa"
+      ],
+      "custom_css": [
+        ".accent-subtitle {letter-spacing: 0.07em; margin: 0 0 8px; font-style: italic; font-size: 17px;}"
+      ],
+      "settings": {
+        "media_width": "50",
+        "media_crop": "4-3",
+        "layout": "left",
+        "content_alignment": "center",
+        "content_position": "center",
+        "color_scheme": "none",
+        "top_padding": false,
+        "bottom_padding": false,
+        "full_width": true,
+        "subheading": "Get It Customized",
+        "heading": "18 KARATS <em>Custom</em> Creations",
+        "heading_size": "h1",
+        "text_highlight": "serif",
+        "text": "<p>18 KARATS specializes in custom creations, from custom engagement rings to one-of-a-kind statement jewelry. We make the process seamless — and fun. Simply reach out to us with your idea or request a special order, and we’ll work with you to create digital renderings of your custom piece complete with revisions and your choice of any metal, stone, style, and size. </p><p>No idea is too bold, no request too detailed! At 18 KARATS, it’s all about creating jewelry that’s as unique as you.</p>",
+        "button_text": "Custom Jewelry",
+        "button_link": "shopify://pages/contact-18karats"
+      }
+    },
+    "advanced_content_xEH6Bt": {
+      "type": "advanced-content",
+      "blocks": {
+        "liquid_UDxgw9": {
+          "type": "liquid",
+          "settings": {
+            "code": "<div class=\"section--divider\"></div>",
+            "width": "100%",
+            "alignment": "center"
+          }
+        }
+      },
+      "block_order": [
+        "liquid_UDxgw9"
+      ],
+      "custom_css": [
+        ".custom-content {margin-top: -40px;}"
+      ],
+      "name": "t:labels.custom_content",
+      "settings": {
+        "full_width": true,
+        "space_around": true
+      }
+    },
+    "media-text-2": {
+      "type": "media-text",
+      "blocks": {
+        "image_9yYAmk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/diamond_ring_builder.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_9yYAmk"
+      ],
+      "custom_css": [
+        ".color-scheme-2 .btn {color: black; background-color: transparent; border-radius: 1px; border-color: black;}",
+        "@media (max-width: 1250px) {.media-with-text__content {text-align: center; }}"
+      ],
+      "settings": {
+        "media_width": "50",
+        "media_crop": "landscape",
+        "layout": "right",
+        "content_alignment": "left",
+        "content_position": "center",
+        "color_scheme": "1",
+        "top_padding": true,
+        "bottom_padding": false,
+        "full_width": true,
+        "subheading": "",
+        "heading": "Design Your <em>Dream</em> Ring Using Our Diamond Ring Builder",
+        "heading_size": "h2",
+        "text_highlight": "serif",
+        "text": "<p>Create your dream diamond ring using our customizable ring builder. Choose from your preferred diamond shape, your choice of lab grown or natural diamonds, you preferred carats, color, quality and more, and add it to your ring setting of choice for a custom creation. </p><p>Looking for further customization on one of our designs? <a href=\"/pages/contact-1\" title=\"Contact 18 KARATS\">Reach out to our team</a> to discuss creating a custom piece today! </p>",
+        "button_text": "Design It",
+        "button_link": "shopify://pages/colored-diamonds"
+      }
+    },
+    "testimonials": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial-2": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial-3": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial-4": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        },
+        "testimonial-5": {
+          "type": "testimonial",
+          "settings": {
+            "icon": "5-stars",
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store’s happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "Los Angeles, CA"
+          }
+        }
+      },
+      "block_order": [
+        "testimonial",
+        "testimonial-2",
+        "testimonial-3",
+        "testimonial-4",
+        "testimonial-5"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "From our customers",
+        "align_text": "center",
+        "round_images": true,
+        "color_scheme": "none"
+      }
+    },
+    "recently-viewed": {
+      "type": "recently-viewed",
+      "disabled": true,
+      "settings": {}
+    },
+    "smi_icon_with_text_1_7_DUKD4x-1748888382298": {
+      "type": "smi-icon-with-text-1-7",
+      "blocks": {
+        "icon_with_text_WL8RFa": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "box",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "Lifetime Warranty on Every Piece",
+            "heading_size": "smi-h4",
+            "content": "<p>Every 18 KARATS piece comes with expert craftsmanship and  a lifetime warranty.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_nqmpCk": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "return",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "30 Day Money Back Guarantee",
+            "heading_size": "smi-h4",
+            "content": "<p>If you're not completely satisfied, return your piece within 30 days for a full refund. </p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_W4tWYm": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verify",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "90 Days Unlimited Resizing",
+            "heading_size": "smi-h4",
+            "content": "<p>Need a different size? Enjoy complimentary resizing for 90 days to ensure the perfect fit.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_jg9wmh": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verify",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "Free Shipping and Returns",
+            "heading_size": "smi-h4",
+            "content": "<p>We offer free shipping and return service for a worry-free experience.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_gVEYVW": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verify",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "Precision and Quality",
+            "heading_size": "smi-h4",
+            "content": "<p>We utilize microscopes to set all the diamonds for maximum accuracy and quality.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "icon_with_text_fT44th": {
+          "type": "icon_with_text",
+          "settings": {
+            "icon": "verify",
+            "upload_icon": "shopify://shop_images/18k_gold_3.svg",
+            "icon_size": 40,
+            "icon_bg": "#f5f4f4",
+            "heading": "Customized For You",
+            "heading_size": "smi-h4",
+            "content": "<p>Modify any existing design or create a one-of-a-kind piece with us made just for you.</p>",
+            "button_label": "",
+            "link1": ""
+          }
+        },
+        "color_kAMhi4": {
+          "type": "color",
+          "settings": {
+            "background_color": "#ffffff",
+            "background_gradient_color": "",
+            "text_color": "#000000",
+            "subtext_color": "#000000",
+            "outline_button_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "icon_with_text_WL8RFa",
+        "icon_with_text_nqmpCk",
+        "icon_with_text_W4tWYm",
+        "icon_with_text_jg9wmh",
+        "icon_with_text_gVEYVW",
+        "icon_with_text_fT44th",
+        "color_kAMhi4"
+      ],
+      "custom_css": [
+        ".smi-text-md {font-size: 14px;}",
+        ".smi-section h4,.smi-section .smi-h4 {font-size: 18px; line-height: calc( (1 + 0.6 / (var(--font-heading-scale) * var(--h4-font-size, 20) / 16)) * var(--heading-line-height-scale, 1) );}",
+        ".smi-color-scheme_4 {--color-background: 255, 255, 255; --gradient-background: #ffffff; --color-foreground: 0, 0, 0; --color-subtext: 0, 0, 0; --color-secondary-button-text: 0, 0, 0; --color-shadow: ; padding-left: 5%; padding-right: 5%;}"
+      ],
+      "settings": {
+        "container_full_width": false,
+        "sub_heading": "",
+        "heading": "18 KARATS Promise",
+        "heading_size": "smi-h2",
+        "description": "",
+        "heading_alignment": "center",
+        "content_alignment": "center",
+        "number_of_columns_on_desktop": "3",
+        "number_of_columns_on_mobile": "1",
+        "enable_swipe_on_mobile": false,
+        "sticky_page_dot_style": "text-style-2",
+        "icon_position": "top",
+        "color_scheme": "scheme_1",
+        "padding_top": 38,
+        "padding_bottom": 50
+      }
+    },
+    "smi_styles_dNx7HP": {
+      "type": "smi-styles",
+      "blocks": {
+        "color_TkxcRm": {
+          "type": "color",
+          "settings": {
+            "background_color1": "#ffffff",
+            "background_gradient_color1": "",
+            "text_color1": "#000000",
+            "subtext_color1": "#000000",
+            "solid_background_button_color1": "#000000",
+            "solid_button_label_color1": "#ffffff",
+            "outline_button_color1": "#000000",
+            "shadow_color1": "#000000",
+            "background_color2": "#fcf8f5",
+            "background_gradient_color2": "",
+            "text_color2": "#000000",
+            "subtext_color2": "#000000",
+            "solid_background_button_color2": "#000000",
+            "solid_button_label_color2": "#fcf8f5",
+            "outline_button_color2": "#000000",
+            "shadow_color2": "#000000",
+            "background_color3": "#282828",
+            "background_gradient_color3": "",
+            "text_color3": "#ffffff",
+            "subtext_color3": "#ffffff",
+            "solid_background_button_color3": "#ffffff",
+            "solid_button_label_color3": "#282828",
+            "outline_button_color3": "#ffffff",
+            "shadow_color3": "#ffffff",
+            "background_color4": "#63513f",
+            "background_gradient_color4": "",
+            "text_color4": "#ffffff",
+            "subtext_color4": "#ffffff",
+            "solid_background_button_color4": "#ffffff",
+            "solid_button_label_color4": "#63513f",
+            "outline_button_color4": "#ffffff",
+            "shadow_color4": "#ffffff",
+            "background_color5": "#5b3f2c",
+            "background_gradient_color5": "",
+            "text_color5": "#ffffff",
+            "subtext_color5": "#ffffff",
+            "solid_background_button_color5": "#ffffff",
+            "solid_button_label_color5": "#5b3f2c",
+            "outline_button_color5": "#ffffff",
+            "shadow_color5": "#ffffff",
+            "background_color6": "#ffffff",
+            "background_gradient_color6": "",
+            "text_color6": "#000000",
+            "subtext_color6": "#000000",
+            "solid_background_button_color6": "#000000",
+            "solid_button_label_color6": "#ffffff",
+            "outline_button_color6": "#000000",
+            "shadow_color6": "#000000",
+            "background_color7": "#ffffff",
+            "background_gradient_color7": "",
+            "text_color7": "#000000",
+            "subtext_color7": "#000000",
+            "solid_background_button_color7": "#000000",
+            "solid_button_label_color7": "#ffffff",
+            "outline_button_color7": "#000000",
+            "shadow_color7": "#000000",
+            "background_color8": "#ffffff",
+            "background_gradient_color8": "",
+            "text_color8": "#000000",
+            "subtext_color8": "#000000",
+            "solid_background_button_color8": "#000000",
+            "solid_button_label_color8": "#ffffff",
+            "outline_button_color8": "#000000",
+            "shadow_color8": "#000000",
+            "background_color9": "#ffffff",
+            "background_gradient_color9": "",
+            "text_color9": "#000000",
+            "subtext_color9": "#000000",
+            "solid_background_button_color9": "#000000",
+            "solid_button_label_color9": "#ffffff",
+            "outline_button_color9": "#000000",
+            "shadow_color9": "#000000",
+            "background_color10": "#ffffff",
+            "background_gradient_color10": "",
+            "text_color10": "#000000",
+            "subtext_color10": "#000000",
+            "solid_background_button_color10": "#000000",
+            "solid_button_label_color10": "#ffffff",
+            "outline_button_color10": "#000000",
+            "shadow_color10": "#000000"
+          }
+        },
+        "typography_B3wUqX": {
+          "type": "typography",
+          "settings": {
+            "overwrite_font": false,
+            "type_header_font": "cardo_n4",
+            "heading_scale": 100,
+            "heading_line_height_scale": 100,
+            "heading_letter_spacing_scale": 0.4,
+            "heading_text_case": "original",
+            "type_body_font": "instrument_sans_n4",
+            "body_scale": 100,
+            "body_line_height_scale": 100,
+            "body_letter_spacing_scale": 0.3,
+            "button_font": "body",
+            "button_text_case": "uppercase",
+            "price_font": "body",
+            "menu_font": "body",
+            "subheading_font": "body"
+          }
+        },
+        "typography_advance_RQzNRP": {
+          "type": "typography_advance",
+          "settings": {
+            "fontsize_h1": 44,
+            "fontsize_h2": 34,
+            "fontsize_h3": 26,
+            "fontsize_h4": 20,
+            "fontsize_h5": 16,
+            "fontsize_h6": 14,
+            "fontsize_xs_h1": 40,
+            "fontsize_xs_h2": 30,
+            "fontsize_xs_h3": 22,
+            "fontsize_xs_h4": 20,
+            "fontsize_xs_h5": 16,
+            "fontsize_xs_h6": 14,
+            "fontsize_button": 14,
+            "button_letter_spacing_scale": 0.7,
+            "fontweight_button": "500",
+            "fontsize_subheading": 14,
+            "subheading_letter_spacing_scale": 0,
+            "fontweight_subheading": "400",
+            "fontsize_badge": 14,
+            "badge_letter_spacing_scale": 0,
+            "fontweight_badge": "400",
+            "fontsize_menu": 16,
+            "menu_letter_spacing_scale": 0.8,
+            "fontweight_menu": "500",
+            "fontsize_price_xl": 24,
+            "fontsize_price_lg": 18,
+            "fontsize_price_md": 16,
+            "price_letter_spacing_scale": 0,
+            "fontweight_price": "400"
+          }
+        },
+        "layout_hNx4Qm": {
+          "type": "layout",
+          "settings": {
+            "page_width": 1200,
+            "spacing_sections": 0,
+            "spacing_elements": 100,
+            "spacing_elements_mobile": 100,
+            "spacing_grid_horizontal": 30,
+            "spacing_grid_vertical": 30
+          }
+        },
+        "buttons_eGCMG3": {
+          "type": "buttons",
+          "settings": {
+            "buttons_scale": 100,
+            "buttons_border_thickness": 1,
+            "buttons_border_opacity": 80,
+            "buttons_radius": 0,
+            "buttons_shadow": "0,0,0",
+            "buttons_shadow_opacity": 20
+          }
+        },
+        "variants_bGTC9q": {
+          "type": "variants",
+          "settings": {
+            "variant_pills_border_thickness": 1,
+            "variant_pills_radius": 0,
+            "variant_pills_shadow": "0,0,0",
+            "variant_pills_shadow_opacity": 20
+          }
+        },
+        "inputs_889Ftr": {
+          "type": "inputs",
+          "settings": {
+            "inputs_border_thickness": 1,
+            "inputs_border_opacity": 55,
+            "inputs_radius": 0,
+            "inputs_shadow": "0,0,0",
+            "inputs_shadow_opacity": 20
+          }
+        },
+        "icons_M8QACN": {
+          "type": "icons",
+          "settings": {
+            "icon_thickness": 1.5,
+            "icon_scale": 100
+          }
+        },
+        "product_cards_LzkYgz": {
+          "type": "product_cards",
+          "settings": {
+            "card_image_padding": 0,
+            "card_border_thickness": 0,
+            "card_border_opacity": 55,
+            "card_corner_radius": 0,
+            "card_shadow": "0,0,0",
+            "card_shadow_opacity": 20
+          }
+        },
+        "product_badges_qxjWmG": {
+          "type": "product_badges",
+          "settings": {
+            "badge_corner_radius": 40,
+            "sale_badge_background_color": "#d01717",
+            "sale_badge_text_color": "#ffffff",
+            "sold_out_badge_background_color": "#8c8c8c",
+            "sold_out_badge_text_color": "#ffffff"
+          }
+        },
+        "blog_cards_TptXMW": {
+          "type": "blog_cards",
+          "settings": {
+            "blog_card_image_padding": 0,
+            "blog_card_border_thickness": 0,
+            "blog_card_border_opacity": 55,
+            "blog_card_corner_radius": 0,
+            "blog_card_shadow": "0,0,0",
+            "blog_card_shadow_opacity": 20
+          }
+        },
+        "content_containers_h6TJ9w": {
+          "type": "content_containers",
+          "settings": {
+            "text_boxes_border_thickness": 0,
+            "text_boxes_border_opacity": 55,
+            "text_boxes_radius": 0,
+            "text_boxes_shadow": "0,0,0",
+            "text_boxes_shadow_opacity": 20
+          }
+        },
+        "media_HeTfNi": {
+          "type": "media",
+          "settings": {
+            "media_border_thickness": 0,
+            "media_border_opacity": 55,
+            "media_radius": 0,
+            "media_shadow": "0,0,0",
+            "media_shadow_opacity": 20
+          }
+        },
+        "dropdown_popup_drawer_Ybw6fB": {
+          "type": "dropdown_popup_drawer",
+          "settings": {
+            "popup_border_thickness": 1,
+            "popup_border_opacity": 10,
+            "popup_corner_radius": 0,
+            "popup_shadow": "0,0,0",
+            "popup_shadow_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "color_TkxcRm",
+        "typography_B3wUqX",
+        "typography_advance_RQzNRP",
+        "layout_hNx4Qm",
+        "buttons_eGCMG3",
+        "variants_bGTC9q",
+        "inputs_889Ftr",
+        "icons_M8QACN",
+        "product_cards_LzkYgz",
+        "product_badges_qxjWmG",
+        "blog_cards_TptXMW",
+        "content_containers_h6TJ9w",
+        "media_HeTfNi",
+        "dropdown_popup_drawer_Ybw6fB"
+      ],
+      "name": "✧Smind Styles",
+      "settings": {}
+    },
+    "17646379826fe339bd": {
+      "type": "apps",
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    }
+  },
+  "order": [
+    "media-text",
+    "collection-header",
+    "main-collection",
+    "featured_collections_3j4Q9p",
+    "advanced_content_MD3QPV",
+    "media_text_TByM69",
+    "advanced_content_xEH6Bt",
+    "media-text-2",
+    "testimonials",
+    "recently-viewed",
+    "smi_icon_with_text_1_7_DUKD4x-1748888382298",
+    "smi_styles_dNx7HP",
+    "17646379826fe339bd"
+  ]
+}

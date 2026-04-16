@@ -1,0 +1,704 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "main": {
+      "type": "main-page",
+      "disabled": true,
+      "settings": {}
+    },
+    "3980a93f-9ea8-4fd6-870d-b06ec608c500": {
+      "type": "rich-text",
+      "blocks": {
+        "8820d03a-bc5f-4630-8e78-ff102368673c": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p><em>Gold, Diamond, and Gemstone Jewelry </em></p>"
+          }
+        },
+        "template--19420908355873__3980a93f-9ea8-4fd6-870d-b06ec608c500-16890002941894b35c-0": {
+          "type": "heading",
+          "settings": {
+            "title": "<em>About </em>18 KARATS",
+            "heading_size": "h0",
+            "text_highlight": "serif"
+          }
+        },
+        "template--19420908355873__3980a93f-9ea8-4fd6-870d-b06ec608c500-16890002941894b35c-1": {
+          "type": "text",
+          "disabled": true,
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>For over two decades, 18 KARATS has set the standard for fine jewelry design and manufacturing in Los Angeles. Every piece is crafted in-house, from 3D modeling and casting to stone setting and final polishing.  Specializing in 14K and 18K gold, platinum settings, diamond jewelry, and bespoke creations, we bring timeless craftsmanship to modern luxury at our LA manufacturing and design studio. </p>"
+          }
+        },
+        "text_mCCWyV": {
+          "type": "text",
+          "settings": {
+            "enlarge_text": false,
+            "text": "<p>For over two decades, 18 KARATS has set the standard for fine jewelry design and manufacturing in Los Angeles. Specializing in 14K and 18K gold, platinum, diamonds, and bespoke rings, we bring timeless craftsmanship to modern luxury at our LA manufacturing and design studio. </p>"
+          }
+        }
+      },
+      "block_order": [
+        "8820d03a-bc5f-4630-8e78-ff102368673c",
+        "template--19420908355873__3980a93f-9ea8-4fd6-870d-b06ec608c500-16890002941894b35c-0",
+        "template--19420908355873__3980a93f-9ea8-4fd6-870d-b06ec608c500-16890002941894b35c-1",
+        "text_mCCWyV"
+      ],
+      "custom_css": [
+        "h2 {margin-top: -30px; margin-bottom: -20px;}",
+        "@media (max-width: 900px) {.rte:last-child {margin-bottom: 0; font-size: 17px; padding-bottom: 8px; }}",
+        ".index-section:not(.index-section--sub-product):first-child {margin-top: 20px; padding-top: var(--index-section-padding);}",
+        "@media (min-width: 1200px) {.index-section:not(.index-section--sub-product):first-child {margin-top: 20px; padding-top: var(--index-section-padding); padding-left: 10%; padding-right: 10%; }}"
+      ],
+      "settings": {
+        "align_text": "center",
+        "narrow_column": false,
+        "color_scheme": "3",
+        "divider": false
+      }
+    },
+    "c4b9350d-db34-4d94-891a-85498051a6d1": {
+      "type": "slideshow",
+      "blocks": {
+        "template--19420908355873__c4b9350d-db34-4d94-891a-85498051a6d1-168902058206aefc3a-0": {
+          "type": "hero",
+          "settings": {
+            "top_subheading": "",
+            "title": "",
+            "text_highlight": "accent-color",
+            "title_size": 40,
+            "subheading": "",
+            "link": "",
+            "link_text": "",
+            "link_2": "",
+            "link_text_2": "",
+            "button_color_scheme": "",
+            "text_align": "vertical-bottom horizontal-left",
+            "image": "shopify://shop_images/gold_and_diamond_jewelry.jpg",
+            "overlay_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "template--19420908355873__c4b9350d-db34-4d94-891a-85498051a6d1-168902058206aefc3a-0"
+      ],
+      "disabled": true,
+      "custom_css": [],
+      "settings": {
+        "full_width": true,
+        "desktop_size": -100,
+        "mobile_size": 0,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 7
+      }
+    },
+    "28e4cbe7-5154-4949-aba2-b3146a230075": {
+      "type": "media-text",
+      "blocks": {
+        "image_wBtnRa": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/diamond_jewelry.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_wBtnRa"
+      ],
+      "custom_css": [
+        "@media (max-width: 1250px) {.media-with-text__content {text-align: center; }}",
+        ".accent-subtitle {letter-spacing: 0.07em; margin: 0 0 -1px; font-style: italic; font-size: 17px;}"
+      ],
+      "settings": {
+        "media_width": "66",
+        "media_crop": "none",
+        "layout": "left",
+        "content_alignment": "center",
+        "content_position": "center",
+        "color_scheme": "1",
+        "top_padding": false,
+        "bottom_padding": true,
+        "full_width": true,
+        "subheading": "Designed For You",
+        "heading": "Luxury <em>Custom </em>Design",
+        "heading_size": "h1",
+        "text_highlight": "serif",
+        "text": "<p>From engagement rings to heirlooms, we transform visions into stunning designs with intention and precision. </p><p>We offer full customization on any piece, with your choice of metals, colors, silhouettes, and more. We also offer custom ring designs, with detailed 3D renderings and personalized guidance along the way to make your dream piece a reality!</p>",
+        "button_text": "REQUEST CUSTOM PIECE",
+        "button_link": "https://18karats.com/pages/contact"
+      }
+    },
+    "910872ce-8541-476b-8bae-54f1bdfc427a": {
+      "type": "media-text",
+      "blocks": {
+        "image_QydcMb": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/18-KARATS-diamond-rings.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_QydcMb"
+      ],
+      "custom_css": [
+        "@media (max-width: 1250px) {.media-with-text__content {text-align: center; }}",
+        ".color-scheme-3 .btn {background-color: #b8a5a2; color: #fff;}",
+        ".accent-subtitle {letter-spacing: 0.07em; margin: 0 0 -1px; font-style: italic; font-size: 17px;}",
+        ".btn {background-color: #b8a5a2; color: #fff !important; padding: 12px 28px; border-radius: 8px; border: none; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;}"
+      ],
+      "settings": {
+        "media_width": "66",
+        "media_crop": "none",
+        "layout": "right",
+        "content_alignment": "center",
+        "content_position": "center",
+        "color_scheme": "3",
+        "top_padding": true,
+        "bottom_padding": true,
+        "full_width": true,
+        "subheading": "Craftsmanship & Precision",
+        "heading": "<em>Made With Elegance</em>",
+        "heading_size": "h1",
+        "text_highlight": "serif",
+        "text": "<p>We only work with brilliant-cut diamonds and premium metals, creating pieces with enduring strength and beauty. Our master setters refine each detail, from prong structure to polish. Diamond tables are perfectly leveled to achieve a flawless, mirror-like  finish, while gold surfaces are smoothed and polished for a luminous glow.</p>",
+        "button_text": "SHOP COLLECTIONS",
+        "button_link": "shopify://collections"
+      }
+    },
+    "d1da4de8-4027-4e2e-9fe2-abd5191b8fd9": {
+      "type": "media-text",
+      "blocks": {
+        "image_pjrekk": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/diamond_ring_builder.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "image_pjrekk"
+      ],
+      "custom_css": [
+        ".btn {background-color: #2f2a2c; color: #fff !important; padding: 12px 28px; border-radius: 6px; border: none; font-weight: 500; letter-spacing: 0.05em; text-transform: uppercase;}",
+        "@media (max-width: 1250px) {.media-with-text__content {text-align: center; }}",
+        ".accent-subtitle {letter-spacing: 0.07em; margin: 0 0 -1px; font-style: italic; font-size: 17px;}"
+      ],
+      "settings": {
+        "media_width": "66",
+        "media_crop": "none",
+        "layout": "left",
+        "content_alignment": "center",
+        "content_position": "center",
+        "color_scheme": "1",
+        "top_padding": true,
+        "bottom_padding": true,
+        "full_width": true,
+        "subheading": "Decades of Experience",
+        "heading": "Trusted for <em>Generations</em>",
+        "heading_size": "h1",
+        "text_highlight": "serif",
+        "text": "<p><em>With over 20 years of expertise, 18 KARATS is synonymous with quality, creativity, and trust. Our designs are cherished by clients and featured by leading names in luxury jewelry. Every piece comes with our lifetime warranty and is crafted with ethically sourced, conflict-free diamonds. Each creation from 18 KARATS is luxury redefined — made just for you.</em></p>",
+        "button_text": "BUILD A RING",
+        "button_link": "shopify://pages/build-your-diamond-ring"
+      }
+    },
+    "smi_collection_list_15_3_rgV3zF": {
+      "type": "smi-collection-list-15-3",
+      "blocks": {
+        "collection_aFdefh": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/brides_magazine_jewelry.png",
+            "heading": "",
+            "link": ""
+          }
+        },
+        "collection_YAy4cr": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Engagement_101.png",
+            "heading": "",
+            "link": ""
+          }
+        },
+        "collection_EATLV8": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Untitled_design.png",
+            "heading": "",
+            "link": ""
+          }
+        },
+        "collection_nDd4cp": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Robb_Report.png",
+            "heading": "",
+            "link": ""
+          }
+        },
+        "collection_cgLwwe": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/couture_magazine.svg",
+            "heading": "",
+            "link": ""
+          }
+        },
+        "collection_rrhz4j": {
+          "type": "collection",
+          "settings": {
+            "collection": "",
+            "image": "shopify://shop_images/Bridal_Guide_Magazine.svg",
+            "heading": "",
+            "link": ""
+          }
+        },
+        "color_4AYkE6": {
+          "type": "color",
+          "settings": {
+            "background_color": "#ffffff",
+            "background_gradient_color": "",
+            "text_color": "#000000",
+            "subtext_color": "#000000",
+            "solid_background_button_color": "#000000",
+            "solid_button_label_color": "#ffffff",
+            "outline_button_color": "#000000",
+            "shadow_color": "#000000"
+          }
+        }
+      },
+      "block_order": [
+        "collection_aFdefh",
+        "collection_YAy4cr",
+        "collection_EATLV8",
+        "collection_nDd4cp",
+        "collection_cgLwwe",
+        "collection_rrhz4j",
+        "color_4AYkE6"
+      ],
+      "settings": {
+        "sub_heading": "In the Press",
+        "heading": "Our Designer Has Been Featured In",
+        "heading_size": "smi-h2",
+        "description": "<p>18 KARATS' designer is renowned in the world of fine jewelry. Her pieces are featured in a range of publication for their elegance, beauty, craftsmanship, and unique style. Below are just a few of the publications our designer is featured in. </p>",
+        "heading_alignment": "center",
+        "content_heading_size": "smi-h5",
+        "content_alignment": "center",
+        "media_ratio": "3/2",
+        "media_shape": "default",
+        "arrow_style": "arr-style-1",
+        "sticky_page_dot_style": "text-style-1",
+        "auto_rotate_slides": false,
+        "change_slides_every": 5,
+        "slider_overflow": false,
+        "container_max_width": 1380,
+        "number_of_columns_on_desktop": 6,
+        "number_of_columns_on_mobile": 3,
+        "item_gap_on_desktop": 16,
+        "item_gap_on_mobile": 10,
+        "show_product_count": true,
+        "show_on_desktop": true,
+        "show_on_mobile": true,
+        "color_scheme": "scheme_1",
+        "padding_top": 50,
+        "padding_bottom": 50
+      }
+    },
+    "1772133203500e06b4": {
+      "type": "apps",
+      "blocks": {
+        "judge_me_reviews_featured_carousel_V4mAyK": {
+          "type": "shopify://apps/judge-me-reviews/blocks/featured_carousel/61ccd3b1-a9f2-4160-9fe9-4fec8413e5d8",
+          "settings": {
+            "maxwidth": 1080
+          }
+        }
+      },
+      "block_order": [
+        "judge_me_reviews_featured_carousel_V4mAyK"
+      ],
+      "settings": {
+        "full_width": false,
+        "space_around": true
+      }
+    },
+    "9cc1cb25-d424-4da2-89d9-122ffe5ddf10": {
+      "type": "slideshow-split",
+      "blocks": {
+        "template--19420908355873__9cc1cb25-d424-4da2-89d9-122ffe5ddf10-168900688303ba9014-0": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "For The Unforgettable Moments",
+            "title": "Engagement Rings",
+            "title_size": 40,
+            "text_highlight": "serif",
+            "subheading": "Shop our collection of beautifully designed Engagement Ring Settings.",
+            "link": "shopify://collections/engagement-ring-settings",
+            "link_text": "ENGAGEMENT RINGS",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify://shop_images/solitaire_diamond_rings.jpg",
+            "indent_image": false,
+            "color_scheme": "1"
+          }
+        },
+        "92f7dc39-2e2e-48a0-86c0-b296d4798f63": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "For Everyday Luxury",
+            "title": "Necklaces",
+            "title_size": 40,
+            "text_highlight": "serif",
+            "subheading": "Shop our full collection of gold and diamond necklaces, available in rose gold, white gold, and yellow gold.",
+            "link": "shopify://collections/gold-and-diamond-earrings",
+            "link_text": "NECKLACES",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify://shop_images/diamond_necklaces.jpg",
+            "indent_image": false,
+            "color_scheme": "1"
+          }
+        },
+        "template--19420908355873__9cc1cb25-d424-4da2-89d9-122ffe5ddf10-168900688303ba9014-1": {
+          "type": "slide",
+          "settings": {
+            "top_subheading": "For Everyday Luxury",
+            "title": "Earrings",
+            "title_size": 40,
+            "text_highlight": "handwrite",
+            "subheading": "Shop our collection of gold and diamond earrings in your choice of rose gold, white gold, or yellow gold.",
+            "link": "shopify://collections/gold-and-diamond-earrings",
+            "link_text": "EARRINGS",
+            "link_2": "",
+            "link_text_2": "",
+            "text_position": "left",
+            "image": "shopify://shop_images/gold_diamond_earrings.jpg",
+            "indent_image": false,
+            "color_scheme": "1"
+          }
+        }
+      },
+      "block_order": [
+        "template--19420908355873__9cc1cb25-d424-4da2-89d9-122ffe5ddf10-168900688303ba9014-0",
+        "92f7dc39-2e2e-48a0-86c0-b296d4798f63",
+        "template--19420908355873__9cc1cb25-d424-4da2-89d9-122ffe5ddf10-168900688303ba9014-1"
+      ],
+      "custom_css": [
+        "h2 {font-size: 32px;}",
+        ".hero__top-subtitle {letter-spacing: 0.07em; font-size: 1.1em; font-style: italic; margin-bottom: 3px;}",
+        ".small--text-center {text-align: left !important;}"
+      ],
+      "settings": {
+        "full_width": true,
+        "height": 480,
+        "height_mobile": 490,
+        "style": "arrows",
+        "autoplay": false,
+        "autoplay_speed": 6
+      }
+    },
+    "smi_styles_BhCzFT": {
+      "type": "smi-styles",
+      "blocks": {
+        "color_83zf6D": {
+          "type": "color",
+          "settings": {
+            "background_color1": "#ffffff",
+            "background_gradient_color1": "",
+            "text_color1": "#000000",
+            "subtext_color1": "#000000",
+            "solid_background_button_color1": "#000000",
+            "solid_button_label_color1": "#ffffff",
+            "outline_button_color1": "#000000",
+            "shadow_color1": "#000000",
+            "background_color2": "#fcf8f5",
+            "background_gradient_color2": "",
+            "text_color2": "#000000",
+            "subtext_color2": "#000000",
+            "solid_background_button_color2": "#000000",
+            "solid_button_label_color2": "#fcf8f5",
+            "outline_button_color2": "#000000",
+            "shadow_color2": "#000000",
+            "background_color3": "#282828",
+            "background_gradient_color3": "",
+            "text_color3": "#ffffff",
+            "subtext_color3": "#ffffff",
+            "solid_background_button_color3": "#ffffff",
+            "solid_button_label_color3": "#282828",
+            "outline_button_color3": "#ffffff",
+            "shadow_color3": "#ffffff",
+            "background_color4": "#63513f",
+            "background_gradient_color4": "",
+            "text_color4": "#ffffff",
+            "subtext_color4": "#ffffff",
+            "solid_background_button_color4": "#ffffff",
+            "solid_button_label_color4": "#63513f",
+            "outline_button_color4": "#ffffff",
+            "shadow_color4": "#ffffff",
+            "background_color5": "#5b3f2c",
+            "background_gradient_color5": "",
+            "text_color5": "#ffffff",
+            "subtext_color5": "#ffffff",
+            "solid_background_button_color5": "#ffffff",
+            "solid_button_label_color5": "#5b3f2c",
+            "outline_button_color5": "#ffffff",
+            "shadow_color5": "#ffffff",
+            "background_color6": "#ffffff",
+            "background_gradient_color6": "",
+            "text_color6": "#000000",
+            "subtext_color6": "#000000",
+            "solid_background_button_color6": "#000000",
+            "solid_button_label_color6": "#ffffff",
+            "outline_button_color6": "#000000",
+            "shadow_color6": "#000000",
+            "background_color7": "#ffffff",
+            "background_gradient_color7": "",
+            "text_color7": "#000000",
+            "subtext_color7": "#000000",
+            "solid_background_button_color7": "#000000",
+            "solid_button_label_color7": "#ffffff",
+            "outline_button_color7": "#000000",
+            "shadow_color7": "#000000",
+            "background_color8": "#ffffff",
+            "background_gradient_color8": "",
+            "text_color8": "#000000",
+            "subtext_color8": "#000000",
+            "solid_background_button_color8": "#000000",
+            "solid_button_label_color8": "#ffffff",
+            "outline_button_color8": "#000000",
+            "shadow_color8": "#000000",
+            "background_color9": "#ffffff",
+            "background_gradient_color9": "",
+            "text_color9": "#000000",
+            "subtext_color9": "#000000",
+            "solid_background_button_color9": "#000000",
+            "solid_button_label_color9": "#ffffff",
+            "outline_button_color9": "#000000",
+            "shadow_color9": "#000000",
+            "background_color10": "#ffffff",
+            "background_gradient_color10": "",
+            "text_color10": "#000000",
+            "subtext_color10": "#000000",
+            "solid_background_button_color10": "#000000",
+            "solid_button_label_color10": "#ffffff",
+            "outline_button_color10": "#000000",
+            "shadow_color10": "#000000"
+          }
+        },
+        "typography_iJ7UkT": {
+          "type": "typography",
+          "settings": {
+            "overwrite_font": false,
+            "type_header_font": "cardo_n4",
+            "heading_scale": 100,
+            "heading_line_height_scale": 100,
+            "heading_letter_spacing_scale": 0.4,
+            "heading_text_case": "original",
+            "type_body_font": "instrument_sans_n4",
+            "body_scale": 100,
+            "body_line_height_scale": 100,
+            "body_letter_spacing_scale": 0.3,
+            "button_font": "body",
+            "button_text_case": "uppercase",
+            "price_font": "body",
+            "menu_font": "body",
+            "subheading_font": "body"
+          }
+        },
+        "typography_advance_hqtprM": {
+          "type": "typography_advance",
+          "settings": {
+            "fontsize_h1": 44,
+            "fontsize_h2": 34,
+            "fontsize_h3": 26,
+            "fontsize_h4": 20,
+            "fontsize_h5": 16,
+            "fontsize_h6": 14,
+            "fontsize_xs_h1": 40,
+            "fontsize_xs_h2": 30,
+            "fontsize_xs_h3": 22,
+            "fontsize_xs_h4": 20,
+            "fontsize_xs_h5": 16,
+            "fontsize_xs_h6": 14,
+            "fontsize_button": 14,
+            "button_letter_spacing_scale": 0.7,
+            "fontweight_button": "500",
+            "fontsize_subheading": 14,
+            "subheading_letter_spacing_scale": 0,
+            "fontweight_subheading": "400",
+            "fontsize_badge": 14,
+            "badge_letter_spacing_scale": 0,
+            "fontweight_badge": "400",
+            "fontsize_menu": 16,
+            "menu_letter_spacing_scale": 0.8,
+            "fontweight_menu": "500",
+            "fontsize_price_xl": 24,
+            "fontsize_price_lg": 18,
+            "fontsize_price_md": 16,
+            "price_letter_spacing_scale": 0,
+            "fontweight_price": "400"
+          }
+        },
+        "layout_zeipQB": {
+          "type": "layout",
+          "settings": {
+            "page_width": 1200,
+            "spacing_sections": 0,
+            "spacing_elements": 100,
+            "spacing_elements_mobile": 100,
+            "spacing_grid_horizontal": 30,
+            "spacing_grid_vertical": 30
+          }
+        },
+        "buttons_hEWymJ": {
+          "type": "buttons",
+          "settings": {
+            "buttons_scale": 100,
+            "buttons_border_thickness": 1,
+            "buttons_border_opacity": 80,
+            "buttons_radius": 0,
+            "buttons_shadow": "0,0,0",
+            "buttons_shadow_opacity": 20
+          }
+        },
+        "variants_nJXKW9": {
+          "type": "variants",
+          "settings": {
+            "variant_pills_border_thickness": 1,
+            "variant_pills_radius": 0,
+            "variant_pills_shadow": "0,0,0",
+            "variant_pills_shadow_opacity": 20
+          }
+        },
+        "inputs_pggkNB": {
+          "type": "inputs",
+          "settings": {
+            "inputs_border_thickness": 1,
+            "inputs_border_opacity": 55,
+            "inputs_radius": 0,
+            "inputs_shadow": "0,0,0",
+            "inputs_shadow_opacity": 20
+          }
+        },
+        "icons_YX4XVn": {
+          "type": "icons",
+          "settings": {
+            "icon_thickness": 1.5,
+            "icon_scale": 100
+          }
+        },
+        "product_cards_HA8eWT": {
+          "type": "product_cards",
+          "settings": {
+            "card_image_padding": 0,
+            "card_border_thickness": 0,
+            "card_border_opacity": 55,
+            "card_corner_radius": 0,
+            "card_shadow": "0,0,0",
+            "card_shadow_opacity": 20
+          }
+        },
+        "product_badges_aVzUNB": {
+          "type": "product_badges",
+          "settings": {
+            "badge_corner_radius": 40,
+            "sale_badge_background_color": "#d01717",
+            "sale_badge_text_color": "#ffffff",
+            "sold_out_badge_background_color": "#8c8c8c",
+            "sold_out_badge_text_color": "#ffffff"
+          }
+        },
+        "blog_cards_dp7mRH": {
+          "type": "blog_cards",
+          "settings": {
+            "blog_card_image_padding": 0,
+            "blog_card_border_thickness": 0,
+            "blog_card_border_opacity": 55,
+            "blog_card_corner_radius": 0,
+            "blog_card_shadow": "0,0,0",
+            "blog_card_shadow_opacity": 20
+          }
+        },
+        "content_containers_iU3zjc": {
+          "type": "content_containers",
+          "settings": {
+            "text_boxes_border_thickness": 0,
+            "text_boxes_border_opacity": 55,
+            "text_boxes_radius": 0,
+            "text_boxes_shadow": "0,0,0",
+            "text_boxes_shadow_opacity": 20
+          }
+        },
+        "media_cWLxqk": {
+          "type": "media",
+          "settings": {
+            "media_border_thickness": 0,
+            "media_border_opacity": 55,
+            "media_radius": 0,
+            "media_shadow": "0,0,0",
+            "media_shadow_opacity": 20
+          }
+        },
+        "dropdown_popup_drawer_HzFRXN": {
+          "type": "dropdown_popup_drawer",
+          "settings": {
+            "popup_border_thickness": 1,
+            "popup_border_opacity": 10,
+            "popup_corner_radius": 0,
+            "popup_shadow": "0,0,0",
+            "popup_shadow_opacity": 20
+          }
+        }
+      },
+      "block_order": [
+        "color_83zf6D",
+        "typography_iJ7UkT",
+        "typography_advance_hqtprM",
+        "layout_zeipQB",
+        "buttons_hEWymJ",
+        "variants_nJXKW9",
+        "inputs_pggkNB",
+        "icons_YX4XVn",
+        "product_cards_HA8eWT",
+        "product_badges_aVzUNB",
+        "blog_cards_dp7mRH",
+        "content_containers_iU3zjc",
+        "media_cWLxqk",
+        "dropdown_popup_drawer_HzFRXN"
+      ],
+      "settings": {}
+    }
+  },
+  "order": [
+    "main",
+    "3980a93f-9ea8-4fd6-870d-b06ec608c500",
+    "c4b9350d-db34-4d94-891a-85498051a6d1",
+    "28e4cbe7-5154-4949-aba2-b3146a230075",
+    "910872ce-8541-476b-8bae-54f1bdfc427a",
+    "d1da4de8-4027-4e2e-9fe2-abd5191b8fd9",
+    "smi_collection_list_15_3_rgV3zF",
+    "1772133203500e06b4",
+    "9cc1cb25-d424-4da2-89d9-122ffe5ddf10",
+    "smi_styles_BhCzFT"
+  ]
+}
