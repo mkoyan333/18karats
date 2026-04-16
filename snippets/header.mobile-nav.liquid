@@ -339,21 +339,6 @@
           assign is_by_shape_menu_item = true
         endif
 
-        assign root_icon_name = 'arrow-right'
-        if title_normalized contains 'engagement'
-          assign root_icon_name = 'heart'
-        elsif title_normalized contains 'jewelry'
-          assign root_icon_name = 'star'
-        elsif title_normalized contains 'diamond'
-          assign root_icon_name = 'shape-round'
-        elsif title_normalized contains 'about'
-          assign root_icon_name = 'shield'
-        elsif title_normalized contains 'gallery'
-          assign root_icon_name = 'view-small'
-        elsif title_normalized contains 'contact'
-          assign root_icon_name = 'phone'
-        endif
-
         assign is_collection = false
         assign have_image = false
         if link.url contains '/collections/'
@@ -392,9 +377,6 @@
                 {{ collection_image }}
               {%- endif -%}
               <span class="slide-nav__root-text">
-                <span class="slide-nav__root-icon" aria-hidden="true">
-                  {% render 'element.icon', name: root_icon_name %}
-                </span>
                 <span>{{ link.title }}</span>
               </span>
               {% render 'element.icon', name: chevron_icon %}
@@ -532,9 +514,6 @@
             {%- endif -%}
 
             <span class="slide-nav__root-text">
-              <span class="slide-nav__root-icon" aria-hidden="true">
-                {% render 'element.icon', name: root_icon_name %}
-              </span>
               <span>{{ link.title | escape }}</span>
             </span>
             {% render 'element.icon', name: chevron_icon %}
