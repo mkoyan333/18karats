@@ -1828,7 +1828,8 @@ html, body {
   }
 
   .template-product .product-grid__content {
-    padding: 0 18px;
+    box-sizing: border-box;
+    padding: 0 clamp(20px, 5.5vw, 28px) !important;
   }
 
   .template-product .product__photos {
@@ -1859,6 +1860,10 @@ html, body {
     border: 0;
     background: #fff;
     box-shadow: none;
+  }
+
+  .template-product .product-single__meta > * {
+    max-width: 100%;
   }
 
   .template-product .product-single__meta h1,
