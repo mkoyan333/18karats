@@ -41,11 +41,13 @@
         const rte = root && root.querySelector('element-text-rte');
         if (!rte || rte.querySelector('.product-detail-spec')) return;
 
-        const children = Array.from(rte.querySelectorAll(':scope > *'));
+        const childNodes = Array.from(rte.childNodes);
+        const children = childNodes.filter((node) => node.nodeType === Node.ELEMENT_NODE);
         const paragraphs = children.filter((element) => element.matches('p'));
         const normalize = (value) => value.replace(/\u00a0/g, ' ').trim();
+        const textOf = (node) => node ? (node.innerText || node.textContent || '') : '';
         const findParagraph = (matcher) => paragraphs.find((paragraph) => matcher(normalize(paragraph.innerText || '')));
-        const findChild = (matcher) => children.find((element) => matcher(normalize(element.innerText || '')));
+        const findChild = (matcher) => childNodes.find((node) => matcher(normalize(textOf(node))));
         const detailsParagraph = findParagraph((text) => text.startsWith('Details:'));
         const naturalParagraph = findParagraph((text) => text.startsWith('Natural Side Diamonds:'));
         const labParagraph = findParagraph((text) => text.startsWith('Lab Side Diamonds:'));
@@ -57,13 +59,60 @@
 
         if (!detailsParagraph && !naturalParagraph && !labParagraph) return;
 
-        const linesFrom = (paragraph, heading) => {
-          if (!paragraph) return [];
-          return normalize(paragraph.innerText || '')
+        const linesFrom = (node, heading) => {
+          if (!node) return [];
+          return normalize(textOf(node))
             .split('\n')
             .map((line) => normalize(line))
             .filter(Boolean)
             .filter((line) => line !== heading);
+        };
+
+        const isSpecLine = (line) => {
+          const label = normalize(line.split(':')[0] || '').toLowerCase();
+          return [
+            'band width',
+            'number of side diamonds',
+            'side diamonds',
+            'number of diamonds',
+            'total carat weight',
+            'diamond color',
+            'diamond clarity',
+            'igi certified',
+            'chain width',
+            'chain length',
+            'metal',
+            'stone',
+            'center stone',
+            'diamond',
+            'dimensions',
+            'width',
+            'length',
+            'setting'
+          ].includes(label);
+        };
+
+        const looseDetailNodes = [];
+        const looseDetailLines = [];
+        const collectLooseDetailsAfter = (anchor) => {
+          let node = anchor && anchor.nextSibling;
+          while (node) {
+            const text = normalize(textOf(node));
+            const lines = text
+              .split('\n')
+              .map((line) => normalize(line))
+              .filter(Boolean);
+
+            if (lines.some((line) => /^(Natural Side Diamonds|Lab Side Diamonds|Natural Diamond|Lab Diamond)\b/.test(line))) break;
+
+            const specLines = lines.filter(isSpecLine);
+            if (specLines.length) {
+              looseDetailLines.push(...specLines);
+              if (specLines.length === lines.length) looseDetailNodes.push(node);
+            }
+
+            node = node.nextSibling;
+          }
         };
 
         const escapeHtml = (value) => value
@@ -81,7 +130,12 @@
           return `<div class="product-detail-spec__row"><span>${label}</span><strong>${value}</strong></div>`;
         }).join('');
 
-        const detailLines = linesFrom(detailsParagraph, 'Details:');
+        collectLooseDetailsAfter(detailsParagraph);
+
+        const detailLines = [
+          ...linesFrom(detailsParagraph, 'Details:'),
+          ...looseDetailLines
+        ].filter((line) => !line.toLowerCase().includes('price is for setting only'));
         const naturalLines = linesFrom(naturalParagraph, 'Natural Side Diamonds:');
         const labLines = linesFrom(labParagraph, 'Lab Side Diamonds:');
         const naturalDiamondLines = linesFrom(naturalDiamondParagraph, 'Natural Diamond');
@@ -95,8 +149,11 @@
         const group = (title, lines) => lines.length
           ? `<section class="product-detail-spec__group"><h3>${title}</h3>${toRows(lines)}</section>`
           : '';
+        const priceLine = priceParagraph
+          ? linesFrom(priceParagraph, 'Details:').find((line) => line.toLowerCase().includes('price is for setting only'))
+          : '';
         const priceNote = hasAddDiamond
-          ? escapeHtml(priceParagraph ? normalize(priceParagraph.innerText || '').replace(/^["\u201C]|["\u201D]$/g, '') : 'Price is for setting only')
+          ? escapeHtml(normalize(priceLine || 'Price is for setting only').replace(/^["\u201C]|["\u201D]$/g, ''))
           : '';
         const specTitle = hasAddDiamond ? 'Setting specification' : 'Product specification';
         const spec = document.createElement('div');
@@ -118,7 +175,7 @@
         `;
 
         (detailsParagraph || naturalParagraph || labParagraph).before(spec);
-        [detailsParagraph, naturalParagraph, labParagraph, naturalDiamondParagraph, labDiamondParagraph, priceParagraph, specialOrderElement].forEach((element) => element && element.remove());
+        [detailsParagraph, naturalParagraph, labParagraph, naturalDiamondParagraph, labDiamondParagraph, priceParagraph, specialOrderElement, ...looseDetailNodes].forEach((element) => element && element.remove());
       })();
     </script>
   {%- endunless -%}
