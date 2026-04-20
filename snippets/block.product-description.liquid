@@ -41,13 +41,19 @@
         const rte = root && root.querySelector('element-text-rte');
         if (!rte || rte.querySelector('.product-detail-spec')) return;
 
-        const paragraphs = Array.from(rte.querySelectorAll(':scope > p'));
+        const children = Array.from(rte.querySelectorAll(':scope > *'));
+        const paragraphs = children.filter((element) => element.matches('p'));
         const normalize = (value) => value.replace(/\u00a0/g, ' ').trim();
         const findParagraph = (matcher) => paragraphs.find((paragraph) => matcher(normalize(paragraph.innerText || '')));
+        const findChild = (matcher) => children.find((element) => matcher(normalize(element.innerText || '')));
         const detailsParagraph = findParagraph((text) => text.startsWith('Details:'));
         const naturalParagraph = findParagraph((text) => text.startsWith('Natural Side Diamonds:'));
         const labParagraph = findParagraph((text) => text.startsWith('Lab Side Diamonds:'));
+        const naturalDiamondParagraph = findChild((text) => text.startsWith('Natural Diamond'));
+        const labDiamondParagraph = findChild((text) => text.startsWith('Lab Diamond'));
         const priceParagraph = findParagraph((text) => text.includes('Price is for setting only'));
+        const specialOrderElement = findChild((text) => text.includes('modified to your preferences') && text.includes('special order'));
+        const hasAddDiamond = Boolean(document.querySelector('#add-diamond-link'));
 
         if (!detailsParagraph && !naturalParagraph && !labParagraph) return;
 
@@ -75,33 +81,44 @@
           return `<div class="product-detail-spec__row"><span>${label}</span><strong>${value}</strong></div>`;
         }).join('');
 
-        const priceNote = escapeHtml(priceParagraph ? normalize(priceParagraph.innerText || '').replace(/^["\u201C]|["\u201D]$/g, '') : 'Price is for setting only');
+        const detailLines = linesFrom(detailsParagraph, 'Details:');
+        const naturalLines = linesFrom(naturalParagraph, 'Natural Side Diamonds:');
+        const labLines = linesFrom(labParagraph, 'Lab Side Diamonds:');
+        const naturalDiamondLines = linesFrom(naturalDiamondParagraph, 'Natural Diamond');
+        const labDiamondLines = linesFrom(labDiamondParagraph, 'Lab Diamond');
+        const isDiamondLine = (line) => {
+          const label = normalize(line.split(':')[0] || line).toLowerCase();
+          return ['diamond', 'stone', 'clarity', 'color', 'carat', 'ctw', 'igi', 'certificate', 'certified'].some((term) => label.includes(term));
+        };
+        const diamondInfoLines = hasAddDiamond ? [] : [...detailLines.filter(isDiamondLine), ...naturalLines, ...labLines];
+        const settingLines = hasAddDiamond ? detailLines : detailLines.filter((line) => !isDiamondLine(line));
+        const group = (title, lines) => lines.length
+          ? `<section class="product-detail-spec__group"><h3>${title}</h3>${toRows(lines)}</section>`
+          : '';
+        const priceNote = hasAddDiamond
+          ? escapeHtml(priceParagraph ? normalize(priceParagraph.innerText || '').replace(/^["\u201C]|["\u201D]$/g, '') : 'Price is for setting only')
+          : '';
+        const specTitle = hasAddDiamond ? 'Setting specification' : 'Product specification';
         const spec = document.createElement('div');
         spec.className = 'product-detail-spec';
         spec.innerHTML = `
           <div class="product-detail-spec__header">
             <span>Product details</span>
-            <strong>Setting specification</strong>
+            <strong>${specTitle}</strong>
           </div>
           <div class="product-detail-spec__grid">
-            <section class="product-detail-spec__group">
-              <h3>Setting</h3>
-              ${toRows(linesFrom(detailsParagraph, 'Details:'))}
-            </section>
-            <section class="product-detail-spec__group">
-              <h3>Natural side diamonds</h3>
-              ${toRows(linesFrom(naturalParagraph, 'Natural Side Diamonds:'))}
-            </section>
-            <section class="product-detail-spec__group">
-              <h3>Lab side diamonds</h3>
-              ${toRows(linesFrom(labParagraph, 'Lab Side Diamonds:'))}
-            </section>
+            ${group('Setting', settingLines)}
+            ${hasAddDiamond ? group('Natural side diamonds', naturalLines) : ''}
+            ${hasAddDiamond ? group('Lab side diamonds', labLines) : group('Diamond information', diamondInfoLines)}
+            ${!hasAddDiamond ? group('Natural diamond', naturalDiamondLines) : ''}
+            ${!hasAddDiamond ? group('Lab diamond', labDiamondLines) : ''}
           </div>
-          <div class="product-detail-spec__note">${priceNote}</div>
+          ${priceNote ? `<div class="product-detail-spec__note">${priceNote}</div>` : ''}
+          ${!hasAddDiamond && specialOrderElement ? `<div class="product-detail-spec__note">${escapeHtml(normalize(specialOrderElement.innerText || ''))}</div>` : ''}
         `;
 
         (detailsParagraph || naturalParagraph || labParagraph).before(spec);
-        [detailsParagraph, naturalParagraph, labParagraph, priceParagraph].forEach((paragraph) => paragraph && paragraph.remove());
+        [detailsParagraph, naturalParagraph, labParagraph, naturalDiamondParagraph, labDiamondParagraph, priceParagraph, specialOrderElement].forEach((element) => element && element.remove());
       })();
     </script>
   {%- endunless -%}
