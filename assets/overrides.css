@@ -858,7 +858,7 @@ html, body {
   color: var(--product-ink);
 }
 
-.template-product .product-single__meta .block-price::after {
+.template-product .product-single__meta:has(#add-diamond-link) .block-price::after {
   content: "Setting price only. Choose your center diamond next.";
   display: block;
   margin-top: 9px;
@@ -979,8 +979,22 @@ html, body {
 
 .template-product .add-to-cart:hover {
   background: #fff !important;
+  border-color: var(--product-ink) !important;
   color: var(--product-ink) !important;
   transform: translateY(-1px);
+}
+
+.template-product .add-to-cart:hover *,
+.template-product .add-to-cart:focus-visible * {
+  color: var(--product-ink) !important;
+}
+
+.template-product .add-to-cart:focus-visible {
+  background: #fff !important;
+  border-color: var(--product-ink) !important;
+  color: var(--product-ink) !important;
+  outline: 2px solid rgba(63, 46, 47, 0.22);
+  outline-offset: 3px;
 }
 
 .template-product .product-promise-panel {
@@ -1677,7 +1691,13 @@ html, body {
 .template-product .add-to-cart:hover {
   border-color: #101113 !important;
   background: #fff !important;
+  color: #101113 !important;
   box-shadow: 0 16px 34px rgba(16, 17, 19, 0.08);
+}
+
+.template-product .add-to-cart:hover *,
+.template-product .add-to-cart:focus-visible * {
+  color: #101113 !important;
 }
 
 .template-product .product-promise-panel {
@@ -1848,6 +1868,10 @@ html, body {
     min-height: 390px;
     max-height: none;
     border-radius: 0;
+  }
+
+  .template-product .product__main-photos {
+    margin-left: 0 !important;
   }
 
   .template-product .product-image-main img {
@@ -2888,4 +2912,20 @@ html, body {
   .shopify-section-group-footer-group .newsletter__input-group {
     max-width: none;
   }
+}
+
+html body.template-product .product-single__meta .add-to-cart.btn:hover,
+html body.template-product .product-single__meta .add-to-cart.btn:focus-visible,
+html body.template-product .product-single__meta #add-diamond-link.add-to-cart:hover,
+html body.template-product .product-single__meta #add-diamond-link.add-to-cart:focus-visible {
+  background: #fff !important;
+  border-color: #101113 !important;
+  color: #101113 !important;
+}
+
+html body.template-product .product-single__meta .add-to-cart.btn:hover *,
+html body.template-product .product-single__meta .add-to-cart.btn:focus-visible *,
+html body.template-product .product-single__meta #add-diamond-link.add-to-cart:hover *,
+html body.template-product .product-single__meta #add-diamond-link.add-to-cart:focus-visible * {
+  color: #101113 !important;
 }
