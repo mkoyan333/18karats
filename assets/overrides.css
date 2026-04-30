@@ -206,25 +206,16 @@ html, body {
 }
 
 .smi-announcement-bar-2 smi-scrolling-text-topbar::before {
-  content: "Lifetime warranty and upgrades  |  Free US shipping  |  Free US returns  |  (888) 318-8818";
+  content: "Lifetime Warranty and Upgrades | Free US Shipping | Free US Returns";
   position: absolute;
   inset: 50% 16px auto;
   color: rgba(255, 255, 255, 0.82);
   font-size: 12px;
   line-height: 1.3;
   font-weight: 500;
-  text-transform: uppercase;
-  letter-spacing: 0.04em;
   text-align: center;
   transform: translateY(-50%);
   pointer-events: none;
-}
-
-.smi-announcement-bar-2 .smi-component-blocks-announcement__content,
-.smi-announcement-bar-2 .smi-component-blocks-announcement__content a,
-.smi-announcement-bar-2-3 .smi-component-blocks-announcement__content,
-.smi-announcement-bar-2-3 .smi-component-blocks-announcement__content a {
-  text-transform: uppercase;
 }
 
 .smi-announcement-bar-2 .smi-component-blocks-announcement {
@@ -381,7 +372,7 @@ html, body {
   }
 
   .smi-announcement-bar-2 smi-scrolling-text-topbar::before {
-    content: "Lifetime warranty  |  Free US shipping & returns";
+    content: "Lifetime Warranty and Upgrades | Free US Shipping | Free US Returns";
     font-size: 11px;
   }
 
