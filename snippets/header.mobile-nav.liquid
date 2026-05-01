@@ -256,13 +256,17 @@
 	  grid-template-columns: repeat(2, minmax(0, 1fr));
 	  gap: 8px;
 	  padding: 0 14px 24px;
+	  overflow: hidden;
 	}
 
 	.slide-nav__dropdown--icon-grid > .slide-nav__item {
 	  padding: 0;
 	}
 
-	.slide-nav__dropdown--icon-grid > .slide-nav__item:first-child,
+	.slide-nav__dropdown--icon-grid > .slide-nav__item:first-child {
+	  display: none;
+	}
+
 	.slide-nav__dropdown--icon-grid > .slide-nav__item--full {
 	  grid-column: 1 / -1;
 	}
@@ -298,6 +302,19 @@
 	    opacity: 1;
 	    transition: all 0.55s cubic-bezier(0.165, 0.84, 0.44, 1) 0.1s forwards;
 	  }
+	}
+
+	mobile-nav.slide-nav__wrapper {
+	  overflow-x: hidden;
+	}
+
+	mobile-nav.slide-nav__wrapper[data-level='3'] .slide-nav__sublist-link {
+	  visibility: hidden;
+	  pointer-events: none;
+	}
+
+	mobile-nav.slide-nav__wrapper[data-level='3'] .slide-nav__dropdown[data-level='2'] > .slide-nav__item > .slide-nav__button > .slide-nav__sublist-link .element-icon {
+	  display: none;
 	}
 	
 	/*Adjustments to footer menus when inside mobile nav*/
@@ -431,10 +448,16 @@
 
                 assign show_menu_icons_submenu = false
                 assign show_section_divider_submenu = false
+                assign menu_icon_type_submenu = ''
                 assign childlink_normalized = childlink.title | downcase | strip
-                if childlink_normalized == 'by shape' or childlink_normalized == 'by style' or childlink_normalized == 'по форме'
+                if childlink_normalized == 'by shape' or childlink_normalized == 'shop by shape' or childlink_normalized == 'по форме'
                   assign show_menu_icons_submenu = true
                   assign show_section_divider_submenu = true
+                  assign menu_icon_type_submenu = 'shape'
+                elsif childlink_normalized == 'by style' or childlink_normalized == 'shop by style'
+                  assign show_menu_icons_submenu = true
+                  assign show_section_divider_submenu = true
+                  assign menu_icon_type_submenu = 'style'
                 endif
               -%}
 
@@ -478,7 +501,7 @@
                       If a collection, automatically add 'view all' link
                     {% endcomment %}
                     {%- if childlink.url contains '/collections/' -%}
-                      <li class="slide-nav__item{% if show_menu_icons_submenu %} slide-nav__item--full{% endif %}">
+                      <li class="slide-nav__item{% if show_menu_icons_submenu or childlink_normalized contains 'shape' or childlink_normalized contains 'style' %} slide-nav__item--full{% endif %}">
                         <a href="{{ childlink.url }}" class="slide-nav__link">
                           <span>
                             {% render 'utility.translate', key: 'actions.view_all', fallback: 'View all' -%}
@@ -490,10 +513,10 @@
 
                     {%- for grandchildlink in childlink.links -%}
                       <li class="slide-nav__item">
-                        <a href="{{ grandchildlink.url }}" class="slide-nav__link{% if show_menu_icons_submenu %} slide-nav__link--icon{% endif %}">
-                          {% if show_menu_icons_submenu %}{% render 'shape-menu-icon', shape: grandchildlink.title %}{% endif %}
+                        <a href="{{ grandchildlink.url }}" class="slide-nav__link{% if show_menu_icons_submenu or childlink_normalized contains 'shape' or childlink_normalized contains 'style' %} slide-nav__link--icon{% endif %}">
+                          {% if show_menu_icons_submenu or childlink_normalized contains 'shape' or childlink_normalized contains 'style' %}{% render 'shape-menu-icon', shape: grandchildlink.title, menu_type: menu_icon_type_submenu | default: 'shape' %}{% endif %}
                           <span>{{ grandchildlink.title | escape }}</span>
-                          {% unless show_menu_icons_submenu %}{% render 'element.icon', name: chevron_icon %}{% endunless %}
+                          {% unless show_menu_icons_submenu or childlink_normalized contains 'shape' or childlink_normalized contains 'style' %}{% render 'element.icon', name: chevron_icon %}{% endunless %}
                         </a>
                       </li>
                     {%- endfor -%}
@@ -527,3 +550,5 @@
 <script type="module">
   import 'header.mobile-nav'
 </script>
+
+

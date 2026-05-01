@@ -438,9 +438,15 @@
                       assign show_menu_icons_mega = false
                       assign show_section_divider_mega = false
                       assign childlink_normalized_mega = childlink.title | downcase | strip
-                      if childlink_normalized_mega == 'by shape' or childlink_normalized_mega == 'by style'
+                      assign menu_icon_type_mega = ''
+                      if childlink_normalized_mega == 'by shape' or childlink_normalized_mega == 'shop by shape' or childlink_normalized_mega == 'Ð¿Ð¾ Ñ„Ð¾Ñ€Ð¼Ðµ'
                         assign show_menu_icons_mega = true
                         assign show_section_divider_mega = true
+                        assign menu_icon_type_mega = 'shape'
+                      elsif childlink_normalized_mega == 'by style' or childlink_normalized_mega == 'shop by style'
+                        assign show_menu_icons_mega = true
+                        assign show_section_divider_mega = true
+                        assign menu_icon_type_mega = 'style'
                       endif
 
                       if childlink.levels > 0 and forloop.index != 1
@@ -494,7 +500,7 @@
 
                       {%- for grandchildlink in childlink.links -%}
                         <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link{% if show_menu_icons_mega %} site-nav__dropdown-link--icon{% endif %}">
-                          {% if show_menu_icons_mega %}{% render 'shape-menu-icon', shape: grandchildlink.title %}{% endif %}
+                          {% if show_menu_icons_mega %}{% render 'shape-menu-icon', shape: grandchildlink.title, menu_type: menu_icon_type_mega %}{% endif %}
                           {{ grandchildlink.title }}
                         </a>
                       {%- endfor -%}
@@ -528,9 +534,15 @@
                 assign show_menu_icons_submenu = false
                 assign show_section_divider_submenu = false
                 assign childlink_normalized = childlink.title | downcase | strip
-                if childlink_normalized == 'by shape' or childlink_normalized == 'by style' or childlink_normalized == 'по форме'
+                assign menu_icon_type_submenu = ''
+                if childlink_normalized == 'by shape' or childlink_normalized == 'shop by shape' or childlink_normalized == 'по форме'
                   assign show_menu_icons_submenu = true
                   assign show_section_divider_submenu = true
+                  assign menu_icon_type_submenu = 'shape'
+                elsif childlink_normalized == 'by style' or childlink_normalized == 'shop by style'
+                  assign show_menu_icons_submenu = true
+                  assign show_section_divider_submenu = true
+                  assign menu_icon_type_submenu = 'style'
                 endif
               -%}
 
@@ -548,8 +560,8 @@
                   <ul class="site-nav__deep-dropdown">
                     {%- for grandchildlink in childlink.links -%}
                       <li>
-                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link{% if show_menu_icons_submenu %} site-nav__dropdown-link--icon{% endif %}">
-                          {% if show_menu_icons_submenu %}{% render 'shape-menu-icon', shape: grandchildlink.title %}{% endif %}
+                        <a href="{{ grandchildlink.url }}" class="site-nav__dropdown-link{% if show_menu_icons_submenu or childlink_normalized contains 'shape' or childlink_normalized contains 'style' %} site-nav__dropdown-link--icon{% endif %}">
+                          {% if show_menu_icons_submenu or childlink_normalized contains 'shape' or childlink_normalized contains 'style' %}{% render 'shape-menu-icon', shape: grandchildlink.title, menu_type: menu_icon_type_submenu | default: 'shape' %}{% endif %}
                           {{- grandchildlink.title | escape -}}
                         </a>
                       </li>
@@ -572,3 +584,5 @@
   {%- endfor -%}
 
 </ul>
+
+

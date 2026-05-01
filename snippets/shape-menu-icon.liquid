@@ -8,12 +8,13 @@
 {% stylesheet %}
   .shape-menu-icon {
     --shape-menu-icon-size: 20px;
+    --shape-menu-icon-width: var(--shape-menu-icon-size);
 
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    flex: 0 0 var(--shape-menu-icon-size);
-    width: var(--shape-menu-icon-size);
+    flex: 0 0 var(--shape-menu-icon-width);
+    width: var(--shape-menu-icon-width);
     height: var(--shape-menu-icon-size);
     margin-right: 0.65rem;
     line-height: 1;
@@ -37,6 +38,106 @@
     object-fit: contain;
   }
 
+  .shape-menu-icon--style {
+    --shape-menu-icon-size: 34px;
+    --shape-menu-icon-width: calc(var(--shape-menu-icon-size) * 1.46);
+    opacity: 0.9;
+  }
+
+  .slide-nav__link > .shape-menu-icon--style {
+    --shape-menu-icon-size: 42px;
+  }
+
+  .slide-nav__link > .shape-menu-icon--style-bezel .shape-menu-icon__image {
+    transform: scale(1.56);
+  }
+
+  .slide-nav__link > .shape-menu-icon--style-chunky .shape-menu-icon__image,
+  .slide-nav__link > .shape-menu-icon--style-chanky .shape-menu-icon__image {
+    transform: scale(1.16);
+  }
+
+  .shape-menu-icon--style .shape-menu-icon__image {
+    transform: scale(1.14);
+    transform-origin: center;
+  }
+
+  .site-nav__dropdown-link .shape-menu-icon--style .shape-menu-icon__image {
+    transform: scale(1.18);
+  }
+
+  .shape-menu-icon--style-solitaire .shape-menu-icon__image {
+    transform: scale(1.2);
+  }
+
+  .site-nav__dropdown-link .shape-menu-icon--style-solitaire .shape-menu-icon__image {
+    transform: scale(1.26);
+  }
+
+  .shape-menu-icon--style-three-stone .shape-menu-icon__image,
+  .shape-menu-icon--style-tree-stone .shape-menu-icon__image {
+    transform: scale(1.18);
+  }
+
+  .site-nav__dropdown-link .shape-menu-icon--style-three-stone .shape-menu-icon__image,
+  .site-nav__dropdown-link .shape-menu-icon--style-tree-stone .shape-menu-icon__image {
+    transform: scale(1.24);
+  }
+
+  .shape-menu-icon--style-bezel .shape-menu-icon__image {
+    transform: scale(1.44);
+  }
+
+  .site-nav__dropdown-link .shape-menu-icon--style-bezel .shape-menu-icon__image {
+    transform: scale(1.6);
+  }
+
+  .shape-menu-icon--style-halo .shape-menu-icon__image {
+    transform: scale(1.18);
+  }
+
+  .site-nav__dropdown-link .shape-menu-icon--style-halo .shape-menu-icon__image {
+    transform: scale(1.24);
+  }
+
+  .shape-menu-icon--style-hidden-halo .shape-menu-icon__image {
+    transform: scale(1.34);
+  }
+
+  .site-nav__dropdown-link .shape-menu-icon--style-hidden-halo .shape-menu-icon__image {
+    transform: scale(1.46);
+  }
+
+  .shape-menu-icon--style-diamond-band .shape-menu-icon__image,
+  .shape-menu-icon--style-pave .shape-menu-icon__image {
+    transform: scale(1.18);
+  }
+
+  .site-nav__dropdown-link .shape-menu-icon--style-diamond-band .shape-menu-icon__image,
+  .site-nav__dropdown-link .shape-menu-icon--style-pave .shape-menu-icon__image {
+    transform: scale(1.24);
+  }
+
+  .shape-menu-icon--style-chunky .shape-menu-icon__image,
+  .shape-menu-icon--style-chanky .shape-menu-icon__image {
+    transform: scale(1.02);
+  }
+
+  .site-nav__dropdown-link .shape-menu-icon--style-chunky .shape-menu-icon__image,
+  .site-nav__dropdown-link .shape-menu-icon--style-chanky .shape-menu-icon__image {
+    transform: scale(1.08);
+  }
+
+  .shape-menu-icon--bezel:not(.shape-menu-icon--style) .shape-menu-icon__image {
+    transform: scale(1.34);
+    transform-origin: center;
+  }
+
+  .shape-menu-icon--chunky:not(.shape-menu-icon--style) .shape-menu-icon__image {
+    transform: scale(1.08);
+    transform-origin: center;
+  }
+
   .site-nav__dropdown-link .shape-menu-icon {
     margin-top: -1px;
   }
@@ -53,7 +154,23 @@
 {% liquid
   assign shape = shape | default: ''
   assign shape_name = shape | strip | downcase
+  assign shape_class_name = shape_name | handleize
+  assign menu_type = menu_type | default: ''
+  assign icon_classes = 'shape-menu-icon'
   assign icon_url = ''
+
+  if menu_type == 'style'
+    assign icon_classes = icon_classes | append: ' shape-menu-icon--style'
+    assign icon_classes = icon_classes | append: ' shape-menu-icon--style-' | append: shape_class_name
+  endif
+
+  if shape_name == 'bezel'
+    assign icon_classes = icon_classes | append: ' shape-menu-icon--bezel'
+  endif
+
+  if shape_name == 'chunky' or shape_name == 'chanky'
+    assign icon_classes = icon_classes | append: ' shape-menu-icon--chunky'
+  endif
 
   case shape_name
     when 'asscher'
@@ -62,7 +179,7 @@
       assign icon_url = '/cdn/shop/files/CUSHION-VQ6KC3AI.svg?v=1749826813&width=50'
     when 'cushion'
       assign icon_url = '/cdn/shop/files/CUSHION-VQ6KC3AI.svg?v=1749826813&width=50'
-    when 'emerald'
+    when 'emerald', 'square emerald', 'square-emerald'
       assign icon_url = '/cdn/shop/files/EMERALD-WDWYFLXN.svg?v=1749826813&width=50'
     when 'heart'
       assign icon_url = '/cdn/shop/files/HEART-VGGURWHG.svg?v=1749826813&width=50'
@@ -74,13 +191,13 @@
       assign icon_url = '/cdn/shop/files/PEAR-ZABBQM76.svg?v=1749826813&width=50'
     when 'princess'
       assign icon_url = '/cdn/shop/files/PRINCESS-GYL3K7OB.svg?v=1749826813&width=50'
-    when 'radiant'
+    when 'radiant', 'square radiant', 'square-radiant'
       assign icon_url = '/cdn/shop/files/RADIANT-LBLWCVJT.svg?v=1749826813&width=50'
     when 'round'
       assign icon_url = '/cdn/shop/files/ROUND-5UMFM7E6.svg?v=1749826813&width=50'
     when 'solitaire'
       assign icon_url = '/cdn/shop/files/solitaire-4VMZDYZQ.svg?v=1749826823&width=50'
-    when 'diamond band', 'pave', 'chunky', 'chanky'
+    when 'diamond band', 'pave'
       assign icon_url = '/cdn/shop/files/pave-YYUQTFKW.svg?v=1749826823&width=50'
     when 'halo'
       assign icon_url = '/cdn/shop/files/halo-YF4LVVRJ.svg?v=1749826823&width=50'
@@ -90,11 +207,13 @@
       assign icon_url = '/cdn/shop/files/three-stone-Y4KHS2BW.svg?v=1749826823&width=50'
     when 'bezel'
       assign icon_url = '/cdn/shop/files/Bezel_50f9c527-b628-4807-b35d-446b225ffd59.svg?v=1751500812&width=50'
+    when 'chunky', 'chanky'
+      assign icon_url = 'icon.style-chunky.svg' | asset_url
   endcase
 -%}
 
 {% if shape_name != blank and icon_url != blank %}
-  <span class="shape-menu-icon" aria-hidden="true">
+  <span class="{{ icon_classes }}" aria-hidden="true">
     <img class="shape-menu-icon__image" src="{{ icon_url }}" alt="" loading="lazy" width="20" height="20">
   </span>
 {% endif %}
