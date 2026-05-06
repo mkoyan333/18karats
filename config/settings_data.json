@@ -149,16 +149,6 @@
         "disabled": false,
         "settings": {}
       },
-      "12016176150940211849": {
-        "type": "shopify://apps/ot-theme-sections/blocks/otsb-script/45c0d634-d78b-458c-8bca-17086e7d65aa",
-        "disabled": false,
-        "settings": {}
-      },
-      "11119278427475967885": {
-        "type": "shopify://apps/ot-theme-sections/blocks/otsb-style/45c0d634-d78b-458c-8bca-17086e7d65aa",
-        "disabled": false,
-        "settings": {}
-      },
       "4981902369724952902": {
         "type": "shopify://apps/vo-product-options/blocks/embed-block/430cbd7b-bd20-4c16-ba41-db6f4c645164",
         "disabled": false,

@@ -19,7 +19,7 @@
         "image_XPtpcA": {
           "type": "image",
           "settings": {
-            "image": "shopify://shop_images/a_6a882083-e599-4d10-bd99-ca7067ff17bc.jpg"
+            "image": "shopify://shop_images/Lilit.png"
           }
         }
       },
@@ -32,44 +32,7 @@
         ".color-scheme-3 .btn {color: var(--color-scheme-3-bg); background-color: transparent; color: black; border: none; text-decoration: underline;}"
       ],
       "settings": {
-        "media_width": "50",
-        "media_crop": "none",
-        "layout": "right",
-        "content_alignment": "center",
-        "content_position": "center",
-        "color_scheme": "3",
-        "top_padding": false,
-        "bottom_padding": false,
-        "full_width": true,
-        "subheading": "Luxury Gold and Diamond Jewelry",
-        "heading": "Gold Jewelry Made to <em>Shine</em>",
-        "heading_size": "h1",
-        "text_highlight": "serif",
-        "text": "<p>Shop our full range of gold jewelry and diamond jewelry pieces, crafted from the purest white, yellow, rose gold, and platinum to create pieces that shine with brilliance. </p>",
-        "button_text": "SHOP GOLD JEWELRY",
-        "button_link": "shopify://collections"
-      }
-    },
-    "media_text_fqEVJf": {
-      "type": "media-text",
-      "blocks": {
-        "image_xCx9FW": {
-          "type": "image",
-          "settings": {
-            "image": "shopify://shop_images/untitled-design-2.png"
-          }
-        }
-      },
-      "block_order": [
-        "image_xCx9FW"
-      ],
-      "custom_css": [
-        ".accent-subtitle {letter-spacing: 0.07em; margin: 0 0 8px; font-style: italic; font-size: 16px;}",
-        "@media (max-width: 1250px) {.media-with-text__content {text-align: center; } .accent-subtitle {letter-spacing: 0.07em; margin: 0 0 8px; font-style: italic; font-size: 14px; }}",
-        ".color-scheme-3 .btn {color: var(--color-scheme-3-bg); background-color: transparent; color: black; border: none; text-decoration: underline;}"
-      ],
-      "settings": {
-        "media_width": "50",
+        "media_width": "33",
         "media_crop": "none",
         "layout": "left",
         "content_alignment": "center",
@@ -79,12 +42,12 @@
         "bottom_padding": false,
         "full_width": true,
         "subheading": "",
-        "heading": "Design Your <em>Dream</em> Ring",
-        "heading_size": "h2",
+        "heading": "Jewelry, <em>Unfiltered</em>",
+        "heading_size": "h1",
         "text_highlight": "serif",
-        "text": "<p>Create your ring with your choice of natural diamonds, lab-grown diamonds, and gemstones in a range of shapes, colors, and sizes.</p>",
-        "button_text": "CREATE YOUR RING",
-        "button_link": "https://18karats.com/pages/build-your-diamond-ring-1?stage=Select+Setting"
+        "text": "<p>Unique settings, bold silhouettes, and refined craftsmanship come together in pieces made to feel just <em>yours</em></p>",
+        "button_text": "SHOP COLLECTIONS",
+        "button_link": "shopify://collections"
       }
     },
     "promo-grid": {
@@ -427,7 +390,7 @@
       "name": "✧Collection list 15-3",
       "settings": {
         "sub_heading": "",
-        "heading": "Shop The 18 KARATS Collection",
+        "heading": "Shop 18 KARATS Collection",
         "heading_size": "smi-h2",
         "description": "",
         "heading_alignment": "center",
@@ -451,6 +414,43 @@
         "color_scheme": "scheme_1",
         "padding_top": 50,
         "padding_bottom": 50
+      }
+    },
+    "media_text_fqEVJf": {
+      "type": "media-text",
+      "blocks": {
+        "image_xCx9FW": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Untitled_design_5_9457313c-939f-4274-8a6a-fcbb89e3473f.png"
+          }
+        }
+      },
+      "block_order": [
+        "image_xCx9FW"
+      ],
+      "custom_css": [
+        ".accent-subtitle {letter-spacing: 0.07em; margin: 0 0 8px; font-style: italic; font-size: 16px;}",
+        "@media (max-width: 1250px) {.media-with-text__content {text-align: center; } .accent-subtitle {letter-spacing: 0.07em; margin: 0 0 8px; font-style: italic; font-size: 14px; }}",
+        ".color-scheme-3 .btn {color: var(--color-scheme-3-bg); background-color: transparent; color: black; border: none; text-decoration: underline;}"
+      ],
+      "settings": {
+        "media_width": "50",
+        "media_crop": "none",
+        "layout": "left",
+        "content_alignment": "center",
+        "content_position": "center",
+        "color_scheme": "3",
+        "top_padding": false,
+        "bottom_padding": false,
+        "full_width": true,
+        "subheading": "",
+        "heading": "Design Your <em>Dream</em> Ring",
+        "heading_size": "h2",
+        "text_highlight": "serif",
+        "text": "<p>Define every element—from the setting to the diamond—and create a custom engagement ring that combines unmatched craftsmanship with your unique vision</p>",
+        "button_text": "CREATE YOUR RING",
+        "button_link": "https://18karats.com/pages/build-your-diamond-ring-1?stage=Select+Setting"
       }
     },
     "featured_collection_7gFyRp": {
@@ -683,7 +683,7 @@
             "sub_heading": "",
             "heading": "Gemstones",
             "heading_size": "smi-h3",
-            "description": "<p>Shop our range of loose gemstones or make your own ring with your gemstone of choice, featuring rubies, sapphires, emeralds, and more. </p>"
+            "description": "<p>A world of color and character. From deep sapphires to vivid rubies, each gemstone brings its own presence—offering a refined, more personal approach to fine jewelry.</p>"
           }
         },
         "button_NgVGf7": {
@@ -720,7 +720,7 @@
       "name": "✧Image with text 1-1",
       "settings": {
         "full_width": "container",
-        "upload_image": "shopify://shop_images/shop-gemstones.jpg",
+        "upload_image": "shopify://shop_images/sapphire.png",
         "desktop_media_width": "50",
         "desktop_media_position": "row",
         "media_ratio": "3/2",
@@ -742,7 +742,7 @@
             "sub_heading": "",
             "heading": "Colored Diamonds",
             "heading_size": "smi-h3",
-            "description": "<p>Create your ring or buy your colored diamond of choice with our colored diamonds, from pink and violet to blues, reds, and more in your choice of natural or lab diamonds.</p>"
+            "description": "<p>Not every diamond is meant to be white. Discover rare hues that bring character, contrast, and a new perspective to fine jewelry.</p>"
           }
         },
         "button_iDnXRA": {
@@ -779,7 +779,7 @@
       "name": "✧Image with text 1-1",
       "settings": {
         "full_width": "container",
-        "upload_image": "shopify://shop_images/pink_diamonds_c7724c4f-af87-4c71-9cb8-6207fd5c90e8.jpg",
+        "upload_image": "shopify://shop_images/yellow_diamond1.png",
         "desktop_media_width": "50",
         "desktop_media_position": "row-reverse",
         "media_ratio": "3/2",
@@ -815,7 +815,7 @@
       ],
       "settings": {
         "media_width": "50",
-        "media_crop": "4-3",
+        "media_crop": "square",
         "layout": "right",
         "content_alignment": "center",
         "content_position": "center",
@@ -823,12 +823,12 @@
         "top_padding": false,
         "bottom_padding": false,
         "full_width": true,
-        "subheading": "Quality Design and Make",
+        "subheading": "",
         "heading": "<em>About</em> 18 KARATS",
         "heading_size": "h1",
         "text_highlight": "serif",
-        "text": "<p>18 KARATS specializes in designing and manufacturing luxury gold jewelry and diamond jewelry with premium white gold, yellow gold, rose gold, platinum, and quality diamonds.  </p><p>With over 20 years of experience in jewelry design and manufacturing, 18 KARATS is one of Los Angeles' largest and most experienced jewelry manufacturers, offering exceptional pieces and designs.</p>",
-        "button_text": "ABOUT 18 KARATS",
+        "text": "<p>We know the industry—because we’ve been behind it for over 20 years. So we built something better! No middlemen, no inflated markups.<br/><br/>We design and craft fine jewelry in-house, delivering a more personal experience, exceptional craftsmanship, and pieces made with you in mind.</p>",
+        "button_text": "LEARN MORE",
         "button_link": "shopify://pages/about-18karats"
       }
     },
@@ -838,7 +838,7 @@
         "video_UMhVAw": {
           "type": "video",
           "settings": {
-            "video": "shopify://files/videos/394E2D4F812FA0232CFDA665F74E339B_video_dashinit.mp4",
+            "video": "shopify://files/videos/band ring video.mp4",
             "autoplay": true,
             "loop": true,
             "hide_controls": true,
@@ -864,11 +864,11 @@
         "top_padding": true,
         "bottom_padding": true,
         "full_width": true,
-        "subheading": "Any Metal, Any Stone, Any Design",
+        "subheading": "",
         "heading": "Custom Designs",
         "heading_size": "h1",
         "text_highlight": "serif",
-        "text": "<p>18 KARATS specializes in bringing dream jewelry to life. We turn ideas into beautiful pieces — from engagement rings to statement jewelry. Whether it's a modern twist on a classic or something entirely your own, we combine your inspiration with our craftsmanship to create a personal piece.</p><p>Request a special order, and we’ll get started right away! You'll receive a digital rendering complete with design revisions to provide the look you always imagined. Choose any metal, any stone, any style, and any size — every detail is up to you.</p>",
+        "text": "<p><em>Have an idea? Let’s make it real.</em><br/>You bring the vision—we bring it to life. From the setting to the stone to the smallest, almost invisible details, everything is shaped around you. No templates, no shortcuts—just a piece that feels like it was always meant to be yours.</p>",
         "button_text": "CUSTOM JEWELRY",
         "button_link": "shopify://pages/contact-18karats"
       }
@@ -1276,15 +1276,6 @@
     },
     "1750452428b87d5448": {
       "type": "apps",
-      "blocks": {
-        "instareel_ig_reels_instagram_reels_feed_6pqGKe": {
-          "type": "shopify://apps/instareel-ig-reels/blocks/instagram-reels-feed/6399ee9c-54c8-4f76-97d7-8f02f7662aa1",
-          "settings": {}
-        }
-      },
-      "block_order": [
-        "instareel_ig_reels_instagram_reels_feed_6pqGKe"
-      ],
       "disabled": true,
       "custom_css": [
         "#reelify-root-container,#instareel-root-container {text-align: center; padding-bottom: 4em;}"
@@ -1328,11 +1319,11 @@
   "order": [
     "176315478554ade424",
     "media-text",
-    "media_text_fqEVJf",
     "promo-grid",
     "smi_collection_list_15_3_Jdr4nM",
     "featured_collections_xfKGJW",
     "smi_collection_list_15_3_Tampqp",
+    "media_text_fqEVJf",
     "featured_collection_7gFyRp",
     "advanced_content_FrzypQ",
     "featured-collection",

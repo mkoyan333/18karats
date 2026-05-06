@@ -28,7 +28,7 @@
       "custom_css": [],
       "settings": {
         "disable_for_account_holders": true,
-        "popup_seconds": 5,
+        "popup_seconds": 22,
         "popup_days": 2,
         "popup_title": "Subscribe and Get $100 Off Your First Ring Order!",
         "popup_text": "<p>Subscribe for exclusive discounts and get $100 off your first ring order! </p>",

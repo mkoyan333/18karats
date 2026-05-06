@@ -17,13 +17,6 @@
     "3980a93f-9ea8-4fd6-870d-b06ec608c500": {
       "type": "rich-text",
       "blocks": {
-        "8820d03a-bc5f-4630-8e78-ff102368673c": {
-          "type": "text",
-          "settings": {
-            "enlarge_text": false,
-            "text": "<p><em>Gold, Diamond, and Gemstone Jewelry </em></p>"
-          }
-        },
         "template--19420908355873__3980a93f-9ea8-4fd6-870d-b06ec608c500-16890002941894b35c-0": {
           "type": "heading",
           "settings": {
@@ -44,12 +37,11 @@
           "type": "text",
           "settings": {
             "enlarge_text": false,
-            "text": "<p>For over two decades, 18 KARATS has set the standard for fine jewelry design and manufacturing in Los Angeles. Specializing in 14K and 18K gold, platinum, diamonds, and bespoke rings, we bring timeless craftsmanship to modern luxury at our LA manufacturing and design studio. </p>"
+            "text": "<p>We’ve been inside the jewelry industry for over 20 years—so we know exactly what we wanted to change. No middlemen. No unnecessary markups. No outdated way of doing things.</p><p>Instead, we built 18 Karats as a direct-to-you experience where everything is designed and crafted in-house. It’s a more personal process—one where your vision actually stays at the center, from the first idea to the final piece.</p>"
           }
         }
       },
       "block_order": [
-        "8820d03a-bc5f-4630-8e78-ff102368673c",
         "template--19420908355873__3980a93f-9ea8-4fd6-870d-b06ec608c500-16890002941894b35c-0",
         "template--19420908355873__3980a93f-9ea8-4fd6-870d-b06ec608c500-16890002941894b35c-1",
         "text_mCCWyV"
@@ -130,11 +122,11 @@
         "top_padding": false,
         "bottom_padding": true,
         "full_width": true,
-        "subheading": "Designed For You",
-        "heading": "Luxury <em>Custom </em>Design",
+        "subheading": "",
+        "heading": "Custom Engagement Rings",
         "heading_size": "h1",
         "text_highlight": "serif",
-        "text": "<p>From engagement rings to heirlooms, we transform visions into stunning designs with intention and precision. </p><p>We offer full customization on any piece, with your choice of metals, colors, silhouettes, and more. We also offer custom ring designs, with detailed 3D renderings and personalized guidance along the way to make your dream piece a reality!</p>",
+        "text": "<p><em>Have an idea? Let’s make it real.</em></p><p>You bring the vision—we bring it to life. From the setting to the stone to the smallest, almost invisible details, everything is shaped around you. No templates, no shortcuts—just a piece that feels like it was always meant to be yours.</p><p>You will receive a detailed 3D rendering and personalized guidance along the way to make your dream piece a reality!</p>",
         "button_text": "REQUEST CUSTOM PIECE",
         "button_link": "https://18karats.com/pages/contact"
       }
@@ -168,11 +160,11 @@
         "top_padding": true,
         "bottom_padding": true,
         "full_width": true,
-        "subheading": "Craftsmanship & Precision",
-        "heading": "<em>Made With Elegance</em>",
+        "subheading": "",
+        "heading": "Craftsmanship & Precision",
         "heading_size": "h1",
         "text_highlight": "serif",
-        "text": "<p>We only work with brilliant-cut diamonds and premium metals, creating pieces with enduring strength and beauty. Our master setters refine each detail, from prong structure to polish. Diamond tables are perfectly leveled to achieve a flawless, mirror-like  finish, while gold surfaces are smoothed and polished for a luminous glow.</p>",
+        "text": "<p>We only work with certified diamonds and premium metals, creating pieces with enduring strength and beauty. Our master setters refine each detail, from prong structure to polish. Diamond tables are perfectly leveled to achieve a flawless, mirror-like finish, while gold surfaces are smoothed and polished for a luminous glow.</p>",
         "button_text": "SHOP COLLECTIONS",
         "button_link": "shopify://collections"
       }
@@ -205,11 +197,11 @@
         "top_padding": true,
         "bottom_padding": true,
         "full_width": true,
-        "subheading": "Decades of Experience",
-        "heading": "Trusted for <em>Generations</em>",
+        "subheading": "",
+        "heading": "Trusted for Generations",
         "heading_size": "h1",
         "text_highlight": "serif",
-        "text": "<p><em>With over 20 years of expertise, 18 KARATS is synonymous with quality, creativity, and trust. Our designs are cherished by clients and featured by leading names in luxury jewelry. Every piece comes with our lifetime warranty and is crafted with ethically sourced, conflict-free diamonds. Each creation from 18 KARATS is luxury redefined — made just for you.</em></p>",
+        "text": "<p>With over 20 years of expertise, 18 KARATS is synonymous with quality, creativity, and trust. Our designs are cherished by clients and featured by leading names in luxury jewelry. Every piece comes with our lifetime warranty and is crafted with ethically sourced, conflict-free diamonds. Each creation from 18 KARATS is luxury redefined — made just for you.</p>",
         "button_text": "BUILD A RING",
         "button_link": "shopify://pages/build-your-diamond-ring"
       }
@@ -296,9 +288,9 @@
       ],
       "settings": {
         "sub_heading": "In the Press",
-        "heading": "Our Designer Has Been Featured In",
+        "heading": "Our Designers Have Been Featured In",
         "heading_size": "smi-h2",
-        "description": "<p>18 KARATS' designer is renowned in the world of fine jewelry. Her pieces are featured in a range of publication for their elegance, beauty, craftsmanship, and unique style. Below are just a few of the publications our designer is featured in. </p>",
+        "description": "<p>18 KARATS' designers are renowned in the world of fine jewelry. Their pieces are featured in a range of publications for their elegance, beauty, craftsmanship, and unique style.</p>",
         "heading_alignment": "center",
         "content_heading_size": "smi-h5",
         "content_alignment": "center",
